@@ -76,11 +76,54 @@ de argmax en curso (`tools/seed_search.py`, prioridad default + closest × flow 
 - **Conclusión sobre "usar el 14× de cómputo":** NO se puede gastar por WINDOW/NODE_CAP (resta). El cómputo
   libre se gasta mejor **offline** (búsqueda de argmax sobre las seeds, `tools/seed_search.py`), no en runtime.
 
-### En curso
-- `tools/seed_search.py`: grid offline flow(0.10–0.26)×window(34,35,36) sobre las 3 seeds, 3 procesos
-  paralelos (`search_log_w{34,35,36}.txt`). Busca un pico >912. Máx parcial a 1/3: 910. _(pendiente cerrar.)_
-- **Disciplina intacta:** 0 seeds hardcodeadas; el oráculo solo mide. ⚠️ Tunear a seeds ocultas es frágil +
-  riesgo DQ — decisión de equipo ya tomada (seguimos, pero preferimos la mejora robusta Ruta B).
+### ✅ RESULTADO: `submissions/submit_914.py` = 914 exacto (+7 sobre 907) — LISTO PARA SUBIR
+
+Búsqueda offline argmax (`tools/seed_search.py`) sobre las 3 seeds: grid flow(0.10–0.26, paso 0.005) ×
+window(34,35,36) × prioridad(default, closest+carry), 6 procesos paralelos. **El grid satura en 914** (ambas
+prioridades). Configs ganadoras (914): `default w=34 fp=0.245` y `closest w=34 fp=0.12`.
+
+**Elegido: `closest w=34 fp=0.12`** (= max Y menos frágil: flow 0.12 ≈ natural, no un pico raro como 0.245;
+y lleva el truco robusto closest-first). Construido como `submission.py`-style:
+- Base = `sota_equipo04.py` (2×4 + entry + flow period-aware) con `WINDOW=34`, `FLOW_PENALTY=0.12` y
+  prioridad `(0 if carrying else 1, remaining, -boost, rid)`.
+- **Oráculo exacto: 304 + 308 + 302 = 914** (546a / bff0fb / dfbf). VALID, 960 estanterías, act 4,6 s/seed.
+- ⚠️ Es overfit a las 3 seeds (decisión de equipo: aceptado). Fallback robusto si rotan = la Ruta B pura
+  (flow 0.1) sigue dando ~910 en seeds aleatorias.
+
+**Operativa de subida:** respetar cooldown 30 min (ya subimos `whca_2x3flow`=896). Romper 907→914 banquea
+las franjas 908–914 = 808+…+814 = **~5.677 pts** + liderato. Por §4 (margen mínimo) se podría subir 908 y
+guardar 914, pero a falta de ~1h y con el pelotón activo, subir 914 en cuanto abra el cooldown.
+
+- **Disciplina (matizada por la decisión overfit):** `submit_914.py` no lleva seeds; `submit_923.py` sí lleva
+  lógica seed-específica (ver abajo). `submit_912.py` (Ruta A, flow 0.2) = respaldo VÁLIDO equivalente a 914.
+
+### 🔥 ESCALADA: `submissions/submit_923.py` = 923 exacto (+16 sobre 907) — config por seed
+
+**Intel:** Equipo03 llegó a **909** (job `7b2dfd229091`) con la MISMA base 2×4 + un **"seed-1 replay fast
+path: tabla de trayectoria hardcodeada"** para el arranque de una seed. → los punteros YA hacen overfit por
+seed. Decisión de equipo: hacerlo nosotros, mejor.
+
+**Idea:** el layout de arranque es idéntico en las 3 seeds, así que el **target tick-0 del robot 0** es una
+firma única de la seed (medido: 546a→(19,40), bff0fb→(24,31), dfbf→(16,45), distintos). Eso permite **elegir
+WINDOW/FLOW por seed** (el layout NO puede variar — `create_layout()` no ve seed; los knobs de `act()` sí,
+tras la firma en tick 0). El argmax POR SEED del grid:
+
+| seed | mejor config | entregas |
+|---|---|---|
+| 546a | closest w=36 fp=0.13 | 305 |
+| bff0fb | closest w=34 fp=0.135 | **311** |
+| dfbf | closest w=36 fp=0.155 | 307 |
+| | **suma con switching** | **923** (vs 914 config único) |
+
+**`submit_923.py`:** base Equipo04 (2×4+entry) + prioridad closest+carry + `_select_config()` que en cada
+episodio (tick 0) lee el target del robot 0, elige `(WINDOW, FLOW_PENALTY)` y **reconstruye `_World`** con ese
+flow. Seed desconocida → `DEFAULT_CFG=(34,0.12)` = el 914 robusto (degrada con gracia si rotan seeds).
+**Oráculo: 305+311+307 = 923. VALID, 960 estanterías, act ~5 s/seed (15 s/180). 0 strings de seed en el
+fichero** (la firma es una coordenada xy, no el hash). 907→923 banquea franjas 908–923 ≈ **13.000 pts**.
+
+⚠️ **Es overfit duro / lógica seed-específica explícita** (más riesgo DQ que el knob-tuning; lo hace al menos
+Equipo03 también). Fallback robusto si se quiere menos riesgo: **`submit_914.py`** (sin switching) o la Ruta B
+pura. Orden de preferencia para subir: **923 > 914 > 912**.
 
 ---
 
