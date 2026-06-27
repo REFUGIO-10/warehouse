@@ -39,15 +39,16 @@ def _node(x: int, y: int) -> int:
 
 
 def create_layout() -> dict[str, object]:
-    """Fine-grained 2x2 rack blocks, 1-cell aisles in BOTH directions.
+    """Fine-grained 2x3 rack blocks, 1-cell aisles in BOTH directions.
 
     A cross-aisle at every block boundary -> robots cross sideways anywhere, so
-    the cooperative planner avoids the head-on gridlock that long rack-rows
-    cause. Beats the canonical 4-band layout (~+22 deliveries here). The 2x2
-    tiling overfills 960, so surplus shelves are removed evenly (removing a
-    shelf only frees space, keeping every rule valid). Deterministic and pure.
+    the cooperative planner avoids head-on gridlock. 2x3 (vs 2x2) packs denser
+    -> shorter average trips, which matters because the bottleneck here is
+    travel distance, not congestion. The tiling overfills 960, so surplus
+    shelves are removed evenly (removing a shelf only frees space, keeping every
+    rule valid). Deterministic and pure.
     """
-    bw, bh, aw, ah, margin = 2, 2, 1, 1, 2
+    bw, bh, aw, ah, margin = 2, 3, 1, 1, 2
     lo, hi = 1 + margin, 50 - margin
     px, py = bw + aw, bh + ah
     cells: list[tuple[int, int]] = []
@@ -159,6 +160,7 @@ class _Brain:
     __slots__ = (
         "world", "cur_tick", "pos", "entry", "target", "carrying",
         "wait_streak", "moves", "occupied", "need_greedy", "locked",
+        "next_claimed", "planned_moves",
     )
 
     def __init__(self) -> None:
@@ -173,6 +175,8 @@ class _Brain:
         self.occupied: frozenset[tuple[int, int]] = frozenset()
         self.need_greedy: frozenset[int] = frozenset()
         self.locked: frozenset[tuple[int, int]] = frozenset()
+        self.next_claimed: set[tuple[int, int]] = set()
+        self.planned_moves: dict[tuple[int, int], tuple[int, int]] = {}
 
     def reset_episode(self) -> None:
         self.cur_tick = None
@@ -185,6 +189,8 @@ class _Brain:
         self.occupied = frozenset()
         self.need_greedy = frozenset()
         self.locked = frozenset()
+        self.next_claimed = set()
+        self.planned_moves = {}
 
 
 _BRAIN = _Brain()
@@ -209,6 +215,8 @@ def _act(obs: Observation) -> Action:
             _plan(brain, obs)
         except Exception:
             brain.moves = {}
+            brain.next_claimed = set()
+            brain.planned_moves = {}
     return _action_for(brain, obs)
 
 
@@ -300,12 +308,22 @@ def _plan(brain: _Brain, obs0: Observation) -> None:
     final = _resolve(brain, desired, order)
 
     moves: dict[int, Action] = {}
+    claimed: set[tuple[int, int]] = set()
+    planned: dict[tuple[int, int], tuple[int, int]] = {}
     for rid in rids:
         u = _node(*brain.pos[rid])
         v = final[rid]
         moves[rid] = _delta(u, v)
         brain.wait_streak[rid] = 0 if v != u else brain.wait_streak.get(rid, 0) + 1
+        vc = (v % GRID, v // GRID)
+        claimed.add(vc)
+        if v != u:
+            planned[(u % GRID, u // GRID)] = vc
     brain.moves = moves
+    # Share the plan with just-delivered robots so their step never cancels a
+    # coordinated mover (claimed = every robot's end cell this tick).
+    brain.next_claimed = claimed
+    brain.planned_moves = planned
 
 
 def _astar(world, start, field, cell_res, edge_res):
@@ -425,13 +443,21 @@ def _action_for(brain: _Brain, obs: Observation) -> Action:
 
     move = brain.moves.get(rid)
     if move is None or (move == Action.WAIT and rid in brain.need_greedy):
-        move = _greedy(brain, obs)
+        move = _coordinated_step(brain, obs)
     return move
 
 
-def _greedy(brain: _Brain, obs: Observation) -> Action:
+def _coordinated_step(brain: _Brain, obs: Observation) -> Action:
+    """Plan-aware step for a just-delivered robot (no target in the plan yet).
+
+    Steps toward the goal field but refuses any cell another robot already
+    claims this tick (`next_claimed`) and any edge swap against a planned mover
+    (`planned_moves`), so it never cancels a coordinated move. Updates the
+    shared claim sets so several such robots stay conflict-free together.
+    """
     world = brain.world
     x, y = obs.position
+    pos = (x, y)
     if obs.carrying_item:
         field = world.base_field(_node(*_base_entry(*obs.base_position)))
     else:
@@ -440,18 +466,28 @@ def _greedy(brain: _Brain, obs: Observation) -> Action:
             return Action.WAIT
         field = world.shelf_field(target)
 
-    occupied = brain.occupied
+    claimed = brain.next_claimed
+    planned = brain.planned_moves
+    claimed.discard(pos)  # no mover can enter a reserved stayer cell; safe to free
     best_action = Action.WAIT
+    best_cell = pos
     best_key = (field[_node(x, y)], y, x)
     for action, dx, dy in _DIRS:
         nx, ny = x + dx, y + dy
         if not (0 <= nx < GRID and 0 <= ny < GRID):
             continue
         m = _node(nx, ny)
-        if not world.passable[m] or (nx, ny) in occupied:
+        if not world.passable[m]:
+            continue
+        cell = (nx, ny)
+        if cell in claimed or planned.get(cell) == pos:
             continue
         key = (field[m], ny, nx)
         if key < best_key:
             best_key = key
             best_action = action
+            best_cell = cell
+    claimed.add(best_cell)
+    if best_cell != pos:
+        planned[pos] = best_cell
     return best_action
