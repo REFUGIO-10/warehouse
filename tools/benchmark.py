@@ -5,7 +5,7 @@ only permutes which shelves get requested (robot start cells are fixed, demand
 is uniform over your 960 shelves), so running MORE seeds gives a lower-variance
 estimate of the hidden-seed score *without* overfitting to round-0/1/2.
 
-Run from refugio-starter-kit/:
+Run from the repo root (warehouse/):
   python tools/benchmark.py submissions/submission.py
   python tools/benchmark.py submissions/layout_dev.py --count 30
   python tools/benchmark.py submissions/policy_dev.py --seeds round-0,round-1,round-2
@@ -19,7 +19,8 @@ from pathlib import Path
 from statistics import mean, pstdev
 
 # Make `warehouse` importable even if a teammate skipped `pip install -e .`.
-_KIT_ROOT = Path(__file__).resolve().parent.parent
+# This file lives at repo-root/tools/; the engine is in repo-root/refugio-starter-kit/.
+_KIT_ROOT = Path(__file__).resolve().parent.parent / "refugio-starter-kit"
 if str(_KIT_ROOT) not in sys.path:
     sys.path.insert(0, str(_KIT_ROOT))
 
