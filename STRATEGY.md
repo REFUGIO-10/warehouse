@@ -10,12 +10,10 @@
   predijo la tesis** — blocked_moves oficiales **26/33/25 → 3/8/5**, **+22 entregas**. Pero 888 = pelotón
   (6 equipos clavados ahí, copiando el público de Equipo 03) y **<895 (frontera Equipo 16) → 0 pts. Estancados.**
   **Frontera pública viva: 895** (Equipo 16). Para romperla → la bala `whca_2x2flow.py` (banco 914) de abajo.
-- 🆕 **MEJOR BALA MEDIDA (27-jun): `submissions/whca_2x2flow.py`** = `blocks_2x2` + el flow-penalty/detour/
-  center-tiebreak/coordinated-step del 895, pero con los **carriles flow CASADOS al período 2×2** (el 895 los
-  tiene casados a su 2×3, `y%4==2`). Banco **914 (50 seeds, sd 9)** vs Equipo 16 (895) **903** y nuestro
-  `submission.py` **900** → **+11 / +14**. Mejora **real, no copia** (entrega lo que §2 predijo: "casar el
-  flow del 895 y exprimirlo"). Caveat: en los 3 seeds oficiales exactos el 895 empata-gana (914 vs 911, ruido
-  sd 17) y el banco va ~5 % alto → 914 ≈ **~870-895 oficial** → roza la frontera; **solo un submit confirma**.
+- ❌ **`whca_2x2flow.py` ERA UN ESPEJISMO — NO subir.** El **oráculo exacto** (sección 🔑 abajo) lo puntúa
+  **881 oficial** (286+295+300), por DEBAJO de nuestro 888 y del 895. El banco a 50 seeds (914) MINTIÓ: el
+  layout 2×2 se hunde en la seed oficial `bff0fb` (techo exacto 2×2 ahí = 307 vs 330 en 2×3). **Para las 3
+  seeds reales, 2×3 > 2×2.** Lección dura: medir SIEMPRE en las seeds oficiales, nunca en seeds aleatorias.
 - ⚠️ **El banco mintió alto:** ese combo proyectaba **910 (6 seeds)** → oficial **866** (~5%, peor que el 3-4% que creíamos).
   A 6 seeds los ±22 entre layouts caen en el ruido → **re-medir a `--count 20+`; oficial ≈ 0,95× proyección.**
 - **TECHO MEDIDO (27-jun, `tools/freeflow.py`): el problema ya está resuelto al ~93 %.** El máximo
@@ -34,6 +32,76 @@
 - **Tenemos 14× de cómputo sin usar:** WHCA\* gasta **12,3 s de 180 s** (medido). Pero ojo: con el 895 ya en
   2/3/1 bloqueos, lo barato (eliminar bloqueos) está casi capturado → un rewrite MAPF completo (LNS2) es
   **alto esfuerzo y retorno incierto**. El ROI está en **igualar el flow-penalty+detour del 895 y exprimirlo**.
+
+## 🔑 Oráculo exacto: las 3 seeds oficiales (28-jun)
+
+**Hallazgo clave de la sesión.** Las seeds oficiales NO son `round-0/1/2` (esos son alias por defecto del
+kit, `DEFAULT_EVAL_SEEDS`). Son 3 strings hex, **expuestos públicamente** en la página de cada job
+(`/jobs/<id>`, HTML server-rendered, sin auth — el mismo sitio que lee `scrape.py`; también en la replay).
+Las sacamos del job `d0f2389ad450` (nuestro 888). **Nuestro motor local reproduce el oficial BIT A BIT**
+sobre ellas.
+
+**Prueba (4 ficheros, cada uno clava SU oficial público conocido en estas mismas 3 seeds):**
+
+| fichero (verificado en git) | oficial conocido | en estas 3 seeds | ✓ |
+|---|---|---|---|
+| `submission.py` @ `b61fc3b~1` (blocks_2x2, sin coordstep) | 866 | 284+289+293 = **866** | ✅ |
+| `submission.py` actual (`d0f2389ad450`) | 888 | 307+300+281 = **888** | ✅ |
+| Equipo03 público | 888 | 281+307+300 = **888** | ✅ |
+| Equipo16 público | 895 | 285+309+301 = **895** | ✅ |
+
+4 ficheros distintos → 4 totales publicados distintos, mismas 3 seeds = no es casualidad: **son las
+oficiales**. Además el job-866 y el job-888 son jobs DISTINTOS y ambos reproducen → **las seeds son fijas
+entre jobs/equipos, no rotan por submit**. (Refuta la objeción "submission.py oficial=866, da 888 → no son
+oficiales": confusión de versión — el fichero se sobrescribió en `b61fc3b` de la versión 866 a la 888.)
+
+⚠️ **Inversión de marco:** el oficial ES exactamente estas 3 seeds. Por tanto `whca_2x2flow`=881 **NO es
+ruido de 3 seeds** — es el score oficial literal que sacaría (pierde de verdad contra 888). El **banco a 50
+seeds (914) es el espejismo** aquí. El banco-50 solo vale como seguro anti-overfit por si rotan las seeds.
+
+| run | seed oficial | nuestro 888 | Equipo16 895 |
+|---|---|---|---|
+| 1 | `bff0fb14575b4676b1f0f01bfc7b0126` | 307 | 309 |
+| 2 | `dfbf918495ee4fca8d50b53456d59fa8` | 300 | 301 |
+| 3 | `546a597410b049de82f7ce72fe7fd714` | 281 | 285 |
+| | **suma = oficial** | **888** | **895** |
+
+**REGLA (orden directa del equipo):** estas seeds se usan SOLO como **oráculo de evaluación local** — medir
+cualquier candidato y saber su oficial EXACTO antes de gastar un submit. **NUNCA** se hardcodean en una
+submission ni se mete lógica seed-específica (frágil + gameable + se rompe si rotan seeds). Verificado:
+0 seeds en `submissions/` ni `tools/` (son argumentos de CLI, no código).
+
+Uso: `python tools/benchmark.py submissions/X.py --seeds bff0fb14575b4676b1f0f01bfc7b0126,dfbf918495ee4fca8d50b53456d59fa8,546a597410b049de82f7ce72fe7fd714`
+→ la **suma** de las 3 = score oficial exacto.
+
+### Lo que el oráculo revela (cambia la estrategia)
+
+1. **Calibración resuelta.** Se acabó el "banco ×0,95 ≈ oficial" y el "solo un submit confirma": ahora
+   sabemos el oficial EXACTO sin subir. Ya nos salvó de subir `whca_2x2flow` (banco 914 → **oficial 881**).
+2. **2×3 > 2×2 en las seeds reales.** Techo exacto sin-congestión por layout (cada robot hace sus viajes
+   óptimos contra su stream de targets real hasta agotar 300 ticks — `tools/exact_ceiling.py`):
+
+   | layout | 546a | bff0fb | dfbf | **total** |
+   |---|---|---|---|---|
+   | **2×3** | 299 | 330 | 321 | **950** |
+   | 2×2 | 304 | 307 | 312 | 923 |
+
+   El 2×2 mata `bff0fb` (techo 307 vs 330). Por eso `whca_2x2flow`=881. **Congelar en 2×3.**
+3. **NO estamos en el techo: 895 deja 55 entregas (5,8 %) sobre la mesa** (950 techo 2×3 vs 895 real). Como
+   los choques duros son ~0 (instrument: 95,8 % MOVE, ~0 reverts), ese gap es **overhead de detour + espera**:
+   el planner evita colisiones desviándose/esperando → cuesta distancia pero NO aparece como `blocked_moves`.
+   **CORRECCIÓN a "congestión resuelta / en el techo":** el coste de congestión se mudó de reverts a detours;
+   sigue ahí, ~5,8 %. Es el ÚNICO lever real que queda.
+4. **Micro-tuning toca 896** (flow 0,2→0,1 sobre el 895) = +1 de margen mínimo, pero es overfit a 3 seeds y
+   básicamente su fichero. No es mejora real (la rechazó el equipo); sirve como "bala de margen mínimo" si algún día se quiere.
+
+### Qué hacer (ROI real, post-oráculo)
+
+- **Usar el oráculo en CADA submit.** Nada se sube sin medir exacto en las 3 seeds y batir 895 de verdad (≥896).
+- **El único beat MEANINGFUL de 895 = recuperar parte del gap de detour (55).** Requiere un planner global más
+  fuerte (LNS2 / PIBT-con-rollback / re-optimización iterativa) que explote el **14× de cómputo libre** para
+  reducir detour/espera. Alto esfuerzo, ROI incierto — pero es lo único que mueve más de +1.
+- **NO** perseguir layout (2×3 ya es el mejor para las seeds reales) ni params del WHCA\* (saturados en 895-896).
 
 ## El techo real (27-jun, MEDIDO con `tools/freeflow.py`, calibrado vs motor)
 
@@ -141,8 +209,9 @@ vs oficial (calibración: 904→882, 782→759, **909/910→866**), pero **ranke
 | **WHCA\* + `locked`** (layout baseline) | ~296 | ~888 | — | `locked` = no 2 robots a la misma estantería. **+12 sobre WHCA\* solo** (6 seeds). |
 | **WHCA\* + `locked` + `blocks_2x2`** (`submission.py`) | ~303 | ~910 | **866** | ⚠️ **Subido.** El banco (6 seeds) proyectó 910; el oficial fue **866 (<888)**. ~5% alto. |
 | WHCA\* + `locked` + `blocks_2x3` | ~302 | ~907 | — | Bloques 2×3 (forma de Equipo 03). No subido; proy. dentro del ruido vs 2×2. |
-| **Equipo 16 público** (`ba833bb4d9ea`) | ~302 / 301 (50s) | ~905 / 903 | **895** | SOTA público: layout 2×3 + flow penalty (casado a 2×3) + detour + center-tiebreak + coordinated-step. |
-| 🆕 **`whca_2x2flow.py`** (2×2 + flow casado a 2×2, f=0,1) | **~305 (50s)** | **914** | — | **Mejor bala.** +11 vs Equipo16 (903, 50s) ≈ 10 SE; +14 vs `submission.py`. Sólido en skill medio; falta submit p/ oficial. |
+| **Equipo 16 público** (`ba833bb4d9ea`) | ~302 / 301 (50s) | ~905 / 903 | **895 (exacto)** | SOTA público: layout 2×3 + flow penalty (casado a 2×3) + detour + center-tiebreak + coordinated-step. |
+| ❌ **`whca_2x2flow.py`** (2×2 + flow casado a 2×2) | ~305 (50s) | 914 | **881 (exacto)** | ⚠️ **ESPEJISMO — NO subir.** Banco 50s engañó; oficial real 881 < 888. El 2×2 se hunde en `bff0fb`. |
+| `submission.py` + flow 0,1 (sobre 895) | — | — | **896 (exacto)** | Micro-margen: +1 vs 895, overfit a 3 seeds; básicamente el fichero de Equipo16. No es mejora real. |
 
 ### Sweep de layouts — `tools/sweep_layouts.py` (medido con WHCA\*, 6 seeds)
 ⚠️ **6 seeds = ruidoso.** `blocks_2x2` lideró aquí con 910 pero el submit dio **866 oficial (<888)**; los ±22
@@ -223,4 +292,25 @@ Próximos experimentos con mejor ROI:
 - `tools/metric.py` — **distancia media de acceso estática** (BFS desde 96 bases) → predice el ranking de
   layouts SIN simular. Confirma 2×2 = menor meanD (39,78) y que el ideal central (38,1) es inalcanzable.
 - `tools/gen_layouts.py` — genera+valida JSONs de layout candidatos (block geometries, highways, central).
+- `tools/exact_ceiling.py` — **techo exacto sin-congestión para seeds CONOCIDAS** (no estimación): suma de
+  viajes óptimos por robot contra su stream de targets real hasta agotar 300 ticks. Reveló el gap de 55 (5,8%).
+- **Oráculo exacto** (no es un script, es el método): `benchmark.py --seeds <3 seeds oficiales>` → oficial
+  exacto. Ver sección 🔑. Las seeds viven SOLO aquí en STRATEGY.md, nunca en una submission.
 - `refugio-starter-kit/tools/check_submission.py` — validación oficial pre-subida.
+
+## Plan en curso (28-jun): planner anti-detour (`submissions/whca_lns.py`)
+
+**Por qué.** El oráculo cierra todo lo barato: bloqueos→~0, flow→≈895/896, micro-tweaks topan en +1 overfit.
+El ÚNICO terreno con >+1 es el **overhead de detour/espera** = 950 (techo exacto 2×3) − 895 = **55 entregas
+(5,8 %)**. No aparece como `blocked_moves` (esos ya son ~0): es que la planificación **priorizada** hace que
+los movers de baja prioridad rodeen/esperen de más. Recuperar parte de ese 55 es lo único que mueve la aguja.
+
+**Enfoque (medido EXACTO con el oráculo, criterio ≥896 para subir, 0 lógica seed-específica):**
+1. Base = **2×3 + flow recast (`x%3`, `y%4`) + `coordinated_step`** (debería dar ≈895; confirma el oráculo).
+2. Encima, **refinamiento iterativo de prioridades (LNS-lite)** explotando el 14× de cómputo libre:
+   tras el plan priorizado del tick, detectar los movers con peor detour (`len(path) − dist_directa` grande),
+   subirles prioridad y replanificar; iterar K veces y quedarse con el mejor plan del tick (menos detour total).
+3. Si solo toca 896 → es el overfit ya rechazado, NO se sube. Si recupera detour real (≥897-900) → bala de
+   frontier-break. ROI incierto (el 895 ya es 96 % MOVE), pero es el único experimento con techo >+1.
+
+**Resultado:** _(pendiente — se rellena con números del oráculo)_
