@@ -9,7 +9,7 @@
   **Frontera pública viva: 895** (Equipo 16, scrape fresco 27-jun 11:35 UTC). Seguimos por debajo → 0 pts de récord.
 - ⚠️ **El banco mintió alto:** ese combo proyectaba **910 (6 seeds)** → oficial **866** (~5%, peor que el 3-4% que creíamos).
   A 6 seeds los ±22 entre layouts caen en el ruido → **re-medir a `--count 20+`; oficial ≈ 0,95× proyección.**
-- **TECHO MEDIDO (27-jun, `scratchpad/freeflow.py`): el problema ya está resuelto al ~93 %.** El máximo
+- **TECHO MEDIDO (27-jun, `tools/freeflow.py`): el problema ya está resuelto al ~93 %.** El máximo
   físico (flujo libre, cero congestión) es **~320/seed ≈ 960 total** para CUALQUIER layout. La frontera 895
   está al **93,3 %** de ese techo. **No existe ningún salto grande**: el margen total es ~65 entregas y la
   última franja es inalcanzable (colisiones simultáneas inevitables). Realista: **895 → ~905-920.**
@@ -26,11 +26,44 @@
   2/3/1 bloqueos, lo barato (eliminar bloqueos) está casi capturado → un rewrite MAPF completo (LNS2) es
   **alto esfuerzo y retorno incierto**. El ROI está en **igualar el flow-penalty+detour del 895 y exprimirlo**.
 
+## El techo real (27-jun, MEDIDO con `tools/freeflow.py`, calibrado vs motor)
+
+Flujo libre = cada robot hace sus viajes ida-vuelta óptimos (BFS sobre el grid real) contra el stream de
+targets sha256 real, **sin congestión**. Es el máximo físico que un layout puede dar.
+
+| Layout | dist. media ida | flujo-libre/seed | ×3 | válido |
+|---|---|---|---|---|
+| diamante (min Σ dist-a-bases, óptimo teórico) | 39,30 | 321 | 963 | ✅ |
+| 2×3 blocks (nuestra `submission.py` / forma SOTA) | 39,86 | 319 | 958 | ✅ |
+| central cluster (ring road) | 39,60 | 305 | 914 | ❌ rompe conexión |
+
+**Lectura:** distancia ≈ 40 ida para todo (ventana 1,4 %) → **techo ≈ 960 igual para cualquiera. Layout =
+palanca muerta.** El óptimo teórico de distancia (diamante) solo da +2/seed = +6 oficial = ruido.
+
+### Calibración flujo-libre → banco → oficial (nuestra `submission.py`, 2×3)
+
+| Capa | /seed | % del flujo-libre |
+|---|---|---|
+| Flujo libre (techo físico) | 319 | 100 % |
+| Banco round-0/1/2 | 303 (298, 323, 288) | 95 % |
+| Oficial | 289 (=866) | 90,6 % |
+| Frontera viva (Equipo 16) | 298 (=895) | 93,3 % |
+
+El banco va ~5 % alto y es ruidoso (sd 14,7). La pérdida real de congestión es ~10 % (319→289 nuestro,
+319→298 el SOTA). **Ese ~7-10 % es TODO el terreno que queda, y el SOTA ya capturó la mayoría.**
+
+### Dónde está el cuello (distribución por base)
+
+- ida media por base: **min 35,5 (centro-borde) · max 47,9 (esquinas) · media 39,9 · std 3,7**.
+- 4 bases más lentas = las 4 **esquinas** (`rid 23, 24, 48, 95`): ~3 viajes/robot vs ~4,1 las de centro.
+- Densidad global **6,2 %** (96/1540) → congestión NO global, es de **embudo** (entrada de base + aisles
+  cerca del perímetro). El 895 ya la lleva a 2/3/1 blocked_moves → el embudo está casi resuelto arriba.
+
 ## La estrategia ahora mismo
 
 ### 1. Congelar el layout — solo importa que tenga cross-aisles, no su forma fina
 **Corrección (27-jun, medida).** Tesis previa ("la forma del layout es lo que importa"): **falsa para
-distancia.** El flujo-libre (`scratchpad/freeflow.py`) da 39,3–39,9 de ida para TODAS las formas válidas
+distancia.** El flujo-libre (`tools/freeflow.py`) da 39,3–39,9 de ida para TODAS las formas válidas
 (diamante = óptimo teórico = solo +2/seed sobre 2×3 = ruido). La distancia es geometría pura: las 96 bases
 rodean la caja. Lo ÚNICO que la forma cambia es la **congestión**: un layout con cross-aisle en cada borde
 de bloque deja al planner rodear embudos → menos blocked_moves. Por eso `blocks_3x3` es **INVÁLIDO**
@@ -39,17 +72,18 @@ de bloque deja al planner rodear embudos → menos blocked_moves. Por eso `block
 suficiente; tocar `create_layout()` es rascar o regresar.** Única excepción acotada: micro-relieve SOLO en
 los embudos de entrada de base, medido a 20+ seeds.
 
-### 2. Gastar el presupuesto (la oportunidad clara)
-Nuestra PIBT resuelve en 0,24 s/seed; el SOTA en 2,34 s/seed; el límite es **180 s**. Tenemos margen
-para una policy mucho más cara y nadie lo está aprovechando del todo:
-- ventana de reserva espacio-temporal **más larga** (el SOTA usa `WINDOW=12`),
-- **node-cap A\*** más alto (SOTA `NODE_CAP=1200`),
-- **replanificación por tick** / lookahead más profundo,
-- backtracking de prioridades más agresivo.
+### 2. La congestión es 100 % policy — pero el cheap-win ya está casi capturado
+Tenemos 14× de cómputo libre (12,3 s / 180 s), pero el 895 ya está en 2/3/1 blocked_moves: lo que queda
+NO es eliminar bloqueos (hecho) sino el **overhead de detour/espera** del MAPF, que es el tail duro e
+inalcanzable. Por eso:
+- **Default (alto ROI):** igualar el **flow-penalty + detour simple** del 895 y exprimirlo (sweep de
+  `FLOW_PENALTY`, detour field-aware, reservas de stayer más cortas). Ver "Ideas accionables" abajo.
+- **Opción cara (ROI incierto):** rewrite a **LNS2 / PIBT-con-rollback**. Solo si los micro-tweaks topan
+  y el banco a 20+ seeds demuestra que recupera detour-overhead real. No empezar por aquí.
+- Subir `WINDOW`/`NODE_CAP` del WHCA\* = mismo algoritmo más caro: rasca 2-3, no es la palanca.
 
-Plan: coger el A* cooperativo (`whca.py` en curso, o portar la idea del SOTA) y **exprimirlo** hasta
-pasar de 882, validando cada cambio en el banco. Herramienta sugerida: `tools/sweep_params.py`
-(barrer `WINDOW`/`NODE_CAP`/replan y rankear).
+> **Recordatorio de marco:** "+15 entregas" suena a rascar, pero cerca de la frontera cada entrega vale
+> ~790 pts (bounty triangular). 895→910 ≈ **11.500 pts + liderato**. Es el mayor botín disponible.
 
 ### 3. SOTA público = munición
 Las soluciones rivales son públicas. `sota_equipo02.py` (Equipo 02) está extraído y medido como
@@ -64,8 +98,8 @@ Detalle operativo en `submissions/SUBMITS.md`.
 
 ## Lo que hemos probado (registro con números)
 
-Banco = media de entregas/seed sobre seeds propios; proyección oficial = ×3. El banco va **~3-4% alto**
-vs oficial (calibración: 904→882, 782→759), pero **rankea fiel** (la estadística es idéntica entre seeds).
+Banco = media de entregas/seed sobre seeds propios; proyección oficial = ×3. El banco va **~3-5% alto**
+vs oficial (calibración: 904→882, 782→759, **909/910→866**), pero **rankea fiel**. Usa ×0,95 conservador.
 
 | Enfoque (policy + layout) | Banco /seed | Proy. | Oficial | Veredicto |
 |---|---|---|---|---|
@@ -101,8 +135,10 @@ sin cross-aisles), **no** para rankear lo bueno. Re-mide candidatas a 20+ seeds:
   tu lista de estanterías ordenada por (y,x). No puedes sesgar qué se pide.
 - **El seed solo permuta la demanda** (posiciones iniciales fijas) → podemos generar seeds propios y
   medir sobre 20-100 para baja varianza **sin sobreajustar**.
-- **Dos presupuestos de 180 s SEPARADOS:** setup (import + `create_layout`) y `act()` acumulado (3 seeds,
-  ~86.400 llamadas → ~2 ms/llamada). → precompute en import; nada caro por tick.
+- **Dos presupuestos de 180 s SEPARADOS:** setup (usamos 0,01 s) y `act()` acumulado sobre 3 seeds
+  (~86.400 llamadas). **Medido: 12,3 s de 180 → 6,8 %, sobra 14×.** Cabe una policy mucho más cara, pero
+  ver §2: el cuello ya no es CPU. **Colisión simultánea** (edge-swaps + vértices) hace el techo 960
+  inalcanzable: siempre quedan choques residuales aunque el planner sea perfecto.
 - **Reglas de layout:** 960 estanterías únicas en `1..50`; no sobre celdas de entrada de base; cada
   estantería con ≥1 vecina EMPTY (→ **tiras ≤2 de ancho**); todas las walkable conexas; determinista.
 - **`act()` se llama por robot en orden de `robot_id`, mismo proceso, globals persisten** → permite
@@ -145,5 +181,6 @@ Próximos experimentos con mejor ROI:
 ## Herramientas
 
 - `tools/benchmark.py` — banco multi-seed (oráculo). `--count 20+`.
-- `tools/sweep_layouts.py` — rankea layouts sobre una policy fija.
+- `tools/sweep_layouts.py` — rankea layouts sobre una policy fija (ya poco útil: layout muerto).
+- `tools/freeflow.py` — **techo de flujo-libre por layout** (análisis del máximo físico, no banco).
 - `refugio-starter-kit/tools/check_submission.py` — validación oficial pre-subida.
