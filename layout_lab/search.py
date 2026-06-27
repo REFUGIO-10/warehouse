@@ -175,7 +175,6 @@ def main() -> None:
     if args.only:
         names = [n.strip() for n in args.only.split(",")]
         # REGISTRY entries are concrete shelf-lists; wrap them as pseudo-params via baseline grid.
-        params_list = [families.LayoutParams(2, 2, 1, "none", False)]  # placeholder; replaced below
         baseline_m = harness.bench("baseline", families.canonical_baseline(), policy, seeds, args.ticks)
         rows: list[Row] = [("baseline", baseline_m, None)]
         for n in names:
@@ -197,14 +196,20 @@ def main() -> None:
     best_name, best_m = max(valid_cand, key=lambda t: t[1].mean_per_seed) if valid_cand else ("baseline", baseline_m)
 
     best_params = families.LayoutParams(2, 2, 1, "none", False)
-    if args.phase in ("hill", "all") and not args.only:
-        # start hill-climb from the best grid candidate's params (re-derive by name match)
+    if not args.only:
         for p in params_list:
             if param_name(p) == best_name:
                 best_params = p
                 break
-        best_params, best_m = hill_climb(policy, seeds, args.ticks, best_params, baseline_m)
-        print(f"\nhill-climb best: {param_name(best_params)} -> proj {best_m.projected:.0f}")
+        if args.phase in ("hill", "all"):
+            best_params, best_m = hill_climb(policy, seeds, args.ticks, best_params, baseline_m)
+            print(f"\nhill-climb best: {param_name(best_params)} -> proj {best_m.projected:.0f}")
+    else:
+        _registry_params = {
+            "blocks_2x2": families.LayoutParams(2, 2, 1, "none", False),
+            "blocks_2x3": families.LayoutParams(2, 3, 1, "none", False),
+        }
+        best_params = _registry_params.get(best_name, best_params)
 
     write_results(RESULTS_DIR, baseline_m, rows, best_params, best_m)
     print(f"\nwrote {RESULTS_DIR}/rankings.json, best_layout.json, REPORT.md")
