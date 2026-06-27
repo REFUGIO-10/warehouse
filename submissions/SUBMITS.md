@@ -13,6 +13,16 @@ Plataforma: https://refugio-hackathon-nine.vercel.app/ · **1 submit / 30 min**.
 - ⚠️ **Lección del submit:** el banco proyectó **910 (6 seeds)**; el oficial fue **866** (~5% menos, peor que el
   3-4% que asumíamos). **Mide a `--count 20+` y descuenta ~5%** para estimar el oficial — no subas fiándote de 6 seeds.
 - `submission.py` ya está integrado y commiteado (= `whca.py`). Fallback para revertir: `cp submissions/policy_pibt.py submissions/submission.py` (PIBT 759).
+- **CANDIDATO LISTO (sin subir, commit `b61fc3b`):** WHCA\* + `locked` + **`_coordinated_step`** + layout **2×3**. Banco 6-seed ~905 proy; estimado oficial **~870-880** (descontando ~5%). Apunta a batir 888 pero probablemente se queda corto — subir en la próxima ventana salvo mejor idea.
+
+## Hallazgos clave — analizadas las 5 top (888/883/882/879…)
+
+Todas son **el MISMO algoritmo que el nuestro**: WHCA\* centralizado (1 planner/tick en el robot 0), reservas espacio-tiempo de celda+arista, prioridad (cargando→inanición→distancia), resolución de conflictos sesgada por prioridad. Lo que nos faltaba:
+
+1. **`_coordinated_step` (LA diferencia).** Los robots recién-entregados (sin target aún) NO deben dar un paso greedy suelto: deben dar un paso **plan-aware** que respete las celdas que los movers ya reservan ese tick (`next_claimed`) y evite edge-swaps. Si no, cancelan movimientos coordinados → cientos de movimientos desperdiciados. **Era nuestro gap principal** (nuestro 866 usaba greedy suelto). Ya implementado en `whca.py`.
+2. **Cuello de botella diagnosticado:** con WHCA\* `blocked_moves` ≈ 30 (congestión RESUELTA). El cuello ahora es `remaining_distance` ≈ 2000 = **distancia de viaje** → favorece layout **DENSA** (2×3 > 2×2: 50% vs 44% de densidad → viajes más cortos).
+3. **Layout (confirmado en 11 variantes):** bloques finos (2×2/2×3 con pasillos de 1 celda en **AMBAS** direcciones) baten el baseline; rack-rows largos, spreading y compactación extrema **regresan**. 2×3 = sweet spot (denso + cross-aisle en cada borde de bloque). El "+38" de Equipo 03 es real.
+4. **Gap restante a 888 = policy fina.** `coordinated_step` dio solo +3 en banco (su valor real en hidden es incógnita). Otras palancas de los líderes aún sin copiar: prioridad **`can_deliver` primero**, y **endgame right-of-way** (`HORIZON=300`, visto en `f692704ea634`).
 
 ## Números verificados (banco + oficial)
 
