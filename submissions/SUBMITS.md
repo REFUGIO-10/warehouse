@@ -73,4 +73,5 @@ la frontera viva** (no solo nuestro propio récord).
 |---|---|---|---|
 | `ce08283218fa` | 397 | 7938 | BFS al goal más cercano; primer submit, récord global en su momento |
 | `8960d3b7806b` | 759 | 0 | PIBT cooperativo; superó nuestro 397. 0 pts (no batió la frontera) |
-| _(pend. scraper)_ | 866 | 0 | WHCA* + `locked` + `blocks_2x2`. Banco 6-seed proyectó 910 → oficial 866 (<888) |
+| `e0a11fa0cd65` | 866 | 0 | WHCA* + `locked` + `blocks_2x2`. Banco 6-seed proyectó 910 → oficial 866 (<888). blocked 26/33/25 |
+| `d0f2389ad450` | **888** | 0 | WHCA* + `locked` + **`_coordinated_step`** + `blocks_2x3`. **+22 vs 866; coordstep bajó blocked a 3/8/5.** Pelotón de 888, <895 frontera → 0 pts. **Estancados; siguiente bala = `whca_2x2flow.py` (banco 914).** |

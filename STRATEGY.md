@@ -5,8 +5,17 @@
 
 ## TL;DR
 
-- **Mejor marca oficial nuestra: 866** (`submission.py` = WHCA\* + `locked` + `blocks_2x2`, ya subido).
-  **Frontera pública viva: 895** (Equipo 16, scrape fresco 27-jun 11:35 UTC). Seguimos por debajo → 0 pts de récord.
+- **Mejor marca oficial nuestra: 888** (job `d0f2389ad450` = WHCA\* + `locked` + **`_coordinated_step`** +
+  `blocks_2x3`, subido 27-jun 11:53). Sube desde 866: **`_coordinated_step` capturó la congestión tal como
+  predijo la tesis** — blocked_moves oficiales **26/33/25 → 3/8/5**, **+22 entregas**. Pero 888 = pelotón
+  (6 equipos clavados ahí, copiando el público de Equipo 03) y **<895 (frontera Equipo 16) → 0 pts. Estancados.**
+  **Frontera pública viva: 895** (Equipo 16). Para romperla → la bala `whca_2x2flow.py` (banco 914) de abajo.
+- 🆕 **MEJOR BALA MEDIDA (27-jun): `submissions/whca_2x2flow.py`** = `blocks_2x2` + el flow-penalty/detour/
+  center-tiebreak/coordinated-step del 895, pero con los **carriles flow CASADOS al período 2×2** (el 895 los
+  tiene casados a su 2×3, `y%4==2`). Banco **914 (50 seeds, sd 9)** vs Equipo 16 (895) **903** y nuestro
+  `submission.py` **900** → **+11 / +14**. Mejora **real, no copia** (entrega lo que §2 predijo: "casar el
+  flow del 895 y exprimirlo"). Caveat: en los 3 seeds oficiales exactos el 895 empata-gana (914 vs 911, ruido
+  sd 17) y el banco va ~5 % alto → 914 ≈ **~870-895 oficial** → roza la frontera; **solo un submit confirma**.
 - ⚠️ **El banco mintió alto:** ese combo proyectaba **910 (6 seeds)** → oficial **866** (~5%, peor que el 3-4% que creíamos).
   A 6 seeds los ±22 entre layouts caen en el ruido → **re-medir a `--count 20+`; oficial ≈ 0,95× proyección.**
 - **TECHO MEDIDO (27-jun, `tools/freeflow.py`): el problema ya está resuelto al ~93 %.** El máximo
@@ -58,6 +67,26 @@ El banco va ~5 % alto y es ruidoso (sd 14,7). La pérdida real de congestión es
 - 4 bases más lentas = las 4 **esquinas** (`rid 23, 24, 48, 95`): ~3 viajes/robot vs ~4,1 las de centro.
 - Densidad global **6,2 %** (96/1540) → congestión NO global, es de **embudo** (entrada de base + aisles
   cerca del perímetro). El 895 ya la lleva a 2/3/1 blocked_moves → el embudo está casi resuelto arriba.
+
+### Confirmación independiente del techo + la mejora real (28-jun, `tools/instrument.py`)
+
+Segundo método, coincide con `freeflow.py`: contabilizando los **28.800 robot-ticks** del 895 sobre un seed,
+**96,0 % son MOVE productivos · 1,8 % WAIT · ~0 % colisiones (2 reverts de 28.800)**. La congestión global
+ya está liquidada → el throughput es **distancia pura** (~92 move-ticks/entrega, ida ~46). El planner del 895
+no tiene grasa que quitar; confirma "el 895 capturó casi todo".
+
+**PERO sí queda un +11 real, y es de anti-congestión casada a la geometría — exactamente el ROI de §2.**
+Medido a **50 seeds** (no 6 → fuera del ruido que nos quemó antes):
+- `blocks_2x2` (rejilla fina, pasillo cada 3 en AMBOS ejes) bate a `blocks_2x3` con flow=0: **902 vs 898**.
+- Los flow-penalty del 895 están casados a su período 2×3 (`y%4==2`, `y//4`). En 2×2 hay que **recasarlos**
+  (`y%3==2`, `y//3`). Hecho → el flow aporta **+12 en 2×2** (902→914) vs +8 en 2×3. La anti-congestión
+  responde a la **finura** de la rejilla: más estructura de carril que explotar.
+- Resultado: `whca_2x2flow.py` = **914 (50 seeds, sd 9)** vs 895-Equipo16 **903** (50 seeds). +11 ≈ **10 SE**.
+- `FLOW_PENALTY` óptimo en 2×2 = **0,1** (monótono 0,1>0,2>0,3 en n24 y n50), no 0,2 como en 2×3.
+- **No contradice "layout = palanca muerta para distancia":** esto NO es distancia (la ida sigue ~40), es el
+  **lever de congestión** que §2 marcó como único vivo, exprimido vía rejilla más fina + carriles alineados.
+- Disciplina: en round-0/1/2 exactos el 895 saca 914 vs 911 (ruido); banco ~5 % alto. Mejor bala, no
+  frontier-break garantizado. Subir para confirmar oficial.
 
 ## La estrategia ahora mismo
 
@@ -112,7 +141,8 @@ vs oficial (calibración: 904→882, 782→759, **909/910→866**), pero **ranke
 | **WHCA\* + `locked`** (layout baseline) | ~296 | ~888 | — | `locked` = no 2 robots a la misma estantería. **+12 sobre WHCA\* solo** (6 seeds). |
 | **WHCA\* + `locked` + `blocks_2x2`** (`submission.py`) | ~303 | ~910 | **866** | ⚠️ **Subido.** El banco (6 seeds) proyectó 910; el oficial fue **866 (<888)**. ~5% alto. |
 | WHCA\* + `locked` + `blocks_2x3` | ~302 | ~907 | — | Bloques 2×3 (forma de Equipo 03). No subido; proy. dentro del ruido vs 2×2. |
-| **Equipo 16 público** (`ba833bb4d9ea`) | ~302 | ~905 | **895** | Nuevo SOTA: layout 2×3 + flow penalty + detour simple; referencia actual. |
+| **Equipo 16 público** (`ba833bb4d9ea`) | ~302 / 301 (50s) | ~905 / 903 | **895** | SOTA público: layout 2×3 + flow penalty (casado a 2×3) + detour + center-tiebreak + coordinated-step. |
+| 🆕 **`whca_2x2flow.py`** (2×2 + flow casado a 2×2, f=0,1) | **~305 (50s)** | **914** | — | **Mejor bala.** +11 vs Equipo16 (903, 50s) ≈ 10 SE; +14 vs `submission.py`. Sólido en skill medio; falta submit p/ oficial. |
 
 ### Sweep de layouts — `tools/sweep_layouts.py` (medido con WHCA\*, 6 seeds)
 ⚠️ **6 seeds = ruidoso.** `blocks_2x2` lideró aquí con 910 pero el submit dio **866 oficial (<888)**; los ±22
@@ -163,10 +193,13 @@ Próximos experimentos con mejor ROI:
 2. **Pickup base-facing:** combinar el 895 con `shelf_field_to_base_side` de Equipo 14 para elegir el lado de pickup que minimiza la vuelta cargado.
 3. **Detour field-aware:** el 895 desvía al primer vecino libre; probar elegir vecino por menor `goal_field` y sin swap.
 4. **Reservas de stayers más cortas:** hoy bloquean su celda todo el `WINDOW`; probar reservar 1-2 ticks para pickup/drop.
-5. **Sweep de `FLOW_PENALTY`:** probar 0.05/0.1/0.2/0.35/0.5, y variantes solo en pasillos internos vs perímetro.
+5. **Sweep de `FLOW_PENALTY`:** ✅ HECHO. En 2×2 el óptimo es **0,1** (0,1>0,2>0,3, n50). Falta probar
+   variantes solo-internos vs perímetro y recasar para otros períodos si se cambia el layout.
 6. **Fallback `_field_step`:** portar el fallback plan-aware de Equipo 15 cuando A\* agota `NODE_CAP`.
 7. **Endgame priority:** probar prioridad de Equipo 02 para robots que todavía pueden entregar antes del tick 300.
-8. **Layout 2×3 phase/removal sweep:** mantener 2×3, variar offset/margen y cómo se eliminan excedentes; evitar volver a filas largas o 2×2 como bala principal.
+8. **Layout:** ✅ CORREGIDO. Entre layouts buenos, **2×2 con flow recasado bate a 2×3** (+11, n50) — pero
+   el lever es anti-congestión, no distancia, y exige recasar los carriles al período (`y%3==2`). Evitar
+   filas largas / sin cross-aisles (se hunden). `whca_2x2flow.py` es la integración actual de esto.
 
 ## Hilos abiertos / próximos experimentos
 
@@ -183,4 +216,11 @@ Próximos experimentos con mejor ROI:
 - `tools/benchmark.py` — banco multi-seed (oráculo). `--count 20+`.
 - `tools/sweep_layouts.py` — rankea layouts sobre una policy fija (ya poco útil: layout muerto).
 - `tools/freeflow.py` — **techo de flujo-libre por layout** (análisis del máximo físico, no banco).
+- `tools/exp.py` — driver de experimentos: parchea constantes (`WINDOW`/`NODE_CAP`/`FLOW_PENALTY`/stayer) y/o
+  override de layout sobre un base, y banquea N seeds. Workhorse del sweep de policy+flow.
+- `tools/instrument.py` — contabiliza a dónde van los 28.800 robot-ticks (MOVE/WAIT/PICKUP/DROP/reverts).
+  Demostró que el 895 es 96 % MOVE productivo, ~0 colisiones → throughput = distancia.
+- `tools/metric.py` — **distancia media de acceso estática** (BFS desde 96 bases) → predice el ranking de
+  layouts SIN simular. Confirma 2×2 = menor meanD (39,78) y que el ideal central (38,1) es inalcanzable.
+- `tools/gen_layouts.py` — genera+valida JSONs de layout candidatos (block geometries, highways, central).
 - `refugio-starter-kit/tools/check_submission.py` — validación oficial pre-subida.
