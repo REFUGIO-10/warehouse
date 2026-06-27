@@ -23,7 +23,9 @@ warehouse/
 │   ├── policy_dev.py      ← RAMA B
 │   └── SUBMITS.md         ← log del operador de subida
 └── tools/
-    └── benchmark.py       ← RAMA C (oráculo multi-seed)
+    ├── benchmark.py       ← RAMA C (oráculo multi-seed)
+    └── scrape.py          ← RAMA C (scraper del leaderboard → scraped/)
+scraped/                   ← inteligencia rival (código público de todos los equipos)
 ```
 
 ## Elige tu rama
@@ -45,10 +47,12 @@ Editas **solo `act()`** y sus helpers. El `create_layout()` es el baseline, para
 - **Palanca 2 (con cuidado):** coordinación/reservas. Una reserva naïve **nos regresó ~5x**
   (gridlock). Solo añádela si el banco confirma que bate el suelo.
 
-### Rama C · Infra → `tools/benchmark.py`
+### Rama C · Infra → `tools/benchmark.py`, `tools/scrape.py`
 El oráculo. Imprime **mean/seed** y **PROJECTED OFFICIAL (mean × 3)** — ese es el número.
-- Siguientes: scraper del leaderboard + **ingesta de layouts públicos rivales** (re-puntuar en el
-  banco y pasar a A) + scheduler de submits.
+- **`tools/scrape.py` (hecho):** baja el código público de TODOS los equipos a `scraped/`
+  (solo stdlib, sin auth). Empieza por `scraped/INDEX.md`; cómo usarlo en `scraped/README.md`.
+  Bucle: `scrape → benchmark scraped/solutions/<file> → copiar layout a A / policy a B → batir`.
+- Siguientes: scheduler de submits (1/30 min, sube solo si el banco bate la frontera viva).
 
 ## Comandos (desde la raíz `warehouse/`)
 
