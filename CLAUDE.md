@@ -9,6 +9,10 @@
 ## Estado
 
 - **Nosotros EN VIVO: 759** (`submissions/policy_pibt.py`, PIBT — bench ~261/seed, 782 proy).
+  Confirmado por el scraper (`scraped/INDEX.md`, 10:52 UTC), job `8960d3b7806b`.
+- ⚠️ **`submission.py` AHORA = WHCA\*** (copia de `whca.py`, último commit), **NO** el PIBT en vivo.
+  **Sin banquear todavía** — `STRATEGY.md` lo lista como hilo abierto. **Antes de subir:** bánquéalo
+  (`--count 20+`) y confirma que bate 759 proy.; si no bate, restaura PIBT antes de la ventana.
 - **SOTA = Equipo 02: 882** (`submissions/sota_equipo02.py`, referencia — bench ~301/seed, A* cooperativo).
   Gap ~16%, **y es de POLICY** (mismo layout baseline; su A* rutea mejor que nuestra PIBT).
 - **Tenemos 10x de presupuesto sin usar:** PIBT gasta ~0,24 s/seed de los 180 s. Hay margen para
@@ -25,14 +29,20 @@ warehouse/
 ├── AGENTS.md              ← estás aquí (gateway)
 ├── refugio-starter-kit/   ← motor oficial. NO meter cosas nuestras aquí.
 ├── submissions/           ← nuestro trabajo
-│   ├── submission.py      ← INTEGRACIÓN: lo que se sube (PIBT, = lo que está en vivo)
-│   ├── layout_dev.py      ← RAMA A
-│   ├── policy_dev.py      ← RAMA B
+│   ├── submission.py      ← INTEGRACIÓN: lo que se sube. AHORA = WHCA* (copia de whca.py, SIN banquear)
+│   ├── policy_pibt.py     ← PIBT cooperativo — lo que ESTÁ EN VIVO (759). Fallback si WHCA* no bate.
+│   ├── whca.py            ← WHCA* (ventana espacio-temporal). Candidato; pendiente de banco vs PIBT.
+│   ├── sota_equipo02.py   ← REFERENCIA (Equipo 02, 882). No subir tal cual.
+│   ├── pibt_v2.py         ← experimento de layout sobre PIBT (5 bandas, más pasillos transversales)
+│   ├── layout_dev.py      ← RAMA A (edita solo create_layout)
+│   ├── policy_dev.py      ← RAMA B (edita solo act)
 │   └── SUBMITS.md         ← log del operador de subida
-└── tools/
-    ├── benchmark.py       ← RAMA C (oráculo multi-seed)
-    └── scrape.py          ← RAMA C (scraper del leaderboard → scraped/)
-scraped/                   ← inteligencia rival (código público de todos los equipos)
+├── tools/
+│   ├── benchmark.py       ← RAMA C (oráculo multi-seed)
+│   ├── sweep_layouts.py   ← RAMA C (rankea layouts sobre una policy fija)
+│   ├── sweep_params.py    ← RAMA C (barre WINDOW/NODE_CAP — aún sin commitear)
+│   └── scrape.py          ← RAMA C (scraper del leaderboard → scraped/)
+└── scraped/               ← inteligencia rival (código público de todos los equipos)
 ```
 
 ## Elige tu rama
