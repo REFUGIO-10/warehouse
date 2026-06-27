@@ -30,12 +30,15 @@ Plataforma: https://refugio-hackathon-nine.vercel.app/ · **1 submit / 30 min**.
 
 | Métrica | Mejor global | Nuestro |
 |---|---|---|
-| Entregas | **882** (Equipo 01/02) | 759 |
-| Puntos acumulados | 88683 (Equipo 02) | 7938 |
+| Entregas | ver `scraped/INDEX.md` (se refresca cada 15 min por CI) | 759 |
+| Puntos acumulados | ver `scraped/INDEX.md` | 7938 |
+
+> La frontera se mueve (was 882, ya 888…). **No la hardcodees aquí**: lee el número
+> vivo de `scraped/INDEX.md` antes de decidir.
 
 Los puntos premian *empujar la frontera global*. Nuestro 759 quedó por debajo de
-los 882 que ya tenían varios equipos → 0 pts por ese submit. Para volver a sumar
-puntos hay que **superar 882**, no solo nuestro propio récord.
+la frontera → 0 pts por ese submit. Para volver a sumar puntos hay que **superar
+la frontera viva** (no solo nuestro propio récord).
 
 ## Cadencia y estrategia
 
