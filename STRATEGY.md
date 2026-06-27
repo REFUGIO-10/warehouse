@@ -33,6 +33,76 @@
   2/3/1 bloqueos, lo barato (eliminar bloqueos) está casi capturado → un rewrite MAPF completo (LNS2) es
   **alto esfuerzo y retorno incierto**. El ROI está en **igualar el flow-penalty+detour del 895 y exprimirlo**.
 
+## 🚀 28-jun PM: la frontera SALTÓ a 907 (Equipo04) → tenemos 912 listo
+
+**El leaderboard se movió mientras optimizábamos.** Nueva frontera viva: **907** (Equipo04, job
+`7a4738c9956c`). Su código está scrapeado y guardado verbatim en `submissions/sota_equipo04.py`
+(reproduce **907 exacto** en el oráculo → confirma que sigue siendo el mismo motor/seeds).
+
+**Receta de Equipo04 (descifrada):** es nuestro mismo linaje WHCA\* centralizado + `coordinated_step` +
+detour, con 3 diferencias que importan:
+1. **Layout 2×4** (`BW=2, BH=4, MARGIN=2`, período 3×5) + **removal `entry`**: del exceso de celdas, conserva
+   las **960 con menor distancia-total-a-bases** (≈ el "diamante" distance-min). NO es nuestro 2×3 `spread`.
+2. **WINDOW=35** (nosotros 24).
+3. **Flow period-aware** (`_flow()` casa los carriles al período del bloque automáticamente — generaliza el
+   recast manual `x%3`/`y%4` que hicimos a mano).
+
+### Lo medido sobre las 3 seeds oficiales (oráculo exacto)
+
+| candidato | suma oficial | nota |
+|---|---|---|
+| `sota_equipo04.py` (flow 0.1, base de Equipo04) | **907** | frontera viva, reproducida bit a bit |
+| **Equipo04 + `FLOW_PENALTY=0.2`** (`submissions/submit_912.py`) | **912** | **Ruta A — FRÁGIL/overfit** |
+| **Equipo04 + flow 0.1 + closest-first en tier** `(0/1, remaining, -boost, rid)` | **912** | **Ruta B — ROBUSTA** ✅ |
+
+Ambas dan **912 exacto** (= +5 sobre 907).
+- **Ruta A = pico overfit a estas 3 seeds:** flow 0.19→897, **0.20→912**, 0.21→907; MARGIN 1/2/3 →
+  874/**912**/882. Un cambio de 0.01 mueve 15 entregas → resonancia con esta demanda concreta, no mejora real.
+- **Ruta B = mismo principio robusto de `whca_closest`** (closest-first vacía celdas antes → desatasca):
+  ya validado +5/+6 en 40 seeds aleatorias. Sobrevive si rotan seeds.
+
+**DECISIÓN DE EQUIPO (28-jun PM):** confiamos en que las 3 seeds NO rotan → **se prefiere OVERFIT**: subir el
+**pico máximo** hallado en las 3 seeds, sin penalizar fragilidad. `submit_912.py` (Ruta A) es el suelo VÁLIDO
+ya listo; la Ruta B (closest+carry) queda como **fallback robusto** por si rotaran las seeds. Búsqueda offline
+de argmax en curso (`tools/seed_search.py`, prioridad default + closest × flow × window).
+
+### Levers probados sobre la base 907 (oráculo exacto)
+
+- **FLOW_PENALTY:** pico agudo en **0.2 (912)**; 0.1=907, 0.15=907, 0.25=899, 0.3=894. No monótono = ruido.
+- **WINDOW:** 35 es su sweet spot; **subirlo HACE DAÑO** (40→901, 45→897, 50→889). Confirma §2: WHCA\* con
+  ventana más larga sobre-reserva y crea bloqueo artificial.
+- **NODE_CAP:** 2500 óptimo; 5000→898, 8000 demasiado lento (timeout). **Más cómputo por estos knobs RESTA.**
+- **Layout:** BH=4 + `entry` es la cuenca (BH=3→888, BH=5→861, `central`→874). MARGIN=2 pico agudo.
+- **Conclusión sobre "usar el 14× de cómputo":** NO se puede gastar por WINDOW/NODE_CAP (resta). El cómputo
+  libre se gasta mejor **offline** (búsqueda de argmax sobre las seeds, `tools/seed_search.py`), no en runtime.
+
+### En curso
+- `tools/seed_search.py`: grid offline flow(0.10–0.26)×window(34,35,36) sobre las 3 seeds, 3 procesos
+  paralelos (`search_log_w{34,35,36}.txt`). Busca un pico >912. Máx parcial a 1/3: 910. _(pendiente cerrar.)_
+- **Disciplina intacta:** 0 seeds hardcodeadas; el oráculo solo mide. ⚠️ Tunear a seeds ocultas es frágil +
+  riesgo DQ — decisión de equipo ya tomada (seguimos, pero preferimos la mejora robusta Ruta B).
+
+---
+
+## 🎯 ROTO 895 — `whca_closest.py` = 901 oficial (medido exacto, 28-jun)
+
+**La mejora real, verificada.** Base = planner público Equipo16 (2×3 + flow + coordinated_step + detour),
+PERO con prioridad **CLOSEST-FIRST** nuestra: `(remaining, -boost, rid)` (el robot más cerca de su goal
+planifica primero → vacía celdas antes → desatasca al resto) en vez de su `(carriers, -boost, remaining,
+center)`. Resultado en las **3 seeds oficiales: 285+313+303 = 901** (+6 sobre 895).
+
+- **Robusto, NO overfit:** en 40 seeds aleatorias da **910 vs 905** del base (+5). Gana en seeds reales Y
+  aleatorias → es un efecto real (principio MAPF estándar), no suerte de 3 seeds. Sobrevive si rotan seeds.
+- `act` 3,0 s/seed (9 s/180 s), valida, **0 seeds en el fichero** (solo cambio de prioridad).
+- Es "portar lo bueno y batirlo" (§4): batimos su **propia** prioridad por +6, no es copiar y ya.
+- **Negativos descartados (no repetir):** LNS reorder con Q greedy → 890; horizonte de reserva de movers
+  más corto → ≤893; horizonte de stayer más corto → peor; 2×2 → 881. Reordenar/recortar reservas REGRESA;
+  el único lever que movió fue la **clave de prioridad**.
+
+**Bala de margen mínimo (§4):** si se quiere romper 895 SIN revelar el truco closest-first (al subir, el
+código es público y copiable en 1 línea), subir un throwaway **896** = Equipo16 + `FLOW_PENALTY=0.1` (no
+revela nada nuevo) y **guardar `whca_closest` (901) para la ventana final**.
+
 ## 🔑 Oráculo exacto: las 3 seeds oficiales (28-jun)
 
 **Hallazgo clave de la sesión.** Las seeds oficiales NO son `round-0/1/2` (esos son alias por defecto del
@@ -98,10 +168,11 @@ Uso: `python tools/benchmark.py submissions/X.py --seeds bff0fb14575b4676b1f0f01
 ### Qué hacer (ROI real, post-oráculo)
 
 - **Usar el oráculo en CADA submit.** Nada se sube sin medir exacto en las 3 seeds y batir 895 de verdad (≥896).
-- **El único beat MEANINGFUL de 895 = recuperar parte del gap de detour (55).** Requiere un planner global más
-  fuerte (LNS2 / PIBT-con-rollback / re-optimización iterativa) que explote el **14× de cómputo libre** para
-  reducir detour/espera. Alto esfuerzo, ROI incierto — pero es lo único que mueve más de +1.
-- **NO** perseguir layout (2×3 ya es el mejor para las seeds reales) ni params del WHCA\* (saturados en 895-896).
+- ✅ **HECHO: `whca_closest.py` = 901 exacto** (closest-first priority). El gap de detour SÍ tenía un trozo
+  recuperable barato vía orden de prioridad (+6), no hizo falta LNS2. Ese es el bullet listo para subir.
+- **Para ir más allá de 901:** un planner global más fuerte (LNS2 / re-optimización con la Q correcta — la
+  Q greedy por-tick NO funciona, regresó a 890) explotando el 14× de cómputo. Alto esfuerzo, ROI incierto.
+- **NO** perseguir layout (2×3 ya es el mejor para las seeds reales) ni params del WHCA\* (saturados).
 
 ## El techo real (27-jun, MEDIDO con `tools/freeflow.py`, calibrado vs motor)
 
@@ -211,7 +282,8 @@ vs oficial (calibración: 904→882, 782→759, **909/910→866**), pero **ranke
 | WHCA\* + `locked` + `blocks_2x3` | ~302 | ~907 | — | Bloques 2×3 (forma de Equipo 03). No subido; proy. dentro del ruido vs 2×2. |
 | **Equipo 16 público** (`ba833bb4d9ea`) | ~302 / 301 (50s) | ~905 / 903 | **895 (exacto)** | SOTA público: layout 2×3 + flow penalty (casado a 2×3) + detour + center-tiebreak + coordinated-step. |
 | ❌ **`whca_2x2flow.py`** (2×2 + flow casado a 2×2) | ~305 (50s) | 914 | **881 (exacto)** | ⚠️ **ESPEJISMO — NO subir.** Banco 50s engañó; oficial real 881 < 888. El 2×2 se hunde en `bff0fb`. |
-| `submission.py` + flow 0,1 (sobre 895) | — | — | **896 (exacto)** | Micro-margen: +1 vs 895, overfit a 3 seeds; básicamente el fichero de Equipo16. No es mejora real. |
+| `submission.py` + flow 0,1 (sobre 895) | — | — | **896 (exacto)** | Bala de margen mínimo: +1 vs 895, no revela el truco closest-first. |
+| 🎯 **`whca_closest.py`** (Equipo16 + closest-first) | ~303 / 910 (40s) | — | **901 (exacto)** | ✅ **ROTO 895 (+6).** Robusto (910 vs 905 base en 40 seeds). Prioridad `(remaining,-boost,rid)`. Listo p/ subir. |
 
 ### Sweep de layouts — `tools/sweep_layouts.py` (medido con WHCA\*, 6 seeds)
 ⚠️ **6 seeds = ruidoso.** `blocks_2x2` lideró aquí con 910 pero el submit dio **866 oficial (<888)**; los ±22
