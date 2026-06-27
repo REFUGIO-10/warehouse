@@ -1,5 +1,1589 @@
 [
   {
+    "job_id": "bf4184ae5b49",
+    "team": "Equipo 16",
+    "team_slug": "team-16",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 896,
+    "runtime_s": 19.04,
+    "submitted": "2026-06-27 13:58:24.605 UTC",
+    "committed": "2026-06-27 13:58:56.963 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 299,
+        "blocked_moves": 8,
+        "remaining_distance": 2264,
+        "policy_time_s": 6.1
+      },
+      {
+        "run": 2,
+        "deliveries": 298,
+        "blocked_moves": 1,
+        "remaining_distance": 2036,
+        "policy_time_s": 6.4
+      },
+      {
+        "run": 3,
+        "deliveries": 299,
+        "blocked_moves": 0,
+        "remaining_distance": 2678,
+        "policy_time_s": 6.41
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No apparent security risks: uses only permitted computational imports and warehouse API, with no filesystem, network, subprocess, dynamic import/code execution, obfuscation, or sandbox escape behavior.",
+    "code_saved_to": "scraped/solutions/0896__equipo-16__bf4184ae5b49.py"
+  },
+  {
+    "job_id": "ff94edb65767",
+    "team": "Equipo 11",
+    "team_slug": "team-11",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 895,
+    "runtime_s": 17.02,
+    "submitted": "2026-06-27 13:58:05.741 UTC",
+    "committed": "2026-06-27 13:58:38.554 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 309,
+        "blocked_moves": 2,
+        "remaining_distance": 2211,
+        "policy_time_s": 5.49
+      },
+      {
+        "run": 2,
+        "deliveries": 302,
+        "blocked_moves": 3,
+        "remaining_distance": 2058,
+        "policy_time_s": 5.47
+      },
+      {
+        "run": 3,
+        "deliveries": 284,
+        "blocked_moves": 0,
+        "remaining_distance": 2208,
+        "policy_time_s": 5.92
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns detected; uses allowed-style imports and contains bounded routing logic without filesystem, network, subprocess, dynamic import, or dynamic code execution.",
+    "code_saved_to": "scraped/solutions/0895__equipo-11__ff94edb65767.py"
+  },
+  {
+    "job_id": "c15da13c3eaa",
+    "team": "Equipo 10",
+    "team_slug": "team-10",
+    "status": "succeeded",
+    "points": 66990,
+    "deliveries": 1008,
+    "runtime_s": 19.31,
+    "submitted": "2026-06-27 13:57:51.174 UTC",
+    "committed": "2026-06-27 13:58:21.932 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 337,
+        "blocked_moves": 2,
+        "remaining_distance": 2363,
+        "policy_time_s": 6.36
+      },
+      {
+        "run": 2,
+        "deliveries": 336,
+        "blocked_moves": 1,
+        "remaining_distance": 2112,
+        "policy_time_s": 6.18
+      },
+      {
+        "run": 3,
+        "deliveries": 335,
+        "blocked_moves": 1,
+        "remaining_distance": 2091,
+        "policy_time_s": 6.63
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns found; the submission uses static imports and in-memory path planning logic without filesystem, network, subprocess, dynamic code execution, or obfuscation.",
+    "code_saved_to": "scraped/solutions/1008__equipo-10__c15da13c3eaa.py"
+  },
+  {
+    "job_id": "9f6e36d64061",
+    "team": "Equipo 05",
+    "team_slug": "team-05",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 925,
+    "runtime_s": 11.95,
+    "submitted": "2026-06-27 13:57:29.837 UTC",
+    "committed": "2026-06-27 13:57:56.183 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 307,
+        "blocked_moves": 1,
+        "remaining_distance": 2756,
+        "policy_time_s": 0.01
+      },
+      {
+        "run": 2,
+        "deliveries": 315,
+        "blocked_moves": 0,
+        "remaining_distance": 2297,
+        "policy_time_s": 5.78
+      },
+      {
+        "run": 3,
+        "deliveries": 303,
+        "blocked_moves": 0,
+        "remaining_distance": 2085,
+        "policy_time_s": 5.99
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns found: uses only allowed-style computation, static data, NumPy arrays, and warehouse API actions; no filesystem, network, subprocess, dynamic import, or dynamic code execution.",
+    "code_saved_to": "scraped/solutions/0925__equipo-05__9f6e36d64061.py"
+  },
+  {
+    "job_id": "03a1a666dba7",
+    "team": "Equipo 06",
+    "team_slug": "team-06",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 901,
+    "runtime_s": 16.08,
+    "submitted": "2026-06-27 13:56:54.375 UTC",
+    "committed": "2026-06-27 13:57:31.687 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 313,
+        "blocked_moves": 0,
+        "remaining_distance": 2236,
+        "policy_time_s": 5.37
+      },
+      {
+        "run": 2,
+        "deliveries": 305,
+        "blocked_moves": 2,
+        "remaining_distance": 2167,
+        "policy_time_s": 5.22
+      },
+      {
+        "run": 3,
+        "deliveries": 283,
+        "blocked_moves": 3,
+        "remaining_distance": 2382,
+        "policy_time_s": 5.31
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns found. The submission uses allowed-style algorithmic planning with standard imports and warehouse_api only, and does not attempt filesystem, network, subprocess, dynamic code execution, obfuscation, or sandbox escape.",
+    "code_saved_to": "scraped/solutions/0901__equipo-06__03a1a666dba7.py"
+  },
+  {
+    "job_id": "372fcd5e99df",
+    "team": "Equipo 02",
+    "team_slug": "team-02",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 886,
+    "runtime_s": 18.93,
+    "submitted": "2026-06-27 13:56:44.847 UTC",
+    "committed": "2026-06-27 13:57:16.556 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 299,
+        "blocked_moves": 7,
+        "remaining_distance": 2206,
+        "policy_time_s": 6.48
+      },
+      {
+        "run": 2,
+        "deliveries": 299,
+        "blocked_moves": 2,
+        "remaining_distance": 2182,
+        "policy_time_s": 6.06
+      },
+      {
+        "run": 3,
+        "deliveries": 288,
+        "blocked_moves": 1,
+        "remaining_distance": 2099,
+        "policy_time_s": 6.24
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns found: the submission uses only normal algorithmic imports and logic, with no filesystem, network, subprocess, dynamic import/code execution, obfuscation, or sandbox escape behavior.",
+    "code_saved_to": "scraped/solutions/0886__equipo-02__372fcd5e99df.py"
+  },
+  {
+    "job_id": "d9d5e50cbd41",
+    "team": "Equipo 08",
+    "team_slug": "team-08",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 930,
+    "runtime_s": 17.84,
+    "submitted": "2026-06-27 13:55:10.580 UTC",
+    "committed": "2026-06-27 13:55:42.203 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 306,
+        "blocked_moves": 7,
+        "remaining_distance": 2580,
+        "policy_time_s": 5.99
+      },
+      {
+        "run": 2,
+        "deliveries": 318,
+        "blocked_moves": 4,
+        "remaining_distance": 2580,
+        "policy_time_s": 5.77
+      },
+      {
+        "run": 3,
+        "deliveries": 306,
+        "blocked_moves": 5,
+        "remaining_distance": 2190,
+        "policy_time_s": 5.94
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns found; the submission uses only standard planning logic and allowed-style imports without filesystem, network, subprocess, dynamic code execution, or obfuscation.",
+    "code_saved_to": "scraped/solutions/0930__equipo-08__d9d5e50cbd41.py"
+  },
+  {
+    "job_id": "9b2617f16f38",
+    "team": "Equipo 12",
+    "team_slug": "team-12",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 930,
+    "runtime_s": 17.81,
+    "submitted": "2026-06-27 13:55:10.493 UTC",
+    "committed": "2026-06-27 13:55:42.180 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 306,
+        "blocked_moves": 7,
+        "remaining_distance": 2580,
+        "policy_time_s": 5.95
+      },
+      {
+        "run": 2,
+        "deliveries": 318,
+        "blocked_moves": 4,
+        "remaining_distance": 2580,
+        "policy_time_s": 5.73
+      },
+      {
+        "run": 3,
+        "deliveries": 306,
+        "blocked_moves": 5,
+        "remaining_distance": 2190,
+        "policy_time_s": 5.93
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns found; the submission uses standard computation and allowed-style imports without filesystem, network, subprocess, dynamic code execution, or obfuscation.",
+    "code_saved_to": "scraped/solutions/0930__equipo-12__9b2617f16f38.py"
+  },
+  {
+    "job_id": "3905ff4f9ead",
+    "team": "Equipo 03",
+    "team_slug": "team-03",
+    "status": "succeeded",
+    "points": 831,
+    "deliveries": 931,
+    "runtime_s": 11.96,
+    "submitted": "2026-06-27 13:48:38.988 UTC",
+    "committed": "2026-06-27 13:49:06.668 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 307,
+        "blocked_moves": 1,
+        "remaining_distance": 2756,
+        "policy_time_s": 0.01
+      },
+      {
+        "run": 2,
+        "deliveries": 318,
+        "blocked_moves": 4,
+        "remaining_distance": 2580,
+        "policy_time_s": 5.82
+      },
+      {
+        "run": 3,
+        "deliveries": 306,
+        "blocked_moves": 5,
+        "remaining_distance": 2190,
+        "policy_time_s": 5.99
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns found; uses only normal algorithmic planning logic and static data without filesystem, network, subprocess, dynamic code execution, or sandbox-escape behavior.",
+    "code_saved_to": "scraped/solutions/0931__equipo-03__3905ff4f9ead.py"
+  },
+  {
+    "job_id": "d3f597c7ceaa",
+    "team": "Equipo 13",
+    "team_slug": "team-13",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 918,
+    "runtime_s": 17.72,
+    "submitted": "2026-06-27 13:38:37.465 UTC",
+    "committed": "2026-06-27 13:39:09.513 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 302,
+        "blocked_moves": 0,
+        "remaining_distance": 2500,
+        "policy_time_s": 6.25
+      },
+      {
+        "run": 2,
+        "deliveries": 313,
+        "blocked_moves": 0,
+        "remaining_distance": 2378,
+        "policy_time_s": 5.71
+      },
+      {
+        "run": 3,
+        "deliveries": 303,
+        "blocked_moves": 0,
+        "remaining_distance": 2045,
+        "policy_time_s": 5.59
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns identified; code is a warehouse routing policy using allowed-style computation without filesystem, network, subprocess, dynamic import, or dynamic code execution.",
+    "code_saved_to": "scraped/solutions/0918__equipo-13__d3f597c7ceaa.py"
+  },
+  {
+    "job_id": "1c3579852486",
+    "team": "Equipo 13",
+    "team_slug": "team-13",
+    "status": "safety_rejected",
+    "points": null,
+    "deliveries": null,
+    "runtime_s": null,
+    "submitted": "2026-06-27 13:37:01.448 UTC",
+    "committed": "2026-06-27 13:37:06.036 UTC",
+    "has_code": false,
+    "has_replay": false,
+    "runs": [],
+    "safety_status": "rejected",
+    "safety_review": "The submission imports internal warehouse.targets, monkey-patches target_for, and iterates sys.modules to replace references globally, attempting to alter simulator behavior rather than just compute actions. Safety review blocked this submission: The submission imports internal warehouse.targets, monkey-patches target_for, and iterates sys.modules to replace references globally, attempting to alter simulator behavior rather than just compute actions. (environment tampering, hidden introspection, unauthorized internal import) (self.__next_f=self.__next_f||[]).push([0]) self.__next_f.push([1,\"1:\\\"$Sreact.fragment\\\"\\n2:I[22016,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"\\\"]\\n3:I[39756,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"default\\\"]\\n4:I[37457,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"default\\\"]\\n6:I[97367,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"OutletBoundary\\\"]\\n7:\\\"$Sreact.suspense\\\"\\na:I[97367,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"ViewportBoundary\\\"]\\nc:I[97367,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"MetadataBoundary\\\"]\\ne:I[68027,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"default\\\",1]\\n10:I[27201,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"IconMark\\\"]\\n:HL[\\\"/_next/static/chunks/1sqvg_u2fgq6n.css?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"style\\\"]\\n:HC[\\\"/\\\",\\\"\\\"]\\n\"]) self.__next_f.push([1,\"0:{\\\"P\\\":null,\\\"c\\\":[\\\"\\\",\\\"jobs\\\",\\\"1c3579852486\\\"],\\\"q\\\":\\\"\\\",\\\"i\\\":false,\\\"f\\\":[[[\\\"\\\",{\\\"children\\\":[\\\"jobs\\\",{\\\"children\\\":[[\\\"jobId\\\",\\\"1c3579852486\\\",\\\"d\\\",null],{\\\"children\\\":[\\\"__PAGE__\\\",{}]}]}]},\\\"$undefined\\\",\\\"$undefined\\\",16],[[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[[[\\\"$\\\",\\\"link\\\",\\\"0\\\",{\\\"rel\\\":\\\"stylesheet\\\",\\\"href\\\":\\\"/_next/static/chunks/1sqvg_u2fgq6n.css?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"precedence\\\":\\\"next\\\",\\\"crossOrigin\\\":\\\"$undefined\\\",\\\"nonce\\\":\\\"$undefined\\\"}],[\\\"$\\\",\\\"script\\\",\\\"script-0\\\",{\\\"src\\\":\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"async\\\":true,\\\"nonce\\\":\\\"$undefined\\\"}],[\\\"$\\\",\\\"script\\\",\\\"script-1\\\",{\\\"src\\\":\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"async\\\":true,\\\"nonce\\\":\\\"$undefined\\\"}]],[\\\"$\\\",\\\"html\\\",null,{\\\"lang\\\":\\\"en\\\",\\\"children\\\":[\\\"$\\\",\\\"body\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"header\\\",null,{\\\"className\\\":\\\"site-header\\\",\\\"children\\\":[[\\\"$\\\",\\\"$L2\\\",null,{\\\"className\\\":\\\"brand\\\",\\\"href\\\":\\\"/\\\",\\\"children\\\":\\\"REFUGIO\\\"}],[\\\"$\\\",\\\"nav\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/\\\",\\\"children\\\":\\\"Leaderboard\\\"}],[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/instructions\\\",\\\"children\\\":\\\"Instructions\\\"}],[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/jobs\\\",\\\"children\\\":\\\"Jobs\\\"}],[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/submit\\\",\\\"children\\\":\\\"Submit\\\"}]]}]]}],[\\\"$\\\",\\\"main\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$L3\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L4\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":[[[\\\"$\\\",\\\"title\\\",null,{\\\"children\\\":\\\"404: This page could not be found.\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"fontFamily\\\":\\\"system-ui,\\\\\\\"Segoe UI\\\\\\\",Roboto,Helvetica,Arial,sans-serif,\\\\\\\"Apple Color Emoji\\\\\\\",\\\\\\\"Segoe UI Emoji\\\\\\\"\\\",\\\"height\\\":\\\"100vh\\\",\\\"textAlign\\\":\\\"center\\\",\\\"display\\\":\\\"flex\\\",\\\"flexDirection\\\":\\\"column\\\",\\\"alignItems\\\":\\\"center\\\",\\\"justifyContent\\\":\\\"center\\\"},\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"style\\\",null,{\\\"dangerouslySetInnerHTML\\\":{\\\"__html\\\":\\\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\\\"}}],[\\\"$\\\",\\\"h1\\\",null,{\\\"className\\\":\\\"next-error-h1\\\",\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\",\\\"margin\\\":\\\"0 20px 0 0\\\",\\\"padding\\\":\\\"0 23px 0 0\\\",\\\"fontSize\\\":24,\\\"fontWeight\\\":500,\\\"verticalAlign\\\":\\\"top\\\",\\\"lineHeight\\\":\\\"49px\\\"},\\\"children\\\":404}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\"},\\\"children\\\":[\\\"$\\\",\\\"h2\\\",null,{\\\"style\\\":{\\\"fontSize\\\":14,\\\"fontWeight\\\":400,\\\"lineHeight\\\":\\\"49px\\\",\\\"margin\\\":0},\\\"children\\\":\\\"This page could not be found.\\\"}]}]]}]}]],[]],\\\"forbidden\\\":\\\"$undefined\\\",\\\"unauthorized\\\":\\\"$undefined\\\"}]}]]}]}]]}],{\\\"children\\\":[[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[null,[\\\"$\\\",\\\"$L3\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L4\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":\\\"$undefined\\\",\\\"forbidden\\\":\\\"$undefined\\\",\\\"unauthorized\\\":\\\"$undefined\\\"}]]}],{\\\"children\\\":[[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[null,[\\\"$\\\",\\\"$L3\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L4\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":\\\"$undefined\\\",\\\"forbidden\\\":\\\"$undefined\\\",\\\"unauthorized\\\":\\\"$undefined\\\"}]]}],{\\\"children\\\":[[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[\\\"$L5\\\",null,[\\\"$\\\",\\\"$L6\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$7\\\",null,{\\\"name\\\":\\\"Next.MetadataOutlet\\\",\\\"children\\\":\\\"$@8\\\"}]}]]}],{},null,false,null]},null,false,\\\"$@9\\\"]},null,false,\\\"$@9\\\"]},null,false,null],[\\\"$\\\",\\\"$1\\\",\\\"h\\\",{\\\"children\\\":[null,[\\\"$\\\",\\\"$La\\\",null,{\\\"children\\\":\\\"$Lb\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"hidden\\\":true,\\\"children\\\":[\\\"$\\\",\\\"$Lc\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$7\\\",null,{\\\"name\\\":\\\"Next.Metadata\\\",\\\"children\\\":\\\"$Ld\\\"}]}]}],null]}],false]],\\\"m\\\":\\\"$undefined\\\",\\\"G\\\":[\\\"$e\\\",[[\\\"$\\\",\\\"link\\\",\\\"0\\\",{\\\"rel\\\":\\\"stylesheet\\\",\\\"href\\\":\\\"/_next/static/chunks/1sqvg_u2fgq6n.css?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"precedence\\\":\\\"next\\\",\\\"crossOrigin\\\":\\\"$undefined\\\",\\\"nonce\\\":\\\"$undefined\\\"}]]],\\\"S\\\":false,\\\"h\\\":null,\\\"s\\\":\\\"$undefined\\\",\\\"l\\\":\\\"$undefined\\\",\\\"p\\\":\\\"$undefined\\\",\\\"d\\\":\\\"$undefined\\\"}\\n\"]) self.__next_f.push([1,\"f:[]\\n9:\\\"$Wf\\\"\\nb:[[\\\"$\\\",\\\"meta\\\",\\\"0\\\",{\\\"charSet\\\":\\\"utf-8\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"1\\\",{\\\"name\\\":\\\"viewport\\\",\\\"content\\\":\\\"width=device-width, initial-scale=1\\\"}]]\\n8:null\\nd:[[\\\"$\\\",\\\"title\\\",\\\"0\\\",{\\\"children\\\":\\\"REFUGIO · Warehouse Challenge\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"1\\\",{\\\"name\\\":\\\"description\\\",\\\"content\\\":\\\"Multi-agent warehouse routing hackathon.\\\"}],[\\\"$\\\",\\\"link\\\",\\\"2\\\",{\\\"rel\\\":\\\"icon\\\",\\\"href\\\":\\\"/platform/favicon.svg\\\"}],[\\\"$\\\",\\\"$L10\\\",\\\"3\\\",{}]]\\n\"]) self.__next_f.push([1,\"5:[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"narrow page-stack\\\",\\\"children\\\":[[\\\"$\\\",\\\"section\\\",null,{\\\"className\\\":\\\"hero compact\\\",\\\"children\\\":[[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"eyebrow\\\",\\\"children\\\":\\\"Job\\\"}],[\\\"$\\\",\\\"h1\\\",null,{\\\"children\\\":\\\"1c3579852486\\\"}],[\\\"$\\\",\\\"p\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/teams/team-13\\\",\\\"children\\\":\\\"Equipo 13\\\"}]}]]}],[\\\"$\\\",\\\"section\\\",null,{\\\"className\\\":\\\"grid two\\\",\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Status\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"safety_rejected\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Safety\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"rejected\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Hackathon points\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"-\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Deliveries\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"-\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Policy time\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"-\\\"}]]}]]}],[\\\"$\\\",\\\"section\\\",null,{\\\"className\\\":\\\"card\\\",\\\"children\\\":[[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"eyebrow\\\",\\\"children\\\":\\\"Scoring\\\"}],[\\\"$\\\",\\\"h2\\\",null,{\\\"children\\\":\\\"Job result\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"score-hero\\\",\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"className\\\":\\\"score-detail\\\",\\\"children\\\":\\\"Frontier points awarded\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"className\\\":\\\"score-value\\\",\\\"children\\\":\\\"-\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"className\\\":\\\"score-detail\\\",\\\"children\\\":\\\"Deliveries\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"className\\\":\\\"score-value\\\",\\\"children\\\":\\\"-\\\"}]]}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"table-wrap\\\",\\\"children\\\":[\\\"$\\\",\\\"table\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"thead\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"tr\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Run\\\"}],[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Packages\\\"}],[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Blocked moves\\\"}],[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Remaining distance\\\"}],[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Policy time\\\"}]]}]}],[\\\"$\\\",\\\"tbody\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"tr\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"td\\\",null,{\\\"colSpan\\\":5,\\\"className\\\":\\\"empty\\\",\\\"children\\\":\\\"No seed breakdown available yet.\\\"}]}]}]]}]}]]}],[\\\"$\\\",\\\"section\\\",null,{\\\"className\\\":\\\"card details\\\",\\\"children\\\":[[\\\"$\\\",\\\"h2\\\",null,{\\\"children\\\":\\\"Evaluation details\\\"}],[\\\"$\\\",\\\"dl\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Seed set\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":[\\\"Hidden official seeds (\\\",3,\\\" runs)\\\"]}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Replay seed\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"Hidden official seed\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Ticks\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":300}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Submitted\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"2026-06-27 13:37:01.448 UTC\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Started\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"-\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Validated + committed\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"2026-06-27 13:37:06.036 UTC\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Updated\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"2026-06-27 13:37:06.036 UTC\\\"}]]}],null]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"safety-review\\\",\\\"children\\\":[[\\\"$\\\",\\\"h3\\\",null,{\\\"children\\\":\\\"LLM safety review\\\"}],[\\\"$\\\",\\\"dl\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Status\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"rejected\\\"}]]}]}],[\\\"$\\\",\\\"p\\\",null,{\\\"style\\\":{\\\"overflowWrap\\\":\\\"anywhere\\\"},\\\"children\\\":\\\"The submission imports internal warehouse.targets, monkey-patches target_for, and iterates sys.modules to replace references globally, attempting to alter simulator behavior rather than just compute actions.\\\"}]]}],[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"notice error\\\",\\\"children\\\":\\\"Safety review blocked this submission: The submission imports internal warehouse.targets, monkey-patches target_for, and iterates sys.modules to replace references globally, attempting to alter simulator behavior rather than just compute actions. (environment tampering, hidden introspection, unauthorized internal import)\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"inline-links\\\",\\\"children\\\":[null,null]}]]}]]}]\\n\"])",
+    "code_saved_to": null
+  },
+  {
+    "job_id": "57aeeedbf2ae",
+    "team": "Equipo 01",
+    "team_slug": "team-01",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 908,
+    "runtime_s": 14.65,
+    "submitted": "2026-06-27 13:33:35.975 UTC",
+    "committed": "2026-06-27 13:34:07.008 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 310,
+        "blocked_moves": 18,
+        "remaining_distance": 2357,
+        "policy_time_s": 0.01
+      },
+      {
+        "run": 2,
+        "deliveries": 300,
+        "blocked_moves": 15,
+        "remaining_distance": 1813,
+        "policy_time_s": 7.47
+      },
+      {
+        "run": 3,
+        "deliveries": 298,
+        "blocked_moves": 4,
+        "remaining_distance": 2036,
+        "policy_time_s": 7.0
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No malware or abuse indicators found: uses only normal algorithmic imports/data structures, no filesystem, network, subprocess, dynamic import/code execution, credential access, or sandbox escape behavior.",
+    "code_saved_to": "scraped/solutions/0908__equipo-01__57aeeedbf2ae.py"
+  },
+  {
+    "job_id": "ded569202010",
+    "team": "Equipo 09",
+    "team_slug": "team-09",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 878,
+    "runtime_s": 19.74,
+    "submitted": "2026-06-27 13:29:48.513 UTC",
+    "committed": "2026-06-27 13:30:21.523 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 302,
+        "blocked_moves": 0,
+        "remaining_distance": 2057,
+        "policy_time_s": 6.63
+      },
+      {
+        "run": 2,
+        "deliveries": 296,
+        "blocked_moves": 1,
+        "remaining_distance": 2137,
+        "policy_time_s": 6.15
+      },
+      {
+        "run": 3,
+        "deliveries": 280,
+        "blocked_moves": 41,
+        "remaining_distance": 2455,
+        "policy_time_s": 6.82
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No malware or abuse indicators found; code uses static imports and in-memory routing logic without filesystem, network, subprocess, dynamic code execution, or sandbox escape attempts.",
+    "code_saved_to": "scraped/solutions/0878__equipo-09__ded569202010.py"
+  },
+  {
+    "job_id": "c31ff1c81105",
+    "team": "Equipo 10",
+    "team_slug": "team-10",
+    "status": "succeeded",
+    "points": 4965,
+    "deliveries": 930,
+    "runtime_s": 17.89,
+    "submitted": "2026-06-27 13:27:11.092 UTC",
+    "committed": "2026-06-27 13:27:41.188 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 306,
+        "blocked_moves": 7,
+        "remaining_distance": 2580,
+        "policy_time_s": 6.04
+      },
+      {
+        "run": 2,
+        "deliveries": 318,
+        "blocked_moves": 4,
+        "remaining_distance": 2580,
+        "policy_time_s": 5.76
+      },
+      {
+        "run": 3,
+        "deliveries": 306,
+        "blocked_moves": 5,
+        "remaining_distance": 2190,
+        "policy_time_s": 5.92
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns found; the submission uses standard computation and warehouse API actions without filesystem, network, subprocess, dynamic code execution, or obfuscation.",
+    "code_saved_to": "scraped/solutions/0930__equipo-10__c31ff1c81105.py"
+  },
+  {
+    "job_id": "2be229bd1d04",
+    "team": "Equipo 02",
+    "team_slug": "team-02",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 917,
+    "runtime_s": 23.57,
+    "submitted": "2026-06-27 13:25:35.995 UTC",
+    "committed": "2026-06-27 13:26:12.312 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 311,
+        "blocked_moves": 3,
+        "remaining_distance": 2344,
+        "policy_time_s": 7.27
+      },
+      {
+        "run": 2,
+        "deliveries": 303,
+        "blocked_moves": 1,
+        "remaining_distance": 1870,
+        "policy_time_s": 8.43
+      },
+      {
+        "run": 3,
+        "deliveries": 303,
+        "blocked_moves": 3,
+        "remaining_distance": 2306,
+        "policy_time_s": 7.7
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns found. The submission uses static imports and implements routing/planning logic without filesystem, network, subprocess, dynamic code execution, obfuscation, or sandbox escape behavior.",
+    "code_saved_to": "scraped/solutions/0917__equipo-02__2be229bd1d04.py"
+  },
+  {
+    "job_id": "41a5ad4a70a8",
+    "team": "Equipo 04",
+    "team_slug": "team-04",
+    "status": "safety_rejected",
+    "points": null,
+    "deliveries": null,
+    "runtime_s": null,
+    "submitted": "2026-06-27 13:23:50.936 UTC",
+    "committed": "2026-06-27 13:23:52.915 UTC",
+    "has_code": false,
+    "has_replay": false,
+    "runs": [],
+    "safety_status": "rejected",
+    "safety_review": "The submission imports and monkey-patches the warehouse evaluation module to fake scores, which is an attempt to tamper with the evaluator rather than implement a policy. Safety review blocked this submission: The submission imports and monkey-patches the warehouse evaluation module to fake scores, which is an attempt to tamper with the evaluator rather than implement a policy. (dynamic import, sandbox tampering, evaluation bypass) (self.__next_f=self.__next_f||[]).push([0]) self.__next_f.push([1,\"1:\\\"$Sreact.fragment\\\"\\n2:I[22016,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"\\\"]\\n3:I[39756,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"default\\\"]\\n4:I[37457,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"default\\\"]\\n6:I[97367,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"OutletBoundary\\\"]\\n7:\\\"$Sreact.suspense\\\"\\na:I[97367,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"ViewportBoundary\\\"]\\nc:I[97367,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"MetadataBoundary\\\"]\\ne:I[68027,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"default\\\",1]\\n10:I[27201,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"IconMark\\\"]\\n:HL[\\\"/_next/static/chunks/1sqvg_u2fgq6n.css?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"style\\\"]\\n:HC[\\\"/\\\",\\\"\\\"]\\n\"]) self.__next_f.push([1,\"0:{\\\"P\\\":null,\\\"c\\\":[\\\"\\\",\\\"jobs\\\",\\\"41a5ad4a70a8\\\"],\\\"q\\\":\\\"\\\",\\\"i\\\":false,\\\"f\\\":[[[\\\"\\\",{\\\"children\\\":[\\\"jobs\\\",{\\\"children\\\":[[\\\"jobId\\\",\\\"41a5ad4a70a8\\\",\\\"d\\\",null],{\\\"children\\\":[\\\"__PAGE__\\\",{}]}]}]},\\\"$undefined\\\",\\\"$undefined\\\",16],[[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[[[\\\"$\\\",\\\"link\\\",\\\"0\\\",{\\\"rel\\\":\\\"stylesheet\\\",\\\"href\\\":\\\"/_next/static/chunks/1sqvg_u2fgq6n.css?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"precedence\\\":\\\"next\\\",\\\"crossOrigin\\\":\\\"$undefined\\\",\\\"nonce\\\":\\\"$undefined\\\"}],[\\\"$\\\",\\\"script\\\",\\\"script-0\\\",{\\\"src\\\":\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"async\\\":true,\\\"nonce\\\":\\\"$undefined\\\"}],[\\\"$\\\",\\\"script\\\",\\\"script-1\\\",{\\\"src\\\":\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"async\\\":true,\\\"nonce\\\":\\\"$undefined\\\"}]],[\\\"$\\\",\\\"html\\\",null,{\\\"lang\\\":\\\"en\\\",\\\"children\\\":[\\\"$\\\",\\\"body\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"header\\\",null,{\\\"className\\\":\\\"site-header\\\",\\\"children\\\":[[\\\"$\\\",\\\"$L2\\\",null,{\\\"className\\\":\\\"brand\\\",\\\"href\\\":\\\"/\\\",\\\"children\\\":\\\"REFUGIO\\\"}],[\\\"$\\\",\\\"nav\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/\\\",\\\"children\\\":\\\"Leaderboard\\\"}],[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/instructions\\\",\\\"children\\\":\\\"Instructions\\\"}],[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/jobs\\\",\\\"children\\\":\\\"Jobs\\\"}],[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/submit\\\",\\\"children\\\":\\\"Submit\\\"}]]}]]}],[\\\"$\\\",\\\"main\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$L3\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L4\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":[[[\\\"$\\\",\\\"title\\\",null,{\\\"children\\\":\\\"404: This page could not be found.\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"fontFamily\\\":\\\"system-ui,\\\\\\\"Segoe UI\\\\\\\",Roboto,Helvetica,Arial,sans-serif,\\\\\\\"Apple Color Emoji\\\\\\\",\\\\\\\"Segoe UI Emoji\\\\\\\"\\\",\\\"height\\\":\\\"100vh\\\",\\\"textAlign\\\":\\\"center\\\",\\\"display\\\":\\\"flex\\\",\\\"flexDirection\\\":\\\"column\\\",\\\"alignItems\\\":\\\"center\\\",\\\"justifyContent\\\":\\\"center\\\"},\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"style\\\",null,{\\\"dangerouslySetInnerHTML\\\":{\\\"__html\\\":\\\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\\\"}}],[\\\"$\\\",\\\"h1\\\",null,{\\\"className\\\":\\\"next-error-h1\\\",\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\",\\\"margin\\\":\\\"0 20px 0 0\\\",\\\"padding\\\":\\\"0 23px 0 0\\\",\\\"fontSize\\\":24,\\\"fontWeight\\\":500,\\\"verticalAlign\\\":\\\"top\\\",\\\"lineHeight\\\":\\\"49px\\\"},\\\"children\\\":404}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\"},\\\"children\\\":[\\\"$\\\",\\\"h2\\\",null,{\\\"style\\\":{\\\"fontSize\\\":14,\\\"fontWeight\\\":400,\\\"lineHeight\\\":\\\"49px\\\",\\\"margin\\\":0},\\\"children\\\":\\\"This page could not be found.\\\"}]}]]}]}]],[]],\\\"forbidden\\\":\\\"$undefined\\\",\\\"unauthorized\\\":\\\"$undefined\\\"}]}]]}]}]]}],{\\\"children\\\":[[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[null,[\\\"$\\\",\\\"$L3\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L4\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":\\\"$undefined\\\",\\\"forbidden\\\":\\\"$undefined\\\",\\\"unauthorized\\\":\\\"$undefined\\\"}]]}],{\\\"children\\\":[[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[null,[\\\"$\\\",\\\"$L3\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L4\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":\\\"$undefined\\\",\\\"forbidden\\\":\\\"$undefined\\\",\\\"unauthorized\\\":\\\"$undefined\\\"}]]}],{\\\"children\\\":[[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[\\\"$L5\\\",null,[\\\"$\\\",\\\"$L6\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$7\\\",null,{\\\"name\\\":\\\"Next.MetadataOutlet\\\",\\\"children\\\":\\\"$@8\\\"}]}]]}],{},null,false,null]},null,false,\\\"$@9\\\"]},null,false,\\\"$@9\\\"]},null,false,null],[\\\"$\\\",\\\"$1\\\",\\\"h\\\",{\\\"children\\\":[null,[\\\"$\\\",\\\"$La\\\",null,{\\\"children\\\":\\\"$Lb\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"hidden\\\":true,\\\"children\\\":[\\\"$\\\",\\\"$Lc\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$7\\\",null,{\\\"name\\\":\\\"Next.Metadata\\\",\\\"children\\\":\\\"$Ld\\\"}]}]}],null]}],false]],\\\"m\\\":\\\"$undefined\\\",\\\"G\\\":[\\\"$e\\\",[[\\\"$\\\",\\\"link\\\",\\\"0\\\",{\\\"rel\\\":\\\"stylesheet\\\",\\\"href\\\":\\\"/_next/static/chunks/1sqvg_u2fgq6n.css?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"precedence\\\":\\\"next\\\",\\\"crossOrigin\\\":\\\"$undefined\\\",\\\"nonce\\\":\\\"$undefined\\\"}]]],\\\"S\\\":false,\\\"h\\\":null,\\\"s\\\":\\\"$undefined\\\",\\\"l\\\":\\\"$undefined\\\",\\\"p\\\":\\\"$undefined\\\",\\\"d\\\":\\\"$undefined\\\"}\\n\"]) self.__next_f.push([1,\"f:[]\\n9:\\\"$Wf\\\"\\nb:[[\\\"$\\\",\\\"meta\\\",\\\"0\\\",{\\\"charSet\\\":\\\"utf-8\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"1\\\",{\\\"name\\\":\\\"viewport\\\",\\\"content\\\":\\\"width=device-width, initial-scale=1\\\"}]]\\n8:null\\nd:[[\\\"$\\\",\\\"title\\\",\\\"0\\\",{\\\"children\\\":\\\"REFUGIO · Warehouse Challenge\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"1\\\",{\\\"name\\\":\\\"description\\\",\\\"content\\\":\\\"Multi-agent warehouse routing hackathon.\\\"}],[\\\"$\\\",\\\"link\\\",\\\"2\\\",{\\\"rel\\\":\\\"icon\\\",\\\"href\\\":\\\"/platform/favicon.svg\\\"}],[\\\"$\\\",\\\"$L10\\\",\\\"3\\\",{}]]\\n\"]) self.__next_f.push([1,\"5:[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"narrow page-stack\\\",\\\"children\\\":[[\\\"$\\\",\\\"section\\\",null,{\\\"className\\\":\\\"hero compact\\\",\\\"children\\\":[[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"eyebrow\\\",\\\"children\\\":\\\"Job\\\"}],[\\\"$\\\",\\\"h1\\\",null,{\\\"children\\\":\\\"41a5ad4a70a8\\\"}],[\\\"$\\\",\\\"p\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/teams/team-04\\\",\\\"children\\\":\\\"Equipo 04\\\"}]}]]}],[\\\"$\\\",\\\"section\\\",null,{\\\"className\\\":\\\"grid two\\\",\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Status\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"safety_rejected\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Safety\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"rejected\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Hackathon points\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"-\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Deliveries\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"-\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Policy time\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"-\\\"}]]}]]}],[\\\"$\\\",\\\"section\\\",null,{\\\"className\\\":\\\"card\\\",\\\"children\\\":[[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"eyebrow\\\",\\\"children\\\":\\\"Scoring\\\"}],[\\\"$\\\",\\\"h2\\\",null,{\\\"children\\\":\\\"Job result\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"score-hero\\\",\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"className\\\":\\\"score-detail\\\",\\\"children\\\":\\\"Frontier points awarded\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"className\\\":\\\"score-value\\\",\\\"children\\\":\\\"-\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"className\\\":\\\"score-detail\\\",\\\"children\\\":\\\"Deliveries\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"className\\\":\\\"score-value\\\",\\\"children\\\":\\\"-\\\"}]]}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"table-wrap\\\",\\\"children\\\":[\\\"$\\\",\\\"table\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"thead\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"tr\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Run\\\"}],[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Packages\\\"}],[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Blocked moves\\\"}],[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Remaining distance\\\"}],[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Policy time\\\"}]]}]}],[\\\"$\\\",\\\"tbody\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"tr\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"td\\\",null,{\\\"colSpan\\\":5,\\\"className\\\":\\\"empty\\\",\\\"children\\\":\\\"No seed breakdown available yet.\\\"}]}]}]]}]}]]}],[\\\"$\\\",\\\"section\\\",null,{\\\"className\\\":\\\"card details\\\",\\\"children\\\":[[\\\"$\\\",\\\"h2\\\",null,{\\\"children\\\":\\\"Evaluation details\\\"}],[\\\"$\\\",\\\"dl\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Seed set\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":[\\\"Hidden official seeds (\\\",3,\\\" runs)\\\"]}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Replay seed\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"Hidden official seed\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Ticks\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":300}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Submitted\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"2026-06-27 13:23:50.936 UTC\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Started\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"-\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Validated + committed\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"2026-06-27 13:23:52.915 UTC\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Updated\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"2026-06-27 13:23:52.915 UTC\\\"}]]}],null]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"safety-review\\\",\\\"children\\\":[[\\\"$\\\",\\\"h3\\\",null,{\\\"children\\\":\\\"LLM safety review\\\"}],[\\\"$\\\",\\\"dl\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Status\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"rejected\\\"}]]}]}],[\\\"$\\\",\\\"p\\\",null,{\\\"style\\\":{\\\"overflowWrap\\\":\\\"anywhere\\\"},\\\"children\\\":\\\"The submission imports and monkey-patches the warehouse evaluation module to fake scores, which is an attempt to tamper with the evaluator rather than implement a policy.\\\"}]]}],[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"notice error\\\",\\\"children\\\":\\\"Safety review blocked this submission: The submission imports and monkey-patches the warehouse evaluation module to fake scores, which is an attempt to tamper with the evaluator rather than implement a policy. (dynamic import, sandbox tampering, evaluation bypass)\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"inline-links\\\",\\\"children\\\":[null,null]}]]}]]}]\\n\"])",
+    "code_saved_to": null
+  },
+  {
+    "job_id": "58fea22a7c33",
+    "team": "Equipo 15",
+    "team_slug": "team-15",
+    "status": "safety_rejected",
+    "points": null,
+    "deliveries": null,
+    "runtime_s": null,
+    "submitted": "2026-06-27 13:22:22.298 UTC",
+    "committed": "2026-06-27 13:22:22.371 UTC",
+    "has_code": false,
+    "has_replay": false,
+    "runs": [],
+    "safety_status": "rejected",
+    "safety_review": "Local safety rules flagged: introspection-escape Safety review blocked this submission: Local safety rules flagged: introspection-escape (introspection-escape) (self.__next_f=self.__next_f||[]).push([0]) self.__next_f.push([1,\"1:\\\"$Sreact.fragment\\\"\\n2:I[22016,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"\\\"]\\n3:I[39756,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"default\\\"]\\n4:I[37457,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"default\\\"]\\n6:I[97367,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"OutletBoundary\\\"]\\n7:\\\"$Sreact.suspense\\\"\\na:I[97367,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"ViewportBoundary\\\"]\\nc:I[97367,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"MetadataBoundary\\\"]\\ne:I[68027,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"default\\\",1]\\n10:I[27201,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"IconMark\\\"]\\n:HL[\\\"/_next/static/chunks/1sqvg_u2fgq6n.css?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"style\\\"]\\n:HC[\\\"/\\\",\\\"\\\"]\\n\"]) self.__next_f.push([1,\"0:{\\\"P\\\":null,\\\"c\\\":[\\\"\\\",\\\"jobs\\\",\\\"58fea22a7c33\\\"],\\\"q\\\":\\\"\\\",\\\"i\\\":false,\\\"f\\\":[[[\\\"\\\",{\\\"children\\\":[\\\"jobs\\\",{\\\"children\\\":[[\\\"jobId\\\",\\\"58fea22a7c33\\\",\\\"d\\\",null],{\\\"children\\\":[\\\"__PAGE__\\\",{}]}]}]},\\\"$undefined\\\",\\\"$undefined\\\",16],[[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[[[\\\"$\\\",\\\"link\\\",\\\"0\\\",{\\\"rel\\\":\\\"stylesheet\\\",\\\"href\\\":\\\"/_next/static/chunks/1sqvg_u2fgq6n.css?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"precedence\\\":\\\"next\\\",\\\"crossOrigin\\\":\\\"$undefined\\\",\\\"nonce\\\":\\\"$undefined\\\"}],[\\\"$\\\",\\\"script\\\",\\\"script-0\\\",{\\\"src\\\":\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"async\\\":true,\\\"nonce\\\":\\\"$undefined\\\"}],[\\\"$\\\",\\\"script\\\",\\\"script-1\\\",{\\\"src\\\":\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"async\\\":true,\\\"nonce\\\":\\\"$undefined\\\"}]],[\\\"$\\\",\\\"html\\\",null,{\\\"lang\\\":\\\"en\\\",\\\"children\\\":[\\\"$\\\",\\\"body\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"header\\\",null,{\\\"className\\\":\\\"site-header\\\",\\\"children\\\":[[\\\"$\\\",\\\"$L2\\\",null,{\\\"className\\\":\\\"brand\\\",\\\"href\\\":\\\"/\\\",\\\"children\\\":\\\"REFUGIO\\\"}],[\\\"$\\\",\\\"nav\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/\\\",\\\"children\\\":\\\"Leaderboard\\\"}],[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/instructions\\\",\\\"children\\\":\\\"Instructions\\\"}],[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/jobs\\\",\\\"children\\\":\\\"Jobs\\\"}],[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/submit\\\",\\\"children\\\":\\\"Submit\\\"}]]}]]}],[\\\"$\\\",\\\"main\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$L3\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L4\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":[[[\\\"$\\\",\\\"title\\\",null,{\\\"children\\\":\\\"404: This page could not be found.\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"fontFamily\\\":\\\"system-ui,\\\\\\\"Segoe UI\\\\\\\",Roboto,Helvetica,Arial,sans-serif,\\\\\\\"Apple Color Emoji\\\\\\\",\\\\\\\"Segoe UI Emoji\\\\\\\"\\\",\\\"height\\\":\\\"100vh\\\",\\\"textAlign\\\":\\\"center\\\",\\\"display\\\":\\\"flex\\\",\\\"flexDirection\\\":\\\"column\\\",\\\"alignItems\\\":\\\"center\\\",\\\"justifyContent\\\":\\\"center\\\"},\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"style\\\",null,{\\\"dangerouslySetInnerHTML\\\":{\\\"__html\\\":\\\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\\\"}}],[\\\"$\\\",\\\"h1\\\",null,{\\\"className\\\":\\\"next-error-h1\\\",\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\",\\\"margin\\\":\\\"0 20px 0 0\\\",\\\"padding\\\":\\\"0 23px 0 0\\\",\\\"fontSize\\\":24,\\\"fontWeight\\\":500,\\\"verticalAlign\\\":\\\"top\\\",\\\"lineHeight\\\":\\\"49px\\\"},\\\"children\\\":404}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\"},\\\"children\\\":[\\\"$\\\",\\\"h2\\\",null,{\\\"style\\\":{\\\"fontSize\\\":14,\\\"fontWeight\\\":400,\\\"lineHeight\\\":\\\"49px\\\",\\\"margin\\\":0},\\\"children\\\":\\\"This page could not be found.\\\"}]}]]}]}]],[]],\\\"forbidden\\\":\\\"$undefined\\\",\\\"unauthorized\\\":\\\"$undefined\\\"}]}]]}]}]]}],{\\\"children\\\":[[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[null,[\\\"$\\\",\\\"$L3\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L4\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":\\\"$undefined\\\",\\\"forbidden\\\":\\\"$undefined\\\",\\\"unauthorized\\\":\\\"$undefined\\\"}]]}],{\\\"children\\\":[[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[null,[\\\"$\\\",\\\"$L3\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L4\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":\\\"$undefined\\\",\\\"forbidden\\\":\\\"$undefined\\\",\\\"unauthorized\\\":\\\"$undefined\\\"}]]}],{\\\"children\\\":[[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[\\\"$L5\\\",null,[\\\"$\\\",\\\"$L6\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$7\\\",null,{\\\"name\\\":\\\"Next.MetadataOutlet\\\",\\\"children\\\":\\\"$@8\\\"}]}]]}],{},null,false,null]},null,false,\\\"$@9\\\"]},null,false,\\\"$@9\\\"]},null,false,null],[\\\"$\\\",\\\"$1\\\",\\\"h\\\",{\\\"children\\\":[null,[\\\"$\\\",\\\"$La\\\",null,{\\\"children\\\":\\\"$Lb\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"hidden\\\":true,\\\"children\\\":[\\\"$\\\",\\\"$Lc\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$7\\\",null,{\\\"name\\\":\\\"Next.Metadata\\\",\\\"children\\\":\\\"$Ld\\\"}]}]}],null]}],false]],\\\"m\\\":\\\"$undefined\\\",\\\"G\\\":[\\\"$e\\\",[[\\\"$\\\",\\\"link\\\",\\\"0\\\",{\\\"rel\\\":\\\"stylesheet\\\",\\\"href\\\":\\\"/_next/static/chunks/1sqvg_u2fgq6n.css?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"precedence\\\":\\\"next\\\",\\\"crossOrigin\\\":\\\"$undefined\\\",\\\"nonce\\\":\\\"$undefined\\\"}]]],\\\"S\\\":false,\\\"h\\\":null,\\\"s\\\":\\\"$undefined\\\",\\\"l\\\":\\\"$undefined\\\",\\\"p\\\":\\\"$undefined\\\",\\\"d\\\":\\\"$undefined\\\"}\\n\"]) self.__next_f.push([1,\"f:[]\\n9:\\\"$Wf\\\"\\nb:[[\\\"$\\\",\\\"meta\\\",\\\"0\\\",{\\\"charSet\\\":\\\"utf-8\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"1\\\",{\\\"name\\\":\\\"viewport\\\",\\\"content\\\":\\\"width=device-width, initial-scale=1\\\"}]]\\n8:null\\nd:[[\\\"$\\\",\\\"title\\\",\\\"0\\\",{\\\"children\\\":\\\"REFUGIO · Warehouse Challenge\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"1\\\",{\\\"name\\\":\\\"description\\\",\\\"content\\\":\\\"Multi-agent warehouse routing hackathon.\\\"}],[\\\"$\\\",\\\"link\\\",\\\"2\\\",{\\\"rel\\\":\\\"icon\\\",\\\"href\\\":\\\"/platform/favicon.svg\\\"}],[\\\"$\\\",\\\"$L10\\\",\\\"3\\\",{}]]\\n\"]) self.__next_f.push([1,\"5:[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"narrow page-stack\\\",\\\"children\\\":[[\\\"$\\\",\\\"section\\\",null,{\\\"className\\\":\\\"hero compact\\\",\\\"children\\\":[[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"eyebrow\\\",\\\"children\\\":\\\"Job\\\"}],[\\\"$\\\",\\\"h1\\\",null,{\\\"children\\\":\\\"58fea22a7c33\\\"}],[\\\"$\\\",\\\"p\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/teams/team-15\\\",\\\"children\\\":\\\"Equipo 15\\\"}]}]]}],[\\\"$\\\",\\\"section\\\",null,{\\\"className\\\":\\\"grid two\\\",\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Status\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"safety_rejected\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Safety\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"rejected\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Hackathon points\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"-\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Deliveries\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"-\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Policy time\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"-\\\"}]]}]]}],[\\\"$\\\",\\\"section\\\",null,{\\\"className\\\":\\\"card\\\",\\\"children\\\":[[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"eyebrow\\\",\\\"children\\\":\\\"Scoring\\\"}],[\\\"$\\\",\\\"h2\\\",null,{\\\"children\\\":\\\"Job result\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"score-hero\\\",\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"className\\\":\\\"score-detail\\\",\\\"children\\\":\\\"Frontier points awarded\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"className\\\":\\\"score-value\\\",\\\"children\\\":\\\"-\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"className\\\":\\\"score-detail\\\",\\\"children\\\":\\\"Deliveries\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"className\\\":\\\"score-value\\\",\\\"children\\\":\\\"-\\\"}]]}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"table-wrap\\\",\\\"children\\\":[\\\"$\\\",\\\"table\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"thead\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"tr\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Run\\\"}],[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Packages\\\"}],[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Blocked moves\\\"}],[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Remaining distance\\\"}],[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Policy time\\\"}]]}]}],[\\\"$\\\",\\\"tbody\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"tr\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"td\\\",null,{\\\"colSpan\\\":5,\\\"className\\\":\\\"empty\\\",\\\"children\\\":\\\"No seed breakdown available yet.\\\"}]}]}]]}]}]]}],[\\\"$\\\",\\\"section\\\",null,{\\\"className\\\":\\\"card details\\\",\\\"children\\\":[[\\\"$\\\",\\\"h2\\\",null,{\\\"children\\\":\\\"Evaluation details\\\"}],[\\\"$\\\",\\\"dl\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Seed set\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":[\\\"Hidden official seeds (\\\",3,\\\" runs)\\\"]}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Replay seed\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"Hidden official seed\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Ticks\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":300}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Submitted\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"2026-06-27 13:22:22.298 UTC\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Started\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"-\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Validated + committed\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"2026-06-27 13:22:22.371 UTC\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Updated\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"2026-06-27 13:22:22.371 UTC\\\"}]]}],null]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"safety-review\\\",\\\"children\\\":[[\\\"$\\\",\\\"h3\\\",null,{\\\"children\\\":\\\"LLM safety review\\\"}],[\\\"$\\\",\\\"dl\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Status\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"rejected\\\"}]]}]}],[\\\"$\\\",\\\"p\\\",null,{\\\"style\\\":{\\\"overflowWrap\\\":\\\"anywhere\\\"},\\\"children\\\":\\\"Local safety rules flagged: introspection-escape\\\"}]]}],[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"notice error\\\",\\\"children\\\":\\\"Safety review blocked this submission: Local safety rules flagged: introspection-escape (introspection-escape)\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"inline-links\\\",\\\"children\\\":[null,null]}]]}]]}]\\n\"])",
+    "code_saved_to": null
+  },
+  {
+    "job_id": "a05096a523b1",
+    "team": "Equipo 05",
+    "team_slug": "team-05",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 909,
+    "runtime_s": 31.49,
+    "submitted": "2026-06-27 13:19:52.761 UTC",
+    "committed": "2026-06-27 13:20:37.285 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 309,
+        "blocked_moves": 3,
+        "remaining_distance": 2265,
+        "policy_time_s": 9.16
+      },
+      {
+        "run": 2,
+        "deliveries": 303,
+        "blocked_moves": 1,
+        "remaining_distance": 1912,
+        "policy_time_s": 11.32
+      },
+      {
+        "run": 3,
+        "deliveries": 297,
+        "blocked_moves": 5,
+        "remaining_distance": 2064,
+        "policy_time_s": 10.81
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns found; the submission uses static imports and contains only routing/planning logic without filesystem, network, subprocess, dynamic code execution, or obfuscation.",
+    "code_saved_to": "scraped/solutions/0909__equipo-05__a05096a523b1.py"
+  },
+  {
+    "job_id": "61a7eb7a1c11",
+    "team": "Equipo 13",
+    "team_slug": "team-13",
+    "status": "safety_rejected",
+    "points": null,
+    "deliveries": null,
+    "runtime_s": null,
+    "submitted": "2026-06-27 13:19:43.853 UTC",
+    "committed": "2026-06-27 13:19:48.271 UTC",
+    "has_code": false,
+    "has_replay": false,
+    "runs": [],
+    "safety_status": "rejected",
+    "safety_review": "The submission imports internal warehouse simulator modules and monkey-patches target generation to force a seed, explicitly attempting to manipulate the evaluation environment. Safety review blocked this submission: The submission imports internal warehouse simulator modules and monkey-patches target generation to force a seed, explicitly attempting to manipulate the evaluation environment. (unauthorized simulator internals access, monkeypatching simulator state, seed hacking / evaluation manipulation) (self.__next_f=self.__next_f||[]).push([0]) self.__next_f.push([1,\"1:\\\"$Sreact.fragment\\\"\\n2:I[22016,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"\\\"]\\n3:I[39756,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"default\\\"]\\n4:I[37457,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"default\\\"]\\n6:I[97367,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"OutletBoundary\\\"]\\n7:\\\"$Sreact.suspense\\\"\\na:I[97367,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"ViewportBoundary\\\"]\\nc:I[97367,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"MetadataBoundary\\\"]\\ne:I[68027,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"default\\\",1]\\n10:I[27201,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"IconMark\\\"]\\n:HL[\\\"/_next/static/chunks/1sqvg_u2fgq6n.css?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"style\\\"]\\n:HC[\\\"/\\\",\\\"\\\"]\\n\"]) self.__next_f.push([1,\"0:{\\\"P\\\":null,\\\"c\\\":[\\\"\\\",\\\"jobs\\\",\\\"61a7eb7a1c11\\\"],\\\"q\\\":\\\"\\\",\\\"i\\\":false,\\\"f\\\":[[[\\\"\\\",{\\\"children\\\":[\\\"jobs\\\",{\\\"children\\\":[[\\\"jobId\\\",\\\"61a7eb7a1c11\\\",\\\"d\\\",null],{\\\"children\\\":[\\\"__PAGE__\\\",{}]}]}]},\\\"$undefined\\\",\\\"$undefined\\\",16],[[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[[[\\\"$\\\",\\\"link\\\",\\\"0\\\",{\\\"rel\\\":\\\"stylesheet\\\",\\\"href\\\":\\\"/_next/static/chunks/1sqvg_u2fgq6n.css?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"precedence\\\":\\\"next\\\",\\\"crossOrigin\\\":\\\"$undefined\\\",\\\"nonce\\\":\\\"$undefined\\\"}],[\\\"$\\\",\\\"script\\\",\\\"script-0\\\",{\\\"src\\\":\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"async\\\":true,\\\"nonce\\\":\\\"$undefined\\\"}],[\\\"$\\\",\\\"script\\\",\\\"script-1\\\",{\\\"src\\\":\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"async\\\":true,\\\"nonce\\\":\\\"$undefined\\\"}]],[\\\"$\\\",\\\"html\\\",null,{\\\"lang\\\":\\\"en\\\",\\\"children\\\":[\\\"$\\\",\\\"body\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"header\\\",null,{\\\"className\\\":\\\"site-header\\\",\\\"children\\\":[[\\\"$\\\",\\\"$L2\\\",null,{\\\"className\\\":\\\"brand\\\",\\\"href\\\":\\\"/\\\",\\\"children\\\":\\\"REFUGIO\\\"}],[\\\"$\\\",\\\"nav\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/\\\",\\\"children\\\":\\\"Leaderboard\\\"}],[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/instructions\\\",\\\"children\\\":\\\"Instructions\\\"}],[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/jobs\\\",\\\"children\\\":\\\"Jobs\\\"}],[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/submit\\\",\\\"children\\\":\\\"Submit\\\"}]]}]]}],[\\\"$\\\",\\\"main\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$L3\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L4\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":[[[\\\"$\\\",\\\"title\\\",null,{\\\"children\\\":\\\"404: This page could not be found.\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"fontFamily\\\":\\\"system-ui,\\\\\\\"Segoe UI\\\\\\\",Roboto,Helvetica,Arial,sans-serif,\\\\\\\"Apple Color Emoji\\\\\\\",\\\\\\\"Segoe UI Emoji\\\\\\\"\\\",\\\"height\\\":\\\"100vh\\\",\\\"textAlign\\\":\\\"center\\\",\\\"display\\\":\\\"flex\\\",\\\"flexDirection\\\":\\\"column\\\",\\\"alignItems\\\":\\\"center\\\",\\\"justifyContent\\\":\\\"center\\\"},\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"style\\\",null,{\\\"dangerouslySetInnerHTML\\\":{\\\"__html\\\":\\\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\\\"}}],[\\\"$\\\",\\\"h1\\\",null,{\\\"className\\\":\\\"next-error-h1\\\",\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\",\\\"margin\\\":\\\"0 20px 0 0\\\",\\\"padding\\\":\\\"0 23px 0 0\\\",\\\"fontSize\\\":24,\\\"fontWeight\\\":500,\\\"verticalAlign\\\":\\\"top\\\",\\\"lineHeight\\\":\\\"49px\\\"},\\\"children\\\":404}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\"},\\\"children\\\":[\\\"$\\\",\\\"h2\\\",null,{\\\"style\\\":{\\\"fontSize\\\":14,\\\"fontWeight\\\":400,\\\"lineHeight\\\":\\\"49px\\\",\\\"margin\\\":0},\\\"children\\\":\\\"This page could not be found.\\\"}]}]]}]}]],[]],\\\"forbidden\\\":\\\"$undefined\\\",\\\"unauthorized\\\":\\\"$undefined\\\"}]}]]}]}]]}],{\\\"children\\\":[[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[null,[\\\"$\\\",\\\"$L3\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L4\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":\\\"$undefined\\\",\\\"forbidden\\\":\\\"$undefined\\\",\\\"unauthorized\\\":\\\"$undefined\\\"}]]}],{\\\"children\\\":[[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[null,[\\\"$\\\",\\\"$L3\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L4\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":\\\"$undefined\\\",\\\"forbidden\\\":\\\"$undefined\\\",\\\"unauthorized\\\":\\\"$undefined\\\"}]]}],{\\\"children\\\":[[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[\\\"$L5\\\",null,[\\\"$\\\",\\\"$L6\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$7\\\",null,{\\\"name\\\":\\\"Next.MetadataOutlet\\\",\\\"children\\\":\\\"$@8\\\"}]}]]}],{},null,false,null]},null,false,\\\"$@9\\\"]},null,false,\\\"$@9\\\"]},null,false,null],[\\\"$\\\",\\\"$1\\\",\\\"h\\\",{\\\"children\\\":[null,[\\\"$\\\",\\\"$La\\\",null,{\\\"children\\\":\\\"$Lb\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"hidden\\\":true,\\\"children\\\":[\\\"$\\\",\\\"$Lc\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$7\\\",null,{\\\"name\\\":\\\"Next.Metadata\\\",\\\"children\\\":\\\"$Ld\\\"}]}]}],null]}],false]],\\\"m\\\":\\\"$undefined\\\",\\\"G\\\":[\\\"$e\\\",[[\\\"$\\\",\\\"link\\\",\\\"0\\\",{\\\"rel\\\":\\\"stylesheet\\\",\\\"href\\\":\\\"/_next/static/chunks/1sqvg_u2fgq6n.css?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"precedence\\\":\\\"next\\\",\\\"crossOrigin\\\":\\\"$undefined\\\",\\\"nonce\\\":\\\"$undefined\\\"}]]],\\\"S\\\":false,\\\"h\\\":null,\\\"s\\\":\\\"$undefined\\\",\\\"l\\\":\\\"$undefined\\\",\\\"p\\\":\\\"$undefined\\\",\\\"d\\\":\\\"$undefined\\\"}\\n\"]) self.__next_f.push([1,\"f:[]\\n9:\\\"$Wf\\\"\\nb:[[\\\"$\\\",\\\"meta\\\",\\\"0\\\",{\\\"charSet\\\":\\\"utf-8\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"1\\\",{\\\"name\\\":\\\"viewport\\\",\\\"content\\\":\\\"width=device-width, initial-scale=1\\\"}]]\\n8:null\\nd:[[\\\"$\\\",\\\"title\\\",\\\"0\\\",{\\\"children\\\":\\\"REFUGIO · Warehouse Challenge\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"1\\\",{\\\"name\\\":\\\"description\\\",\\\"content\\\":\\\"Multi-agent warehouse routing hackathon.\\\"}],[\\\"$\\\",\\\"link\\\",\\\"2\\\",{\\\"rel\\\":\\\"icon\\\",\\\"href\\\":\\\"/platform/favicon.svg\\\"}],[\\\"$\\\",\\\"$L10\\\",\\\"3\\\",{}]]\\n\"]) self.__next_f.push([1,\"5:[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"narrow page-stack\\\",\\\"children\\\":[[\\\"$\\\",\\\"section\\\",null,{\\\"className\\\":\\\"hero compact\\\",\\\"children\\\":[[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"eyebrow\\\",\\\"children\\\":\\\"Job\\\"}],[\\\"$\\\",\\\"h1\\\",null,{\\\"children\\\":\\\"61a7eb7a1c11\\\"}],[\\\"$\\\",\\\"p\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/teams/team-13\\\",\\\"children\\\":\\\"Equipo 13\\\"}]}]]}],[\\\"$\\\",\\\"section\\\",null,{\\\"className\\\":\\\"grid two\\\",\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Status\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"safety_rejected\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Safety\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"rejected\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Hackathon points\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"-\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Deliveries\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"-\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Policy time\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"-\\\"}]]}]]}],[\\\"$\\\",\\\"section\\\",null,{\\\"className\\\":\\\"card\\\",\\\"children\\\":[[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"eyebrow\\\",\\\"children\\\":\\\"Scoring\\\"}],[\\\"$\\\",\\\"h2\\\",null,{\\\"children\\\":\\\"Job result\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"score-hero\\\",\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"className\\\":\\\"score-detail\\\",\\\"children\\\":\\\"Frontier points awarded\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"className\\\":\\\"score-value\\\",\\\"children\\\":\\\"-\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"className\\\":\\\"score-detail\\\",\\\"children\\\":\\\"Deliveries\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"className\\\":\\\"score-value\\\",\\\"children\\\":\\\"-\\\"}]]}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"table-wrap\\\",\\\"children\\\":[\\\"$\\\",\\\"table\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"thead\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"tr\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Run\\\"}],[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Packages\\\"}],[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Blocked moves\\\"}],[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Remaining distance\\\"}],[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Policy time\\\"}]]}]}],[\\\"$\\\",\\\"tbody\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"tr\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"td\\\",null,{\\\"colSpan\\\":5,\\\"className\\\":\\\"empty\\\",\\\"children\\\":\\\"No seed breakdown available yet.\\\"}]}]}]]}]}]]}],[\\\"$\\\",\\\"section\\\",null,{\\\"className\\\":\\\"card details\\\",\\\"children\\\":[[\\\"$\\\",\\\"h2\\\",null,{\\\"children\\\":\\\"Evaluation details\\\"}],[\\\"$\\\",\\\"dl\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Seed set\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":[\\\"Hidden official seeds (\\\",3,\\\" runs)\\\"]}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Replay seed\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"Hidden official seed\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Ticks\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":300}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Submitted\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"2026-06-27 13:19:43.853 UTC\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Started\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"-\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Validated + committed\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"2026-06-27 13:19:48.271 UTC\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Updated\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"2026-06-27 13:19:48.271 UTC\\\"}]]}],null]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"safety-review\\\",\\\"children\\\":[[\\\"$\\\",\\\"h3\\\",null,{\\\"children\\\":\\\"LLM safety review\\\"}],[\\\"$\\\",\\\"dl\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Status\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"rejected\\\"}]]}]}],[\\\"$\\\",\\\"p\\\",null,{\\\"style\\\":{\\\"overflowWrap\\\":\\\"anywhere\\\"},\\\"children\\\":\\\"The submission imports internal warehouse simulator modules and monkey-patches target generation to force a seed, explicitly attempting to manipulate the evaluation environment.\\\"}]]}],[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"notice error\\\",\\\"children\\\":\\\"Safety review blocked this submission: The submission imports internal warehouse simulator modules and monkey-patches target generation to force a seed, explicitly attempting to manipulate the evaluation environment. (unauthorized simulator internals access, monkeypatching simulator state, seed hacking / evaluation manipulation)\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"inline-links\\\",\\\"children\\\":[null,null]}]]}]]}]\\n\"])",
+    "code_saved_to": null
+  },
+  {
+    "job_id": "a591827df228",
+    "team": "Equipo 03",
+    "team_slug": "team-03",
+    "status": "succeeded",
+    "points": 824,
+    "deliveries": 924,
+    "runtime_s": 16.28,
+    "submitted": "2026-06-27 13:18:03.982 UTC",
+    "committed": "2026-06-27 13:18:32.499 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 312,
+        "blocked_moves": 19,
+        "remaining_distance": 2362,
+        "policy_time_s": 0.01
+      },
+      {
+        "run": 2,
+        "deliveries": 307,
+        "blocked_moves": 2,
+        "remaining_distance": 1968,
+        "policy_time_s": 8.52
+      },
+      {
+        "run": 3,
+        "deliveries": 305,
+        "blocked_moves": 1,
+        "remaining_distance": 2287,
+        "policy_time_s": 7.59
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns found. The submission uses permitted-style algorithmic code and static data only, with no filesystem, network, subprocess, dynamic import, dynamic execution, or sandbox-escape behavior.",
+    "code_saved_to": "scraped/solutions/0924__equipo-03__a591827df228.py"
+  },
+  {
+    "job_id": "cec1de88e43c",
+    "team": "Equipo 16",
+    "team_slug": "team-16",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 878,
+    "runtime_s": 37.75,
+    "submitted": "2026-06-27 13:17:33.711 UTC",
+    "committed": "2026-06-27 13:18:27.073 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 293,
+        "blocked_moves": 2,
+        "remaining_distance": 2145,
+        "policy_time_s": 12.28
+      },
+      {
+        "run": 2,
+        "deliveries": 290,
+        "blocked_moves": 17,
+        "remaining_distance": 2451,
+        "policy_time_s": 12.81
+      },
+      {
+        "run": 3,
+        "deliveries": 295,
+        "blocked_moves": 8,
+        "remaining_distance": 2516,
+        "policy_time_s": 12.46
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "The submission uses only allowed-looking imports and implements deterministic path-planning logic. No network access, subprocess execution, filesystem access, dynamic imports/code execution, credential access, obfuscation, or sandbox escape behavior is present.",
+    "code_saved_to": "scraped/solutions/0878__equipo-16__cec1de88e43c.py"
+  },
+  {
+    "job_id": "8726443032a0",
+    "team": "Equipo 07",
+    "team_slug": "team-07",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 895,
+    "runtime_s": 17.63,
+    "submitted": "2026-06-27 13:11:32.493 UTC",
+    "committed": "2026-06-27 13:12:03.864 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 308,
+        "blocked_moves": 2,
+        "remaining_distance": 2075,
+        "policy_time_s": 5.73
+      },
+      {
+        "run": 2,
+        "deliveries": 304,
+        "blocked_moves": 1,
+        "remaining_distance": 2147,
+        "policy_time_s": 5.59
+      },
+      {
+        "run": 3,
+        "deliveries": 283,
+        "blocked_moves": 4,
+        "remaining_distance": 2206,
+        "policy_time_s": 6.14
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns found; the submission uses static imports and implements routing logic without filesystem, network, subprocess, dynamic code execution, obfuscation, or sandbox escape behavior.",
+    "code_saved_to": "scraped/solutions/0895__equipo-07__8726443032a0.py"
+  },
+  {
+    "job_id": "4ebc9d45f10d",
+    "team": "Equipo 14",
+    "team_slug": "team-14",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 897,
+    "runtime_s": 28.32,
+    "submitted": "2026-06-27 13:06:27.730 UTC",
+    "committed": "2026-06-27 13:07:09.235 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 297,
+        "blocked_moves": 2,
+        "remaining_distance": 1865,
+        "policy_time_s": 9.66
+      },
+      {
+        "run": 2,
+        "deliveries": 301,
+        "blocked_moves": 25,
+        "remaining_distance": 2010,
+        "policy_time_s": 10.23
+      },
+      {
+        "run": 3,
+        "deliveries": 299,
+        "blocked_moves": 7,
+        "remaining_distance": 2271,
+        "policy_time_s": 8.2
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns detected; code uses standard path-planning logic with permitted-style imports and no filesystem, network, subprocess, dynamic code execution, or obfuscation.",
+    "code_saved_to": "scraped/solutions/0897__equipo-14__4ebc9d45f10d.py"
+  },
+  {
+    "job_id": "6cb8721bc2f7",
+    "team": "Equipo 01",
+    "team_slug": "team-01",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 877,
+    "runtime_s": 23.08,
+    "submitted": "2026-06-27 13:02:46.059 UTC",
+    "committed": "2026-06-27 13:03:21.114 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 285,
+        "blocked_moves": 5,
+        "remaining_distance": 2402,
+        "policy_time_s": 7.93
+      },
+      {
+        "run": 2,
+        "deliveries": 308,
+        "blocked_moves": 3,
+        "remaining_distance": 2057,
+        "policy_time_s": 7.07
+      },
+      {
+        "run": 3,
+        "deliveries": 284,
+        "blocked_moves": 5,
+        "remaining_distance": 2171,
+        "policy_time_s": 7.93
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns found; the submission uses allowed algorithmic code and static data only, with no filesystem, network, subprocess, dynamic import, or dynamic code execution behavior.",
+    "code_saved_to": "scraped/solutions/0877__equipo-01__6cb8721bc2f7.py"
+  },
+  {
+    "job_id": "56e8c94f9fd8",
+    "team": "Equipo 12",
+    "team_slug": "team-12",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 877,
+    "runtime_s": 21.74,
+    "submitted": "2026-06-27 13:01:19.500 UTC",
+    "committed": "2026-06-27 13:01:56.058 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 294,
+        "blocked_moves": 1,
+        "remaining_distance": 2057,
+        "policy_time_s": 7.46
+      },
+      {
+        "run": 2,
+        "deliveries": 297,
+        "blocked_moves": 0,
+        "remaining_distance": 2098,
+        "policy_time_s": 7.04
+      },
+      {
+        "run": 3,
+        "deliveries": 286,
+        "blocked_moves": 0,
+        "remaining_distance": 2021,
+        "policy_time_s": 7.09
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns found; code uses allowed-style computation and bounded path planning without filesystem, network, subprocess, dynamic import, or code execution behavior.",
+    "code_saved_to": "scraped/solutions/0877__equipo-12__56e8c94f9fd8.py"
+  },
+  {
+    "job_id": "37f9c7c7908a",
+    "team": "Equipo 09",
+    "team_slug": "team-09",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 898,
+    "runtime_s": 37.0,
+    "submitted": "2026-06-27 12:57:48.840 UTC",
+    "committed": "2026-06-27 12:58:41.654 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 312,
+        "blocked_moves": 1,
+        "remaining_distance": 2224,
+        "policy_time_s": 11.91
+      },
+      {
+        "run": 2,
+        "deliveries": 302,
+        "blocked_moves": 0,
+        "remaining_distance": 2078,
+        "policy_time_s": 11.62
+      },
+      {
+        "run": 3,
+        "deliveries": 284,
+        "blocked_moves": 2,
+        "remaining_distance": 2400,
+        "policy_time_s": 13.28
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns found. The submission uses static imports and implements routing logic without filesystem, network, subprocess, dynamic code execution, obfuscation, or sandbox escape behavior.",
+    "code_saved_to": "scraped/solutions/0898__equipo-09__37f9c7c7908a.py"
+  },
+  {
+    "job_id": "64584e8c4c8d",
+    "team": "Equipo 08",
+    "team_slug": "team-08",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 904,
+    "runtime_s": 16.86,
+    "submitted": "2026-06-27 12:57:40.056 UTC",
+    "committed": "2026-06-27 12:58:09.258 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 313,
+        "blocked_moves": 2,
+        "remaining_distance": 2168,
+        "policy_time_s": 5.64
+      },
+      {
+        "run": 2,
+        "deliveries": 307,
+        "blocked_moves": 0,
+        "remaining_distance": 2090,
+        "policy_time_s": 5.51
+      },
+      {
+        "run": 3,
+        "deliveries": 284,
+        "blocked_moves": 2,
+        "remaining_distance": 2282,
+        "policy_time_s": 5.69
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns found. The submission uses only standard path-planning logic with allowed-style imports and no filesystem, network, subprocess, dynamic code execution, obfuscation, or exfiltration behavior.",
+    "code_saved_to": "scraped/solutions/0904__equipo-08__64584e8c4c8d.py"
+  },
+  {
+    "job_id": "a99d84c43de0",
+    "team": "Equipo 10",
+    "team_slug": "team-10",
+    "status": "succeeded",
+    "points": 11431,
+    "deliveries": 923,
+    "runtime_s": 32.99,
+    "submitted": "2026-06-27 12:56:10.086 UTC",
+    "committed": "2026-06-27 12:57:03.695 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 311,
+        "blocked_moves": 3,
+        "remaining_distance": 2344,
+        "policy_time_s": 10.42
+      },
+      {
+        "run": 2,
+        "deliveries": 307,
+        "blocked_moves": 2,
+        "remaining_distance": 1968,
+        "policy_time_s": 11.65
+      },
+      {
+        "run": 3,
+        "deliveries": 305,
+        "blocked_moves": 1,
+        "remaining_distance": 2287,
+        "policy_time_s": 10.69
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No malware or abuse indicators found; code uses static imports and in-memory planning only, with no filesystem, network, subprocess, dynamic import, or dynamic code execution.",
+    "code_saved_to": "scraped/solutions/0923__equipo-10__a99d84c43de0.py"
+  },
+  {
+    "job_id": "121ea3b92294",
+    "team": "Equipo 11",
+    "team_slug": "team-11",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 890,
+    "runtime_s": 17.4,
+    "submitted": "2026-06-27 12:49:08.904 UTC",
+    "committed": "2026-06-27 12:49:39.136 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 307,
+        "blocked_moves": 6,
+        "remaining_distance": 1956,
+        "policy_time_s": 5.8
+      },
+      {
+        "run": 2,
+        "deliveries": 302,
+        "blocked_moves": 2,
+        "remaining_distance": 1987,
+        "policy_time_s": 5.43
+      },
+      {
+        "run": 3,
+        "deliveries": 281,
+        "blocked_moves": 1,
+        "remaining_distance": 2265,
+        "policy_time_s": 6.04
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns detected; uses only allowed/static imports and contains no filesystem, network, subprocess, dynamic code execution, or obfuscation behavior.",
+    "code_saved_to": "scraped/solutions/0890__equipo-11__121ea3b92294.py"
+  },
+  {
+    "job_id": "7b2dfd229091",
+    "team": "Equipo 03",
+    "team_slug": "team-03",
+    "status": "succeeded",
+    "points": 1617,
+    "deliveries": 909,
+    "runtime_s": 14.92,
+    "submitted": "2026-06-27 12:47:28.194 UTC",
+    "committed": "2026-06-27 12:47:57.429 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 310,
+        "blocked_moves": 18,
+        "remaining_distance": 2357,
+        "policy_time_s": 0.02
+      },
+      {
+        "run": 2,
+        "deliveries": 300,
+        "blocked_moves": 3,
+        "remaining_distance": 2035,
+        "policy_time_s": 7.59
+      },
+      {
+        "run": 3,
+        "deliveries": 299,
+        "blocked_moves": 8,
+        "remaining_distance": 2212,
+        "policy_time_s": 7.15
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns detected: uses allowed static imports and contains only routing logic with hardcoded replay data; no filesystem, network, subprocess, dynamic import/code execution, credential access, or sandbox escape behavior.",
+    "code_saved_to": "scraped/solutions/0909__equipo-03__7b2dfd229091.py"
+  },
+  {
+    "job_id": "55ed53e5f3ed",
+    "team": "Equipo 02",
+    "team_slug": "team-02",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 895,
+    "runtime_s": 18.32,
+    "submitted": "2026-06-27 12:47:22.549 UTC",
+    "committed": "2026-06-27 12:47:53.259 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 309,
+        "blocked_moves": 3,
+        "remaining_distance": 2105,
+        "policy_time_s": 6.17
+      },
+      {
+        "run": 2,
+        "deliveries": 301,
+        "blocked_moves": 5,
+        "remaining_distance": 1904,
+        "policy_time_s": 5.81
+      },
+      {
+        "run": 3,
+        "deliveries": 285,
+        "blocked_moves": 1,
+        "remaining_distance": 2315,
+        "policy_time_s": 6.2
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns found. The submission uses allowed/static imports and implements bounded in-memory planning without filesystem, network, subprocess, dynamic code execution, or obfuscation.",
+    "code_saved_to": "scraped/solutions/0895__equipo-02__55ed53e5f3ed.py"
+  },
+  {
+    "job_id": "a8b5d3da13ac",
+    "team": "Equipo 13",
+    "team_slug": "team-13",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 892,
+    "runtime_s": 17.53,
+    "submitted": "2026-06-27 12:45:10.808 UTC",
+    "committed": "2026-06-27 12:45:41.342 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 310,
+        "blocked_moves": 0,
+        "remaining_distance": 2058,
+        "policy_time_s": 5.68
+      },
+      {
+        "run": 2,
+        "deliveries": 296,
+        "blocked_moves": 0,
+        "remaining_distance": 1865,
+        "policy_time_s": 5.83
+      },
+      {
+        "run": 3,
+        "deliveries": 286,
+        "blocked_moves": 0,
+        "remaining_distance": 2291,
+        "policy_time_s": 5.87
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns found; the submission uses allowed static imports and contains only bounded planning logic without filesystem, network, subprocess, dynamic execution, or obfuscation.",
+    "code_saved_to": "scraped/solutions/0892__equipo-13__a8b5d3da13ac.py"
+  },
+  {
+    "job_id": "374b27415776",
+    "team": "Equipo 15",
+    "team_slug": "team-15",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 877,
+    "runtime_s": 26.85,
+    "submitted": "2026-06-27 12:43:52.361 UTC",
+    "committed": "2026-06-27 12:44:36.948 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 289,
+        "blocked_moves": 3,
+        "remaining_distance": 1967,
+        "policy_time_s": 8.96
+      },
+      {
+        "run": 2,
+        "deliveries": 300,
+        "blocked_moves": 0,
+        "remaining_distance": 2155,
+        "policy_time_s": 9.09
+      },
+      {
+        "run": 3,
+        "deliveries": 288,
+        "blocked_moves": 1,
+        "remaining_distance": 2386,
+        "policy_time_s": 8.67
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No malware indicators found: no filesystem, network, subprocess, dynamic import/code execution, credential access, or sandbox escape attempts. The code is a deterministic routing/planning policy with bounded search structures.",
+    "code_saved_to": "scraped/solutions/0877__equipo-15__374b27415776.py"
+  },
+  {
+    "job_id": "d43dc4eb5632",
+    "team": "Equipo 16",
+    "team_slug": "team-16",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 893,
+    "runtime_s": 8.85,
+    "submitted": "2026-06-27 12:40:10.186 UTC",
+    "committed": "2026-06-27 12:40:33.832 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 311,
+        "blocked_moves": 2,
+        "remaining_distance": 2246,
+        "policy_time_s": 0.01
+      },
+      {
+        "run": 2,
+        "deliveries": 300,
+        "blocked_moves": 3,
+        "remaining_distance": 2043,
+        "policy_time_s": 4.27
+      },
+      {
+        "run": 3,
+        "deliveries": 282,
+        "blocked_moves": 21,
+        "remaining_distance": 2319,
+        "policy_time_s": 4.55
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security-relevant behavior detected: only allowed/static imports, deterministic planning logic, and static replay data; no filesystem, network, subprocess, dynamic code/imports, introspection, or sandbox escape attempts.",
+    "code_saved_to": "scraped/solutions/0893__equipo-16__d43dc4eb5632.py"
+  },
+  {
+    "job_id": "78011f7a0fab",
+    "team": "Equipo 05",
+    "team_slug": "team-05",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 897,
+    "runtime_s": 12.87,
+    "submitted": "2026-06-27 12:35:12.238 UTC",
+    "committed": "2026-06-27 12:35:39.617 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 312,
+        "blocked_moves": 5,
+        "remaining_distance": 2299,
+        "policy_time_s": 0.01
+      },
+      {
+        "run": 2,
+        "deliveries": 300,
+        "blocked_moves": 5,
+        "remaining_distance": 1910,
+        "policy_time_s": 6.13
+      },
+      {
+        "run": 3,
+        "deliveries": 285,
+        "blocked_moves": 3,
+        "remaining_distance": 2444,
+        "policy_time_s": 6.58
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security-risk behavior detected: imports are static and limited, no filesystem/network/subprocess/dynamic code execution or sandbox escape attempts. Large replay table is static action data, not executable or abusive.",
+    "code_saved_to": "scraped/solutions/0897__equipo-05__78011f7a0fab.py"
+  },
+  {
+    "job_id": "27551e60ac6a",
+    "team": "Equipo 14",
+    "team_slug": "team-14",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 887,
+    "runtime_s": 26.27,
+    "submitted": "2026-06-27 12:34:51.565 UTC",
+    "committed": "2026-06-27 12:35:39.017 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 296,
+        "blocked_moves": 2,
+        "remaining_distance": 2101,
+        "policy_time_s": 8.79
+      },
+      {
+        "run": 2,
+        "deliveries": 300,
+        "blocked_moves": 2,
+        "remaining_distance": 2047,
+        "policy_time_s": 8.7
+      },
+      {
+        "run": 3,
+        "deliveries": 291,
+        "blocked_moves": 0,
+        "remaining_distance": 2133,
+        "policy_time_s": 8.55
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No malicious behavior or prohibited operations detected; code uses standard planning logic with allowed imports and no filesystem, network, subprocess, dynamic execution, or obfuscation concerns.",
+    "code_saved_to": "scraped/solutions/0887__equipo-14__27551e60ac6a.py"
+  },
+  {
+    "job_id": "5a2fd7d7ada2",
+    "team": "Equipo 14",
+    "team_slug": "team-14",
+    "status": "safety_rejected",
+    "points": null,
+    "deliveries": null,
+    "runtime_s": null,
+    "submitted": "2026-06-27 12:30:27.125 UTC",
+    "committed": "2026-06-27 12:30:27.198 UTC",
+    "has_code": false,
+    "has_replay": false,
+    "runs": [],
+    "safety_status": "rejected",
+    "safety_review": "Local safety rules flagged: disallowed-import Safety review blocked this submission: Local safety rules flagged: disallowed-import (disallowed-import) (self.__next_f=self.__next_f||[]).push([0]) self.__next_f.push([1,\"1:\\\"$Sreact.fragment\\\"\\n2:I[22016,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"\\\"]\\n3:I[39756,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"default\\\"]\\n4:I[37457,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"default\\\"]\\n6:I[97367,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"OutletBoundary\\\"]\\n7:\\\"$Sreact.suspense\\\"\\na:I[97367,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"ViewportBoundary\\\"]\\nc:I[97367,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"MetadataBoundary\\\"]\\ne:I[68027,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"default\\\",1]\\n10:I[27201,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"IconMark\\\"]\\n:HL[\\\"/_next/static/chunks/1sqvg_u2fgq6n.css?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"style\\\"]\\n:HC[\\\"/\\\",\\\"\\\"]\\n\"]) self.__next_f.push([1,\"0:{\\\"P\\\":null,\\\"c\\\":[\\\"\\\",\\\"jobs\\\",\\\"5a2fd7d7ada2\\\"],\\\"q\\\":\\\"\\\",\\\"i\\\":false,\\\"f\\\":[[[\\\"\\\",{\\\"children\\\":[\\\"jobs\\\",{\\\"children\\\":[[\\\"jobId\\\",\\\"5a2fd7d7ada2\\\",\\\"d\\\",null],{\\\"children\\\":[\\\"__PAGE__\\\",{}]}]}]},\\\"$undefined\\\",\\\"$undefined\\\",16],[[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[[[\\\"$\\\",\\\"link\\\",\\\"0\\\",{\\\"rel\\\":\\\"stylesheet\\\",\\\"href\\\":\\\"/_next/static/chunks/1sqvg_u2fgq6n.css?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"precedence\\\":\\\"next\\\",\\\"crossOrigin\\\":\\\"$undefined\\\",\\\"nonce\\\":\\\"$undefined\\\"}],[\\\"$\\\",\\\"script\\\",\\\"script-0\\\",{\\\"src\\\":\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"async\\\":true,\\\"nonce\\\":\\\"$undefined\\\"}],[\\\"$\\\",\\\"script\\\",\\\"script-1\\\",{\\\"src\\\":\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"async\\\":true,\\\"nonce\\\":\\\"$undefined\\\"}]],[\\\"$\\\",\\\"html\\\",null,{\\\"lang\\\":\\\"en\\\",\\\"children\\\":[\\\"$\\\",\\\"body\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"header\\\",null,{\\\"className\\\":\\\"site-header\\\",\\\"children\\\":[[\\\"$\\\",\\\"$L2\\\",null,{\\\"className\\\":\\\"brand\\\",\\\"href\\\":\\\"/\\\",\\\"children\\\":\\\"REFUGIO\\\"}],[\\\"$\\\",\\\"nav\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/\\\",\\\"children\\\":\\\"Leaderboard\\\"}],[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/instructions\\\",\\\"children\\\":\\\"Instructions\\\"}],[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/jobs\\\",\\\"children\\\":\\\"Jobs\\\"}],[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/submit\\\",\\\"children\\\":\\\"Submit\\\"}]]}]]}],[\\\"$\\\",\\\"main\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$L3\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L4\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":[[[\\\"$\\\",\\\"title\\\",null,{\\\"children\\\":\\\"404: This page could not be found.\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"fontFamily\\\":\\\"system-ui,\\\\\\\"Segoe UI\\\\\\\",Roboto,Helvetica,Arial,sans-serif,\\\\\\\"Apple Color Emoji\\\\\\\",\\\\\\\"Segoe UI Emoji\\\\\\\"\\\",\\\"height\\\":\\\"100vh\\\",\\\"textAlign\\\":\\\"center\\\",\\\"display\\\":\\\"flex\\\",\\\"flexDirection\\\":\\\"column\\\",\\\"alignItems\\\":\\\"center\\\",\\\"justifyContent\\\":\\\"center\\\"},\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"style\\\",null,{\\\"dangerouslySetInnerHTML\\\":{\\\"__html\\\":\\\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\\\"}}],[\\\"$\\\",\\\"h1\\\",null,{\\\"className\\\":\\\"next-error-h1\\\",\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\",\\\"margin\\\":\\\"0 20px 0 0\\\",\\\"padding\\\":\\\"0 23px 0 0\\\",\\\"fontSize\\\":24,\\\"fontWeight\\\":500,\\\"verticalAlign\\\":\\\"top\\\",\\\"lineHeight\\\":\\\"49px\\\"},\\\"children\\\":404}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\"},\\\"children\\\":[\\\"$\\\",\\\"h2\\\",null,{\\\"style\\\":{\\\"fontSize\\\":14,\\\"fontWeight\\\":400,\\\"lineHeight\\\":\\\"49px\\\",\\\"margin\\\":0},\\\"children\\\":\\\"This page could not be found.\\\"}]}]]}]}]],[]],\\\"forbidden\\\":\\\"$undefined\\\",\\\"unauthorized\\\":\\\"$undefined\\\"}]}]]}]}]]}],{\\\"children\\\":[[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[null,[\\\"$\\\",\\\"$L3\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L4\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":\\\"$undefined\\\",\\\"forbidden\\\":\\\"$undefined\\\",\\\"unauthorized\\\":\\\"$undefined\\\"}]]}],{\\\"children\\\":[[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[null,[\\\"$\\\",\\\"$L3\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L4\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":\\\"$undefined\\\",\\\"forbidden\\\":\\\"$undefined\\\",\\\"unauthorized\\\":\\\"$undefined\\\"}]]}],{\\\"children\\\":[[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[\\\"$L5\\\",null,[\\\"$\\\",\\\"$L6\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$7\\\",null,{\\\"name\\\":\\\"Next.MetadataOutlet\\\",\\\"children\\\":\\\"$@8\\\"}]}]]}],{},null,false,null]},null,false,\\\"$@9\\\"]},null,false,\\\"$@9\\\"]},null,false,null],[\\\"$\\\",\\\"$1\\\",\\\"h\\\",{\\\"children\\\":[null,[\\\"$\\\",\\\"$La\\\",null,{\\\"children\\\":\\\"$Lb\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"hidden\\\":true,\\\"children\\\":[\\\"$\\\",\\\"$Lc\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$7\\\",null,{\\\"name\\\":\\\"Next.Metadata\\\",\\\"children\\\":\\\"$Ld\\\"}]}]}],null]}],false]],\\\"m\\\":\\\"$undefined\\\",\\\"G\\\":[\\\"$e\\\",[[\\\"$\\\",\\\"link\\\",\\\"0\\\",{\\\"rel\\\":\\\"stylesheet\\\",\\\"href\\\":\\\"/_next/static/chunks/1sqvg_u2fgq6n.css?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"precedence\\\":\\\"next\\\",\\\"crossOrigin\\\":\\\"$undefined\\\",\\\"nonce\\\":\\\"$undefined\\\"}]]],\\\"S\\\":false,\\\"h\\\":null,\\\"s\\\":\\\"$undefined\\\",\\\"l\\\":\\\"$undefined\\\",\\\"p\\\":\\\"$undefined\\\",\\\"d\\\":\\\"$undefined\\\"}\\n\"]) self.__next_f.push([1,\"f:[]\\n9:\\\"$Wf\\\"\\nb:[[\\\"$\\\",\\\"meta\\\",\\\"0\\\",{\\\"charSet\\\":\\\"utf-8\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"1\\\",{\\\"name\\\":\\\"viewport\\\",\\\"content\\\":\\\"width=device-width, initial-scale=1\\\"}]]\\n8:null\\nd:[[\\\"$\\\",\\\"title\\\",\\\"0\\\",{\\\"children\\\":\\\"REFUGIO · Warehouse Challenge\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"1\\\",{\\\"name\\\":\\\"description\\\",\\\"content\\\":\\\"Multi-agent warehouse routing hackathon.\\\"}],[\\\"$\\\",\\\"link\\\",\\\"2\\\",{\\\"rel\\\":\\\"icon\\\",\\\"href\\\":\\\"/platform/favicon.svg\\\"}],[\\\"$\\\",\\\"$L10\\\",\\\"3\\\",{}]]\\n\"]) self.__next_f.push([1,\"5:[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"narrow page-stack\\\",\\\"children\\\":[[\\\"$\\\",\\\"section\\\",null,{\\\"className\\\":\\\"hero compact\\\",\\\"children\\\":[[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"eyebrow\\\",\\\"children\\\":\\\"Job\\\"}],[\\\"$\\\",\\\"h1\\\",null,{\\\"children\\\":\\\"5a2fd7d7ada2\\\"}],[\\\"$\\\",\\\"p\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/teams/team-14\\\",\\\"children\\\":\\\"Equipo 14\\\"}]}]]}],[\\\"$\\\",\\\"section\\\",null,{\\\"className\\\":\\\"grid two\\\",\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Status\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"safety_rejected\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Safety\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"rejected\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Hackathon points\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"-\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Deliveries\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"-\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Policy time\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"-\\\"}]]}]]}],[\\\"$\\\",\\\"section\\\",null,{\\\"className\\\":\\\"card\\\",\\\"children\\\":[[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"eyebrow\\\",\\\"children\\\":\\\"Scoring\\\"}],[\\\"$\\\",\\\"h2\\\",null,{\\\"children\\\":\\\"Job result\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"score-hero\\\",\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"className\\\":\\\"score-detail\\\",\\\"children\\\":\\\"Frontier points awarded\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"className\\\":\\\"score-value\\\",\\\"children\\\":\\\"-\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"className\\\":\\\"score-detail\\\",\\\"children\\\":\\\"Deliveries\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"className\\\":\\\"score-value\\\",\\\"children\\\":\\\"-\\\"}]]}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"table-wrap\\\",\\\"children\\\":[\\\"$\\\",\\\"table\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"thead\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"tr\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Run\\\"}],[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Packages\\\"}],[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Blocked moves\\\"}],[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Remaining distance\\\"}],[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Policy time\\\"}]]}]}],[\\\"$\\\",\\\"tbody\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"tr\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"td\\\",null,{\\\"colSpan\\\":5,\\\"className\\\":\\\"empty\\\",\\\"children\\\":\\\"No seed breakdown available yet.\\\"}]}]}]]}]}]]}],[\\\"$\\\",\\\"section\\\",null,{\\\"className\\\":\\\"card details\\\",\\\"children\\\":[[\\\"$\\\",\\\"h2\\\",null,{\\\"children\\\":\\\"Evaluation details\\\"}],[\\\"$\\\",\\\"dl\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Seed set\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":[\\\"Hidden official seeds (\\\",3,\\\" runs)\\\"]}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Replay seed\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"Hidden official seed\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Ticks\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":300}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Submitted\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"2026-06-27 12:30:27.125 UTC\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Started\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"-\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Validated + committed\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"2026-06-27 12:30:27.198 UTC\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Updated\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"2026-06-27 12:30:27.198 UTC\\\"}]]}],null]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"safety-review\\\",\\\"children\\\":[[\\\"$\\\",\\\"h3\\\",null,{\\\"children\\\":\\\"LLM safety review\\\"}],[\\\"$\\\",\\\"dl\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Status\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"rejected\\\"}]]}]}],[\\\"$\\\",\\\"p\\\",null,{\\\"style\\\":{\\\"overflowWrap\\\":\\\"anywhere\\\"},\\\"children\\\":\\\"Local safety rules flagged: disallowed-import\\\"}]]}],[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"notice error\\\",\\\"children\\\":\\\"Safety review blocked this submission: Local safety rules flagged: disallowed-import (disallowed-import)\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"inline-links\\\",\\\"children\\\":[null,null]}]]}]]}]\\n\"])",
+    "code_saved_to": null
+  },
+  {
+    "job_id": "7ab7a8eeb8a4",
+    "team": "Equipo 14",
+    "team_slug": "team-14",
+    "status": "safety_rejected",
+    "points": null,
+    "deliveries": null,
+    "runtime_s": null,
+    "submitted": "2026-06-27 12:29:57.006 UTC",
+    "committed": "2026-06-27 12:29:57.071 UTC",
+    "has_code": false,
+    "has_replay": false,
+    "runs": [],
+    "safety_status": "rejected",
+    "safety_review": "Local safety rules flagged: disallowed-import Safety review blocked this submission: Local safety rules flagged: disallowed-import (disallowed-import) (self.__next_f=self.__next_f||[]).push([0]) self.__next_f.push([1,\"1:\\\"$Sreact.fragment\\\"\\n2:I[22016,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"\\\"]\\n3:I[39756,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"default\\\"]\\n4:I[37457,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"default\\\"]\\n6:I[97367,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"OutletBoundary\\\"]\\n7:\\\"$Sreact.suspense\\\"\\na:I[97367,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"ViewportBoundary\\\"]\\nc:I[97367,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"MetadataBoundary\\\"]\\ne:I[68027,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"default\\\",1]\\n10:I[27201,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"IconMark\\\"]\\n:HL[\\\"/_next/static/chunks/1sqvg_u2fgq6n.css?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"style\\\"]\\n:HC[\\\"/\\\",\\\"\\\"]\\n\"]) self.__next_f.push([1,\"0:{\\\"P\\\":null,\\\"c\\\":[\\\"\\\",\\\"jobs\\\",\\\"7ab7a8eeb8a4\\\"],\\\"q\\\":\\\"\\\",\\\"i\\\":false,\\\"f\\\":[[[\\\"\\\",{\\\"children\\\":[\\\"jobs\\\",{\\\"children\\\":[[\\\"jobId\\\",\\\"7ab7a8eeb8a4\\\",\\\"d\\\",null],{\\\"children\\\":[\\\"__PAGE__\\\",{}]}]}]},\\\"$undefined\\\",\\\"$undefined\\\",16],[[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[[[\\\"$\\\",\\\"link\\\",\\\"0\\\",{\\\"rel\\\":\\\"stylesheet\\\",\\\"href\\\":\\\"/_next/static/chunks/1sqvg_u2fgq6n.css?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"precedence\\\":\\\"next\\\",\\\"crossOrigin\\\":\\\"$undefined\\\",\\\"nonce\\\":\\\"$undefined\\\"}],[\\\"$\\\",\\\"script\\\",\\\"script-0\\\",{\\\"src\\\":\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"async\\\":true,\\\"nonce\\\":\\\"$undefined\\\"}],[\\\"$\\\",\\\"script\\\",\\\"script-1\\\",{\\\"src\\\":\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"async\\\":true,\\\"nonce\\\":\\\"$undefined\\\"}]],[\\\"$\\\",\\\"html\\\",null,{\\\"lang\\\":\\\"en\\\",\\\"children\\\":[\\\"$\\\",\\\"body\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"header\\\",null,{\\\"className\\\":\\\"site-header\\\",\\\"children\\\":[[\\\"$\\\",\\\"$L2\\\",null,{\\\"className\\\":\\\"brand\\\",\\\"href\\\":\\\"/\\\",\\\"children\\\":\\\"REFUGIO\\\"}],[\\\"$\\\",\\\"nav\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/\\\",\\\"children\\\":\\\"Leaderboard\\\"}],[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/instructions\\\",\\\"children\\\":\\\"Instructions\\\"}],[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/jobs\\\",\\\"children\\\":\\\"Jobs\\\"}],[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/submit\\\",\\\"children\\\":\\\"Submit\\\"}]]}]]}],[\\\"$\\\",\\\"main\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$L3\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L4\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":[[[\\\"$\\\",\\\"title\\\",null,{\\\"children\\\":\\\"404: This page could not be found.\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"fontFamily\\\":\\\"system-ui,\\\\\\\"Segoe UI\\\\\\\",Roboto,Helvetica,Arial,sans-serif,\\\\\\\"Apple Color Emoji\\\\\\\",\\\\\\\"Segoe UI Emoji\\\\\\\"\\\",\\\"height\\\":\\\"100vh\\\",\\\"textAlign\\\":\\\"center\\\",\\\"display\\\":\\\"flex\\\",\\\"flexDirection\\\":\\\"column\\\",\\\"alignItems\\\":\\\"center\\\",\\\"justifyContent\\\":\\\"center\\\"},\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"style\\\",null,{\\\"dangerouslySetInnerHTML\\\":{\\\"__html\\\":\\\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\\\"}}],[\\\"$\\\",\\\"h1\\\",null,{\\\"className\\\":\\\"next-error-h1\\\",\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\",\\\"margin\\\":\\\"0 20px 0 0\\\",\\\"padding\\\":\\\"0 23px 0 0\\\",\\\"fontSize\\\":24,\\\"fontWeight\\\":500,\\\"verticalAlign\\\":\\\"top\\\",\\\"lineHeight\\\":\\\"49px\\\"},\\\"children\\\":404}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\"},\\\"children\\\":[\\\"$\\\",\\\"h2\\\",null,{\\\"style\\\":{\\\"fontSize\\\":14,\\\"fontWeight\\\":400,\\\"lineHeight\\\":\\\"49px\\\",\\\"margin\\\":0},\\\"children\\\":\\\"This page could not be found.\\\"}]}]]}]}]],[]],\\\"forbidden\\\":\\\"$undefined\\\",\\\"unauthorized\\\":\\\"$undefined\\\"}]}]]}]}]]}],{\\\"children\\\":[[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[null,[\\\"$\\\",\\\"$L3\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L4\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":\\\"$undefined\\\",\\\"forbidden\\\":\\\"$undefined\\\",\\\"unauthorized\\\":\\\"$undefined\\\"}]]}],{\\\"children\\\":[[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[null,[\\\"$\\\",\\\"$L3\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L4\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":\\\"$undefined\\\",\\\"forbidden\\\":\\\"$undefined\\\",\\\"unauthorized\\\":\\\"$undefined\\\"}]]}],{\\\"children\\\":[[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[\\\"$L5\\\",null,[\\\"$\\\",\\\"$L6\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$7\\\",null,{\\\"name\\\":\\\"Next.MetadataOutlet\\\",\\\"children\\\":\\\"$@8\\\"}]}]]}],{},null,false,null]},null,false,\\\"$@9\\\"]},null,false,\\\"$@9\\\"]},null,false,null],[\\\"$\\\",\\\"$1\\\",\\\"h\\\",{\\\"children\\\":[null,[\\\"$\\\",\\\"$La\\\",null,{\\\"children\\\":\\\"$Lb\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"hidden\\\":true,\\\"children\\\":[\\\"$\\\",\\\"$Lc\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$7\\\",null,{\\\"name\\\":\\\"Next.Metadata\\\",\\\"children\\\":\\\"$Ld\\\"}]}]}],null]}],false]],\\\"m\\\":\\\"$undefined\\\",\\\"G\\\":[\\\"$e\\\",[[\\\"$\\\",\\\"link\\\",\\\"0\\\",{\\\"rel\\\":\\\"stylesheet\\\",\\\"href\\\":\\\"/_next/static/chunks/1sqvg_u2fgq6n.css?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"precedence\\\":\\\"next\\\",\\\"crossOrigin\\\":\\\"$undefined\\\",\\\"nonce\\\":\\\"$undefined\\\"}]]],\\\"S\\\":false,\\\"h\\\":null,\\\"s\\\":\\\"$undefined\\\",\\\"l\\\":\\\"$undefined\\\",\\\"p\\\":\\\"$undefined\\\",\\\"d\\\":\\\"$undefined\\\"}\\n\"]) self.__next_f.push([1,\"f:[]\\n9:\\\"$Wf\\\"\\nb:[[\\\"$\\\",\\\"meta\\\",\\\"0\\\",{\\\"charSet\\\":\\\"utf-8\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"1\\\",{\\\"name\\\":\\\"viewport\\\",\\\"content\\\":\\\"width=device-width, initial-scale=1\\\"}]]\\n8:null\\nd:[[\\\"$\\\",\\\"title\\\",\\\"0\\\",{\\\"children\\\":\\\"REFUGIO · Warehouse Challenge\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"1\\\",{\\\"name\\\":\\\"description\\\",\\\"content\\\":\\\"Multi-agent warehouse routing hackathon.\\\"}],[\\\"$\\\",\\\"link\\\",\\\"2\\\",{\\\"rel\\\":\\\"icon\\\",\\\"href\\\":\\\"/platform/favicon.svg\\\"}],[\\\"$\\\",\\\"$L10\\\",\\\"3\\\",{}]]\\n\"]) self.__next_f.push([1,\"5:[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"narrow page-stack\\\",\\\"children\\\":[[\\\"$\\\",\\\"section\\\",null,{\\\"className\\\":\\\"hero compact\\\",\\\"children\\\":[[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"eyebrow\\\",\\\"children\\\":\\\"Job\\\"}],[\\\"$\\\",\\\"h1\\\",null,{\\\"children\\\":\\\"7ab7a8eeb8a4\\\"}],[\\\"$\\\",\\\"p\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/teams/team-14\\\",\\\"children\\\":\\\"Equipo 14\\\"}]}]]}],[\\\"$\\\",\\\"section\\\",null,{\\\"className\\\":\\\"grid two\\\",\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Status\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"safety_rejected\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Safety\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"rejected\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Hackathon points\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"-\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Deliveries\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"-\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Policy time\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"-\\\"}]]}]]}],[\\\"$\\\",\\\"section\\\",null,{\\\"className\\\":\\\"card\\\",\\\"children\\\":[[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"eyebrow\\\",\\\"children\\\":\\\"Scoring\\\"}],[\\\"$\\\",\\\"h2\\\",null,{\\\"children\\\":\\\"Job result\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"score-hero\\\",\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"className\\\":\\\"score-detail\\\",\\\"children\\\":\\\"Frontier points awarded\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"className\\\":\\\"score-value\\\",\\\"children\\\":\\\"-\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"className\\\":\\\"score-detail\\\",\\\"children\\\":\\\"Deliveries\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"className\\\":\\\"score-value\\\",\\\"children\\\":\\\"-\\\"}]]}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"table-wrap\\\",\\\"children\\\":[\\\"$\\\",\\\"table\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"thead\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"tr\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Run\\\"}],[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Packages\\\"}],[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Blocked moves\\\"}],[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Remaining distance\\\"}],[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Policy time\\\"}]]}]}],[\\\"$\\\",\\\"tbody\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"tr\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"td\\\",null,{\\\"colSpan\\\":5,\\\"className\\\":\\\"empty\\\",\\\"children\\\":\\\"No seed breakdown available yet.\\\"}]}]}]]}]}]]}],[\\\"$\\\",\\\"section\\\",null,{\\\"className\\\":\\\"card details\\\",\\\"children\\\":[[\\\"$\\\",\\\"h2\\\",null,{\\\"children\\\":\\\"Evaluation details\\\"}],[\\\"$\\\",\\\"dl\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Seed set\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":[\\\"Hidden official seeds (\\\",3,\\\" runs)\\\"]}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Replay seed\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"Hidden official seed\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Ticks\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":300}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Submitted\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"2026-06-27 12:29:57.006 UTC\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Started\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"-\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Validated + committed\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"2026-06-27 12:29:57.071 UTC\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Updated\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"2026-06-27 12:29:57.071 UTC\\\"}]]}],null]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"safety-review\\\",\\\"children\\\":[[\\\"$\\\",\\\"h3\\\",null,{\\\"children\\\":\\\"LLM safety review\\\"}],[\\\"$\\\",\\\"dl\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Status\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"rejected\\\"}]]}]}],[\\\"$\\\",\\\"p\\\",null,{\\\"style\\\":{\\\"overflowWrap\\\":\\\"anywhere\\\"},\\\"children\\\":\\\"Local safety rules flagged: disallowed-import\\\"}]]}],[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"notice error\\\",\\\"children\\\":\\\"Safety review blocked this submission: Local safety rules flagged: disallowed-import (disallowed-import)\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"inline-links\\\",\\\"children\\\":[null,null]}]]}]]}]\\n\"])",
+    "code_saved_to": null
+  },
+  {
+    "job_id": "6de9937942dc",
+    "team": "Equipo 12",
+    "team_slug": "team-12",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 893,
+    "runtime_s": 18.11,
+    "submitted": "2026-06-27 12:29:40.734 UTC",
+    "committed": "2026-06-27 12:30:19.552 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 309,
+        "blocked_moves": 0,
+        "remaining_distance": 2279,
+        "policy_time_s": 0.02
+      },
+      {
+        "run": 2,
+        "deliveries": 299,
+        "blocked_moves": 1,
+        "remaining_distance": 2082,
+        "policy_time_s": 8.78
+      },
+      {
+        "run": 3,
+        "deliveries": 285,
+        "blocked_moves": 0,
+        "remaining_distance": 2543,
+        "policy_time_s": 9.12
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No apparent malware or abuse behavior: no filesystem, network, subprocess, dynamic import/code execution, or sandbox-escape attempts. The code is a bounded in-memory planning/replay policy.",
+    "code_saved_to": "scraped/solutions/0893__equipo-12__6de9937942dc.py"
+  },
+  {
+    "job_id": "00c4bc775b0f",
+    "team": "Equipo 08",
+    "team_slug": "team-08",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 890,
+    "runtime_s": 17.67,
+    "submitted": "2026-06-27 12:26:52.438 UTC",
+    "committed": "2026-06-27 12:27:24.491 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 306,
+        "blocked_moves": 1,
+        "remaining_distance": 2121,
+        "policy_time_s": 5.92
+      },
+      {
+        "run": 2,
+        "deliveries": 300,
+        "blocked_moves": 3,
+        "remaining_distance": 2040,
+        "policy_time_s": 5.58
+      },
+      {
+        "run": 3,
+        "deliveries": 284,
+        "blocked_moves": 1,
+        "remaining_distance": 2336,
+        "policy_time_s": 6.02
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns found. The submission uses allowed-style static imports and implements deterministic planning logic without filesystem, network, subprocess, dynamic import, or dynamic code execution behavior.",
+    "code_saved_to": "scraped/solutions/0890__equipo-08__00c4bc775b0f.py"
+  },
+  {
+    "job_id": "246962e09980",
+    "team": "Equipo 10",
+    "team_slug": "team-10",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 896,
+    "runtime_s": 15.92,
+    "submitted": "2026-06-27 12:25:30.485 UTC",
+    "committed": "2026-06-27 12:25:59.326 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 308,
+        "blocked_moves": 0,
+        "remaining_distance": 2051,
+        "policy_time_s": 5.23
+      },
+      {
+        "run": 2,
+        "deliveries": 303,
+        "blocked_moves": 1,
+        "remaining_distance": 2066,
+        "policy_time_s": 5.05
+      },
+      {
+        "run": 3,
+        "deliveries": 285,
+        "blocked_moves": 1,
+        "remaining_distance": 2369,
+        "policy_time_s": 5.49
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns detected; uses allowed imports and implements bounded path-planning logic without filesystem, network, subprocess, dynamic code execution, or obfuscation.",
+    "code_saved_to": "scraped/solutions/0896__equipo-10__246962e09980.py"
+  },
+  {
+    "job_id": "7a4738c9956c",
+    "team": "Equipo 04",
+    "team_slug": "team-04",
+    "status": "succeeded",
+    "points": 7227,
+    "deliveries": 907,
+    "runtime_s": 21.93,
+    "submitted": "2026-06-27 12:23:10.721 UTC",
+    "committed": "2026-06-27 12:23:46.817 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 308,
+        "blocked_moves": 2,
+        "remaining_distance": 2375,
+        "policy_time_s": 7.41
+      },
+      {
+        "run": 2,
+        "deliveries": 300,
+        "blocked_moves": 3,
+        "remaining_distance": 2035,
+        "policy_time_s": 7.34
+      },
+      {
+        "run": 3,
+        "deliveries": 299,
+        "blocked_moves": 8,
+        "remaining_distance": 2212,
+        "policy_time_s": 7.03
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns found. The submission uses standard computation and allowed-style imports only, with no filesystem, network, subprocess, dynamic import, or dynamic code execution behavior.",
+    "code_saved_to": "scraped/solutions/0907__equipo-04__7a4738c9956c.py"
+  },
+  {
+    "job_id": "b867727fbfbe",
+    "team": "Equipo 09",
+    "team_slug": "team-09",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 897,
+    "runtime_s": 22.93,
+    "submitted": "2026-06-27 12:20:15.231 UTC",
+    "committed": "2026-06-27 12:20:48.872 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 308,
+        "blocked_moves": 1,
+        "remaining_distance": 2155,
+        "policy_time_s": 7.56
+      },
+      {
+        "run": 2,
+        "deliveries": 303,
+        "blocked_moves": 63,
+        "remaining_distance": 2294,
+        "policy_time_s": 7.18
+      },
+      {
+        "run": 3,
+        "deliveries": 286,
+        "blocked_moves": 112,
+        "remaining_distance": 2427,
+        "policy_time_s": 8.05
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns found; uses only standard path-planning logic with allowed-style imports and no filesystem, network, subprocess, dynamic code, or obfuscation behavior.",
+    "code_saved_to": "scraped/solutions/0897__equipo-09__b867727fbfbe.py"
+  },
+  {
+    "job_id": "d6ef1065be31",
+    "team": "Equipo 06",
+    "team_slug": "team-06",
+    "status": "succeeded",
+    "points": 798,
+    "deliveries": 898,
+    "runtime_s": 10.79,
+    "submitted": "2026-06-27 12:19:16.226 UTC",
+    "committed": "2026-06-27 12:19:41.758 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 297,
+        "blocked_moves": 3,
+        "remaining_distance": 2076,
+        "policy_time_s": 3.99
+      },
+      {
+        "run": 2,
+        "deliveries": 308,
+        "blocked_moves": 1,
+        "remaining_distance": 1949,
+        "policy_time_s": 3.38
+      },
+      {
+        "run": 3,
+        "deliveries": 293,
+        "blocked_moves": 6,
+        "remaining_distance": 2299,
+        "policy_time_s": 3.28
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No malware or abuse indicators found: imports are limited to allowed/common modules and warehouse_api, with no network, subprocess, filesystem, dynamic import, dynamic execution, credential access, sandbox escape, or denial-of-service setup. The hardcoded replay table/seed logic is competitive behavior rather than a security risk.",
+    "code_saved_to": "scraped/solutions/0898__equipo-06__d6ef1065be31.py"
+  },
+  {
     "job_id": "6e45a3788f3d",
     "team": "Equipo 03",
     "team_slug": "team-03",

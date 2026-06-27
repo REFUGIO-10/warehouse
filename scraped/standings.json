@@ -1,130 +1,130 @@
 [
   {
-    "team": "Equipo 03",
-    "best_deliveries": 897,
-    "best_points": 85754,
-    "jobs": 4,
-    "best_job": "6e45a3788f3d",
+    "team": "Equipo 10",
+    "best_deliveries": 1008,
+    "best_points": 66990,
+    "jobs": 8,
+    "best_job": "c15da13c3eaa",
     "rank_by_deliveries": 1
+  },
+  {
+    "team": "Equipo 03",
+    "best_deliveries": 931,
+    "best_points": 85754,
+    "jobs": 7,
+    "best_job": "3905ff4f9ead",
+    "rank_by_deliveries": 2
+  },
+  {
+    "team": "Equipo 08",
+    "best_deliveries": 930,
+    "best_points": 87165,
+    "jobs": 6,
+    "best_job": "d9d5e50cbd41",
+    "rank_by_deliveries": 3
+  },
+  {
+    "team": "Equipo 12",
+    "best_deliveries": 930,
+    "best_points": 0,
+    "jobs": 5,
+    "best_job": "9b2617f16f38",
+    "rank_by_deliveries": 4
+  },
+  {
+    "team": "Equipo 05",
+    "best_deliveries": 925,
+    "best_points": 0,
+    "jobs": 6,
+    "best_job": "9f6e36d64061",
+    "rank_by_deliveries": 5
+  },
+  {
+    "team": "Equipo 13",
+    "best_deliveries": 918,
+    "best_points": 0,
+    "jobs": 7,
+    "best_job": "d3f597c7ceaa",
+    "rank_by_deliveries": 6
+  },
+  {
+    "team": "Equipo 02",
+    "best_deliveries": 917,
+    "best_points": 88683,
+    "jobs": 7,
+    "best_job": "2be229bd1d04",
+    "rank_by_deliveries": 7
+  },
+  {
+    "team": "Equipo 01",
+    "best_deliveries": 908,
+    "best_points": 0,
+    "jobs": 3,
+    "best_job": "57aeeedbf2ae",
+    "rank_by_deliveries": 8
+  },
+  {
+    "team": "Equipo 04",
+    "best_deliveries": 907,
+    "best_points": 36315,
+    "jobs": 7,
+    "best_job": "7a4738c9956c",
+    "rank_by_deliveries": 9
+  },
+  {
+    "team": "Equipo 06",
+    "best_deliveries": 901,
+    "best_points": 798,
+    "jobs": 5,
+    "best_job": "03a1a666dba7",
+    "rank_by_deliveries": 10
+  },
+  {
+    "team": "Equipo 09",
+    "best_deliveries": 898,
+    "best_points": 783,
+    "jobs": 6,
+    "best_job": "37f9c7c7908a",
+    "rank_by_deliveries": 11
   },
   {
     "team": "Equipo 16",
     "best_deliveries": 897,
     "best_points": 5544,
-    "jobs": 4,
+    "jobs": 7,
     "best_job": "96f62c7fdaa8",
-    "rank_by_deliveries": 2
+    "rank_by_deliveries": 12
   },
   {
-    "team": "Equipo 02",
-    "best_deliveries": 896,
-    "best_points": 88683,
-    "jobs": 4,
-    "best_job": "681e81189b62",
-    "rank_by_deliveries": 3
+    "team": "Equipo 14",
+    "best_deliveries": 897,
+    "best_points": 0,
+    "jobs": 6,
+    "best_job": "4ebc9d45f10d",
+    "rank_by_deliveries": 13
   },
   {
     "team": "Equipo 15",
     "best_deliveries": 896,
     "best_points": 0,
-    "jobs": 3,
+    "jobs": 5,
     "best_job": "31cb4f2c2474",
-    "rank_by_deliveries": 4
+    "rank_by_deliveries": 14
   },
   {
     "team": "Equipo 11",
     "best_deliveries": 895,
     "best_points": 0,
-    "jobs": 3,
-    "best_job": "75b0ac568321",
-    "rank_by_deliveries": 5
-  },
-  {
-    "team": "Equipo 08",
-    "best_deliveries": 895,
-    "best_points": 87165,
-    "jobs": 3,
-    "best_job": "c0bc3a9e42a6",
-    "rank_by_deliveries": 6
-  },
-  {
-    "team": "Equipo 09",
-    "best_deliveries": 895,
-    "best_points": 783,
-    "jobs": 3,
-    "best_job": "a3d83de2263e",
-    "rank_by_deliveries": 7
-  },
-  {
-    "team": "Equipo 06",
-    "best_deliveries": 894,
-    "best_points": 0,
-    "jobs": 3,
-    "best_job": "956ee7ee8efc",
-    "rank_by_deliveries": 8
-  },
-  {
-    "team": "Equipo 05",
-    "best_deliveries": 892,
-    "best_points": 0,
-    "jobs": 3,
-    "best_job": "5074ff6d86e0",
-    "rank_by_deliveries": 9
-  },
-  {
-    "team": "Equipo 13",
-    "best_deliveries": 892,
-    "best_points": 0,
-    "jobs": 3,
-    "best_job": "2645ba1ece2a",
-    "rank_by_deliveries": 10
-  },
-  {
-    "team": "Equipo 12",
-    "best_deliveries": 890,
-    "best_points": 0,
-    "jobs": 2,
-    "best_job": "2f8ed9f4e6eb",
-    "rank_by_deliveries": 11
-  },
-  {
-    "team": "Equipo 10",
-    "best_deliveries": 888,
-    "best_points": 7938,
-    "jobs": 4,
-    "best_job": "d0f2389ad450",
-    "rank_by_deliveries": 12
-  },
-  {
-    "team": "Equipo 04",
-    "best_deliveries": 888,
-    "best_points": 36315,
     "jobs": 5,
-    "best_job": "a1a8eb276980",
-    "rank_by_deliveries": 13
-  },
-  {
-    "team": "Equipo 14",
-    "best_deliveries": 882,
-    "best_points": 0,
-    "jobs": 2,
-    "best_job": "aca05fcc279b",
-    "rank_by_deliveries": 14
-  },
-  {
-    "team": "Equipo 07",
-    "best_deliveries": 882,
-    "best_points": 0,
-    "jobs": 2,
-    "best_job": "7d200466801b",
+    "best_job": "ff94edb65767",
     "rank_by_deliveries": 15
   },
   {
-    "team": "Equipo 01",
-    "best_deliveries": 882,
+    "team": "Equipo 07",
+    "best_deliveries": 895,
     "best_points": 0,
-    "jobs": 1,
-    "best_job": "dd10c86ea066",
+    "jobs": 3,
+    "best_job": "8726443032a0",
     "rank_by_deliveries": 16
   }
 ]
