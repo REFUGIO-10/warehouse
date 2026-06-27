@@ -1,12 +1,14 @@
 {
-  "scraped_at": "2026-06-27 10:52:31 UTC",
+  "scraped_at": "2026-06-27 11:10:36 UTC",
   "source": "https://refugio-hackathon-nine.vercel.app",
-  "total_jobs": 17,
-  "frontier_deliveries": 882,
+  "total_jobs": 21,
+  "frontier_deliveries": 888,
   "our_team": "Equipo 10",
   "our_best_deliveries": 759,
   "new_job_ids": [
-    "8960d3b7806b",
-    "3b8bedf4c0df"
+    "7dd5b6c2a2bf",
+    "f692704ea634",
+    "e6856d86d6ff",
+    "516d288495df"
   ]
 }

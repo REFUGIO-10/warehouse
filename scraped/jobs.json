@@ -1,5 +1,161 @@
 [
   {
+    "job_id": "7dd5b6c2a2bf",
+    "team": "Equipo 03",
+    "team_slug": "team-03",
+    "status": "succeeded",
+    "points": 3146,
+    "deliveries": 888,
+    "runtime_s": 16.88,
+    "submitted": "2026-06-27 11:07:30.940 UTC",
+    "committed": "2026-06-27 11:08:00.784 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 307,
+        "blocked_moves": 3,
+        "remaining_distance": 2254,
+        "policy_time_s": 5.49
+      },
+      {
+        "run": 2,
+        "deliveries": 300,
+        "blocked_moves": 8,
+        "remaining_distance": 2054,
+        "policy_time_s": 5.39
+      },
+      {
+        "run": 3,
+        "deliveries": 281,
+        "blocked_moves": 5,
+        "remaining_distance": 2271,
+        "policy_time_s": 5.86
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns found; the submission uses allowed imports and implements deterministic planning without filesystem, network, subprocess, dynamic import, or code execution behavior.",
+    "code_saved_to": "scraped/solutions/0888__equipo-03__7dd5b6c2a2bf.py"
+  },
+  {
+    "job_id": "f692704ea634",
+    "team": "Equipo 02",
+    "team_slug": "team-02",
+    "status": "succeeded",
+    "points": 784,
+    "deliveries": 884,
+    "runtime_s": 16.56,
+    "submitted": "2026-06-27 11:02:40.292 UTC",
+    "committed": "2026-06-27 11:03:10.152 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 285,
+        "blocked_moves": 41,
+        "remaining_distance": 2327,
+        "policy_time_s": 5.73
+      },
+      {
+        "run": 2,
+        "deliveries": 302,
+        "blocked_moves": 50,
+        "remaining_distance": 2424,
+        "policy_time_s": 5.4
+      },
+      {
+        "run": 3,
+        "deliveries": 297,
+        "blocked_moves": 49,
+        "remaining_distance": 2286,
+        "policy_time_s": 5.28
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "Submission uses only permitted/static imports and implements bounded path-planning logic without filesystem, network, subprocess, dynamic import/code execution, obfuscation, or other abuse indicators.",
+    "code_saved_to": "scraped/solutions/0884__equipo-02__f692704ea634.py"
+  },
+  {
+    "job_id": "e6856d86d6ff",
+    "team": "Equipo 15",
+    "team_slug": "team-15",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 858,
+    "runtime_s": 19.32,
+    "submitted": "2026-06-27 10:58:49.932 UTC",
+    "committed": "2026-06-27 10:59:20.963 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 287,
+        "blocked_moves": 35,
+        "remaining_distance": 2232,
+        "policy_time_s": 6.59
+      },
+      {
+        "run": 2,
+        "deliveries": 289,
+        "blocked_moves": 56,
+        "remaining_distance": 1995,
+        "policy_time_s": 6.2
+      },
+      {
+        "run": 3,
+        "deliveries": 282,
+        "blocked_moves": 41,
+        "remaining_distance": 2185,
+        "policy_time_s": 6.28
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns found. The submission uses only allowed/static imports, contains no filesystem, network, subprocess, dynamic code/import, obfuscation, or exfiltration behavior; computation appears bounded for planning.",
+    "code_saved_to": "scraped/solutions/0858__equipo-15__e6856d86d6ff.py"
+  },
+  {
+    "job_id": "516d288495df",
+    "team": "Equipo 09",
+    "team_slug": "team-09",
+    "status": "succeeded",
+    "points": 783,
+    "deliveries": 883,
+    "runtime_s": 16.56,
+    "submitted": "2026-06-27 10:58:44.267 UTC",
+    "committed": "2026-06-27 10:59:16.025 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 285,
+        "blocked_moves": 49,
+        "remaining_distance": 2326,
+        "policy_time_s": 5.68
+      },
+      {
+        "run": 2,
+        "deliveries": 301,
+        "blocked_moves": 54,
+        "remaining_distance": 2322,
+        "policy_time_s": 5.41
+      },
+      {
+        "run": 3,
+        "deliveries": 297,
+        "blocked_moves": 50,
+        "remaining_distance": 2287,
+        "policy_time_s": 5.3
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns found; uses only allowed-style imports and deterministic in-memory path planning without filesystem, network, subprocess, dynamic import, or code execution behavior.",
+    "code_saved_to": "scraped/solutions/0883__equipo-09__516d288495df.py"
+  },
+  {
     "job_id": "8960d3b7806b",
     "team": "Equipo 10",
     "team_slug": "team-10",
