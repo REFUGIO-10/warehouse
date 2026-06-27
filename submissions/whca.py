@@ -39,13 +39,38 @@ def _node(x: int, y: int) -> int:
 
 
 def create_layout() -> dict[str, object]:
-    shelves: list[list[int]] = []
-    for x0 in range(3, 48, 4):
-        for y0, y1 in ((3, 12), (15, 24), (27, 36), (39, 48)):
-            for x in (x0, x0 + 1):
-                for y in range(y0, y1 + 1):
-                    shelves.append([x, y])
-    return {"schema_version": 1, "shelves": shelves}
+    """Fine-grained 2x2 rack blocks, 1-cell aisles in BOTH directions.
+
+    A cross-aisle at every block boundary -> robots cross sideways anywhere, so
+    the cooperative planner avoids the head-on gridlock that long rack-rows
+    cause. Beats the canonical 4-band layout (~+22 deliveries here). The 2x2
+    tiling overfills 960, so surplus shelves are removed evenly (removing a
+    shelf only frees space, keeping every rule valid). Deterministic and pure.
+    """
+    bw, bh, aw, ah, margin = 2, 2, 1, 1, 2
+    lo, hi = 1 + margin, 50 - margin
+    px, py = bw + aw, bh + ah
+    cells: list[tuple[int, int]] = []
+    x = lo
+    while x <= hi:
+        y = lo
+        while y <= hi:
+            for cx in range(x, min(x + bw, hi + 1)):
+                for cy in range(y, min(y + bh, hi + 1)):
+                    cells.append((cx, cy))
+            y += py
+        x += px
+    n = len(cells)
+    extra = n - 960
+    if extra > 0:
+        removed: set[int] = set()
+        for k in range(extra):
+            idx = (k * n) // extra + n // (2 * extra)
+            while idx in removed:
+                idx = (idx + 1) % n
+            removed.add(idx)
+        cells = [c for i, c in enumerate(cells) if i not in removed]
+    return {"schema_version": 1, "shelves": [[cx, cy] for cx, cy in cells]}
 
 
 def _base_entry(bx: int, by: int) -> tuple[int, int]:
@@ -133,7 +158,7 @@ class _World:
 class _Brain:
     __slots__ = (
         "world", "cur_tick", "pos", "entry", "target", "carrying",
-        "wait_streak", "moves", "occupied", "need_greedy",
+        "wait_streak", "moves", "occupied", "need_greedy", "locked",
     )
 
     def __init__(self) -> None:
@@ -147,6 +172,7 @@ class _Brain:
         self.moves: dict[int, Action] = {}
         self.occupied: frozenset[tuple[int, int]] = frozenset()
         self.need_greedy: frozenset[int] = frozenset()
+        self.locked: frozenset[tuple[int, int]] = frozenset()
 
     def reset_episode(self) -> None:
         self.cur_tick = None
@@ -158,6 +184,7 @@ class _Brain:
         self.moves.clear()
         self.occupied = frozenset()
         self.need_greedy = frozenset()
+        self.locked = frozenset()
 
 
 _BRAIN = _Brain()
@@ -199,6 +226,10 @@ def _plan(brain: _Brain, obs0: Observation) -> None:
 
     rids = sorted(positions)
     brain.occupied = frozenset(brain.pos[rid] for rid in rids)
+    brain.locked = frozenset(
+        t for rid in rids
+        if brain.carrying.get(rid) and (t := brain.target.get(rid)) is not None
+    )
 
     stayers: list[int] = []
     movers: list[int] = []
@@ -388,7 +419,7 @@ def _action_for(brain: _Brain, obs: Observation) -> Action:
             brain.target[rid] = None
             return Action.DROP
     else:
-        if _adjacent(pos, target):
+        if _adjacent(pos, target) and target not in brain.locked:
             brain.carrying[rid] = True
             return Action.PICKUP
 
