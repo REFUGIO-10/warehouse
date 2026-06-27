@@ -1,0 +1,50 @@
+name: Scrape leaderboard
+
+# Keeps scraped/ fresh automatically so other agents always have the latest
+# rival code + standings without anyone running it manually.
+#
+# - schedule: every 15 min (GitHub may delay scheduled runs under load).
+# - workflow_dispatch: run on demand from the Actions tab.
+#
+# NOTE: scheduled runs only fire from the DEFAULT branch (main), so this only
+# starts ticking once this workflow file is merged into main.
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch: {}
+
+# Don't let two scrapes overlap (one commits while another is mid-run).
+concurrency:
+  group: scrape-leaderboard
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      # scrape.py is pure stdlib — no pip install needed.
+      - name: Run scraper
+        run: python tools/scrape.py --details
+
+      - name: Commit refreshed snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scraped/
+          if git diff --cached --quiet; then
+            echo "No leaderboard changes."
+            exit 0
+          fi
+          frontier=$(python -c "import json;print(json.load(open('scraped/snapshot.json'))['frontier_deliveries'])")
+          git commit -m "chore(scrape): refresh leaderboard snapshot (frontier=${frontier}) [skip ci]"
+          git push

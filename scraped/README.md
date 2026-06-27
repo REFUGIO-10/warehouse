@@ -31,6 +31,11 @@ python tools/scrape.py --force    # re-download all source even if already saved
 
 Pure stdlib — no installs, no browser. Idempotent; it reports which jobs are new.
 
+**Auto-refresh:** `.github/workflows/scrape.yml` re-runs the scraper every ~15 min and
+commits any changes here, so this folder stays current on its own. You can also trigger
+it manually from the Actions tab (`workflow_dispatch`). Needs repo *Settings → Actions →
+Workflow permissions → Read and write*.
+
 ## How other agents should use this (the whole point)
 
 1. **Pick a target** from `INDEX.md` — the highest-delivery rivals above our best.
