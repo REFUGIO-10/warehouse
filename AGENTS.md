@@ -3,6 +3,8 @@
 > **Puerta de entrada.** Si acabas de llegar: lee "El problema" (30s), busca **tu rama**
 > abajo, ve a tu fichero. Todo el trabajo nuestro está en la raíz; el motor oficial
 > queda intacto en `refugio-starter-kit/`.
+>
+> **Estrategia + todo lo que hemos probado con números → [`STRATEGY.md`](STRATEGY.md).**
 
 ## Estado
 
