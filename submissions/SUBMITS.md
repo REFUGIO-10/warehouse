@@ -7,20 +7,12 @@ Plataforma: https://refugio-hackathon-nine.vercel.app/ · **1 submit / 30 min**.
 
 ## Estado actual
 
-- **EN VIVO (nuestro récord): 759 entregas** — job `8960d3b7806b` (PIBT, `policy_pibt.py`).
-  Confirmado por el scraper. La frontera global está en **888** (Equipo 03, por layout).
-- 🚀 **MEJOR candidato medido: WHCA\* + `locked` + layout `blocks_2x2` = 910 proy (6 seeds).**
-  Batería en banco a la SOTA. **NO está integrado todavía** — las piezas están sueltas:
-  - `locked` → en `whca.py` **sin commitear** (subió la baseline 876→888).
-  - `blocks_2x2` (`create_layout`) → **solo en scratchpad**, en ningún fichero del repo.
-  - `submission.py` → todavía el WHCA\* viejo (~876, layout baseline, sin `locked`).
-- **PASOS PARA SUBIR ESTO:**
-  1. Integrar `locked` (de `whca.py`) + `blocks_2x2` (de scratchpad) en `submission.py`.
-  2. `python tools/benchmark.py submissions/submission.py --count 20` → confirma ~910 proy.
-  3. `python refugio-starter-kit/tools/check_submission.py submissions/submission.py` (valida layout+reglas).
-  4. Subir en la ventana. Fallback si algo falla: `cp submissions/policy_pibt.py submissions/submission.py` (PIBT vivo, 759).
-- ⚠️ **Calibración:** banco ~3-4% alto → 910 proy ≈ ~880 oficial, **muy cerca de los 888**. El submit es
-  el único que dice si de verdad bate la frontera (o solo la roza). Vale el tiro igual: récord propio seguro.
+- **EN VIVO (nuestro récord): 866 entregas** — WHCA\* + `locked` + layout `blocks_2x2` (`submission.py`, ya subido).
+  Sube desde el 759 (PIBT) anterior. La frontera global está en **888** (Equipo 03) → seguimos por debajo → 0 pts de récord.
+  (El scraper puede tardar un refresco en mostrar el 866 y su job id.)
+- ⚠️ **Lección del submit:** el banco proyectó **910 (6 seeds)**; el oficial fue **866** (~5% menos, peor que el
+  3-4% que asumíamos). **Mide a `--count 20+` y descuenta ~5%** para estimar el oficial — no subas fiándote de 6 seeds.
+- `submission.py` ya está integrado y commiteado (= `whca.py`). Fallback para revertir: `cp submissions/policy_pibt.py submissions/submission.py` (PIBT 759).
 
 ## Números verificados (banco + oficial)
 
@@ -36,7 +28,7 @@ Plataforma: https://refugio-hackathon-nine.vercel.app/ · **1 submit / 30 min**.
 
 | Métrica | Mejor global | Nuestro |
 |---|---|---|
-| Entregas | ver `scraped/INDEX.md` (se refresca cada 15 min por CI) | 759 |
+| Entregas | ver `scraped/INDEX.md` (frontera 888; se refresca cada 15 min por CI) | 866 |
 | Puntos acumulados | ver `scraped/INDEX.md` | 7938 |
 
 > La frontera se mueve (was 882, ya 888…). **No la hardcodees aquí**: lee el número
@@ -49,14 +41,14 @@ la frontera viva** (no solo nuestro propio récord).
 ## Cadencia y estrategia
 
 - Último submit: ~10:19 UTC → **próxima ventana ~10:49 UTC**.
-- **Solo subo si el banco (`--count 20+`) bate los 759 en vivo**, y por el
+- **Solo subo si el banco (`--count 20+`, no 6) bate los 866 en vivo** descontando ~5%, y por el
   **margen mínimo** (gana la integral, no el pico). Bala buena para el final.
-- Candidato listo (en cuanto se integre): WHCA\* + `locked` + `blocks_2x2` (~910 proy). Ver "Estado actual"
-  para los 4 pasos. Valida con `check_submission.py` y sube en la ventana.
+- Para sumar puntos hay que pasar de **888** (frontera). 866 ya está subido; lo siguiente tiene que apuntar a >888 oficial.
 
 ## Historial
 
 | Job | Entregas | Pts | Notas |
 |---|---|---|---|
 | `ce08283218fa` | 397 | 7938 | BFS al goal más cercano; primer submit, récord global en su momento |
-| `8960d3b7806b` | 759 | 0 | PIBT cooperativo; superó nuestro 397. 0 pts (no batió la frontera global 882) |
+| `8960d3b7806b` | 759 | 0 | PIBT cooperativo; superó nuestro 397. 0 pts (no batió la frontera) |
+| _(pend. scraper)_ | 866 | 0 | WHCA* + `locked` + `blocks_2x2`. Banco 6-seed proyectó 910 → oficial 866 (<888) |
