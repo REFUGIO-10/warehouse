@@ -6,9 +6,13 @@
 
 ## Estado
 
-- **EN VIVO: 397 entregas — récord global de entregas** (job `ce08283218fa`, policy BFS).
-- **Suelo a batir:** BFS ~**131 entregas/seed** (banco) → proyección oficial ~**394**.
-  Cualquier layout o policy nueva tiene que **superar ~393 en el banco** para subirse.
+- **Nosotros EN VIVO: 397 entregas** (~131/seed, policy BFS).
+- **SOTA real = Equipo 02: ~301/seed → proy. ~904** (`submissions/sota_equipo02.py`, referencia).
+  Es **2,3x lo nuestro**, con la MISMA layout baseline + un **planificador A* cooperativo (MAPF)**.
+  → **La policy es la palanca dominante ahora mismo.** Hay que cerrar ese hueco.
+- **La layout es la palanca SOBRE una policy buena:** el SOTA dejó la layout en baseline.
+  Sweep inicial (layouts sobre la policy SOTA): baseline 301, su transpuesta 300, `wide_avenues` 59
+  (sin pasillos transversales se hunde). Batir 301 con layout requiere algo más listo que las variantes obvias.
 - Operación de subida (1 submit / 30 min): ver **`submissions/SUBMITS.md`**.
 
 ## Estructura del repo
@@ -33,9 +37,12 @@ Editas **solo `create_layout()`**. El `act()` es el BFS probado, para que tus la
 - **Objetivo:** demanda uniforme sobre tus 960 estanterías; robots desde los 4 bordes.
   Minimiza el viaje medio base↔estantería **sin estrechar pasillos** (atascos). Búsqueda local moviendo estanterías.
 - **Reglas (el validador rechaza si no):** 960 estanterías únicas en `1..50`; ninguna sobre
-  una celda de entrada de base; cada estantería con ≥1 vecina EMPTY (pickup); todas las
-  celdas walkable conexas; `create_layout()` determinista.
-- **Mide:** `python tools/benchmark.py submissions/layout_dev.py --count 20`
+  una celda de entrada de base; cada estantería con ≥1 vecina EMPTY (pickup) → **tiras ≤2 de ancho**
+  (un bloque más ancho deja celdas internas sin pickup = inválido); todas las celdas walkable
+  conexas; `create_layout()` determinista. Los **pasillos transversales son críticos** (sin ellos se hunde).
+- **Mide sobre la MEJOR policy** (no sobre el BFS débil): `python tools/sweep_layouts.py --count 5`
+  prueba tus layouts encima del act del SOTA. Añade candidatas en `CANDIDATES`; las inválidas se
+  reportan y se saltan. Para iterar la layout aislada: `python tools/benchmark.py submissions/layout_dev.py --count 20`
 
 ### Rama B · Policy → `submissions/policy_dev.py`
 Editas **solo `act()`** y sus helpers. El `create_layout()` es el baseline, para medir la policy aislada.
@@ -84,7 +91,8 @@ Submission = **un único `.py`** con `create_layout()` y `act(observation)`.
 | Policy | entregas/seed | proy. oficial | nota |
 |---|---|---|---|
 | Greedy (paso a paso hacia el goal) | ~12 | ~37 | se atasca contra los bloques y hace WAIT |
-| **BFS al goal más cercano** | **~131** | **~394 (oficial 397)** | **suelo actual = lo que está en vivo** |
+| **BFS al goal más cercano** | **~131** | **~394 (oficial 397)** | lo nuestro en vivo |
+| **A* cooperativo MAPF (Equipo 02)** | **~301** | **~904** | SOTA público, misma layout. La policy es el 2,3x. |
 
 (En la layout baseline, BFS ≈ no se atasca; la ganancia ahora está en **mejorar la layout (A)**,
 porque con pasillos donde el greedy moriría es donde una buena policy/layout despega.)

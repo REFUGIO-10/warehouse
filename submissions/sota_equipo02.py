@@ -1,3 +1,9 @@
+# === REFERENCE ONLY — NOT our submission ===
+# Public SOTA solution by Equipo 02, fetched from
+#   https://refugio-hackathon-nine.vercel.app/code/1b294895f546
+# Cooperative A* MAPF planner. Local bench: ~301 deliveries/seed (proj ~904).
+# Use as a base to improve (better layout on top); do NOT submit verbatim.
+
 """REFUGIO Warehouse Challenge submission.
 
 Centralized cooperative multi-agent pathfinding for 96 warehouse robots.
