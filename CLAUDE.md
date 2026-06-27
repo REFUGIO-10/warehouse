@@ -8,20 +8,17 @@
 
 ## Estado
 
-- **En vivo: 759** (último submit registrado; la fuente de verdad es `scraped/INDEX.md`).
-- 🚀 **MEJOR medida (sin subir aún): WHCA\* + `locked` + layout `blocks_2x2` = 910 proy (6 seeds).**
-  Bate en banco a la SOTA pública (888). **PERO las piezas están SUELTAS, hay que integrarlas:**
-  - `locked` (anti-contención: 2 robots no apuntan a la misma estantería) → en `whca.py` **sin commitear**.
-    Subió la baseline 876→888 él solo.
-  - `blocks_2x2` (`create_layout`) → **solo en scratchpad, en ningún fichero del repo todavía**.
-  - `submission.py` sigue siendo el WHCA\* viejo (~876, layout baseline, sin `locked`).
-  - **Acción:** integrar `locked` + `blocks_2x2` en `submission.py`, `check_submission.py`, subir. Ver `SUBMITS.md`.
-- **SOTA pública: 888 (Equipo 03) — y la lograron por LAYOUT** (bloques 2×3, +38 sobre la canónica), no por policy.
-  Equipo 02 = 884. `sota_equipo02.py` (A* cooperativo, 882) queda como referencia de policy.
-- **Las DOS palancas mueven** (esto corrige la creencia vieja de "layout agotado"): el tweak `locked` (+12)
-  **y** layouts en bloques finos 2×2/2×3 con pasillos en ambas direcciones (+22). Detalle en `STRATEGY.md`.
-- **Calibración:** el banco va ~3-4% alto vs oficial → 910 proy ≈ **~880 oficial**, en el entorno de los 888.
-  El banco **rankea fiel** (blocks_2x2 > baseline es real), pero **solo un submit confirma** si bate la frontera.
+- **Mejor marca oficial: 866** (`submission.py` = WHCA\* + `locked` + layout `blocks_2x2`, ya subido).
+  Sube desde 759, pero **sigue por DEBAJO de la frontera 888** → 0 pts de récord. (El scraper puede
+  mostrar 759 hasta el próximo refresco.)
+- ⚠️ **El banco MINTIÓ alto:** ese mismo combo proyectaba **910 en banco (6 seeds)** → oficial **866** (~5% menos).
+  La calibración real es peor que el 3-4% que creíamos, y con 6 seeds los ±22 entre layouts caen DENTRO del
+  ruido. **Re-mide cualquier layout a `--count 20+` y trata el oficial como ≈ 0,95× la proyección.**
+- `submission.py` está integrado y commiteado (= `whca.py`): WHCA\* + `locked` + bloques 2×2. NO el WHCA\* viejo.
+- **SOTA pública: 888 (Equipo 03), lograda por LAYOUT** (bloques 2×3, +38 oficial sobre la canónica). Equipo 02 = 884.
+- **¿El layout es palanca?** Para Equipo 03 sí (888 oficial). Para nosotros, el +22 de `blocks_2x2` vs baseline
+  era 6-seed (ruido) y el submit dio 866<888 → **no demostrado en oficial por nuestra parte**. Re-medir a 20+
+  seeds antes de fiarse. El tweak `locked` (policy) sí parece real (+12 banco). Detalle en `STRATEGY.md`.
 - Operación de subida (1 submit / 30 min): ver **`submissions/SUBMITS.md`**.
 
 ## Estructura del repo
@@ -31,9 +28,9 @@ warehouse/
 ├── AGENTS.md              ← estás aquí (gateway)
 ├── refugio-starter-kit/   ← motor oficial. NO meter cosas nuestras aquí.
 ├── submissions/           ← nuestro trabajo
-│   ├── submission.py      ← INTEGRACIÓN: lo que se sube. AHORA = WHCA* viejo (~876, sin locked). Pendiente integrar la mejor.
-│   ├── whca.py            ← WHCA* + locked (anti-contención). Baseline 888. Cambio locked SIN commitear.
-│   ├── policy_pibt.py     ← PIBT cooperativo — lo que ESTÁ EN VIVO (759). Fallback.
+│   ├── submission.py      ← INTEGRACIÓN: lo subido. = WHCA* + locked + blocks_2x2. OFICIAL 866 (bench proy era 910).
+│   ├── whca.py            ← = submission.py (WHCA* + locked + bloques 2×2). locked = anti-contención (+12 banco).
+│   ├── policy_pibt.py     ← PIBT cooperativo (759). Fallback de policy.
 │   ├── sota_equipo02.py   ← REFERENCIA (Equipo 02, 882). No subir tal cual.
 │   ├── pibt_v2.py         ← experimento de layout sobre PIBT (5 bandas, más pasillos transversales)
 │   ├── layout_dev.py      ← RAMA A (edita solo create_layout)
@@ -51,10 +48,11 @@ warehouse/
 
 ### Rama A · Layout → `submissions/layout_dev.py`
 Editas **solo `create_layout()`**. El `act()` es el BFS probado, para que tus layouts den entregas reales.
-- **GANADOR (27-jun):** bloques finos **2×2 / 2×3 separados por pasillos de 1 celda en AMBAS direcciones**
-  → hay un cross-aisle en cada borde de bloque y WHCA\* rodea la congestión por cualquier lado.
-  En banco: `blocks_2x2`=910, `blocks_2x3`=907 vs baseline 888. **`blocks_3x3` es INVÁLIDO** (3-ancho
-  atrapa celdas centrales sin pickup). Las layouts de filas largas (cross-aisle cada 5-10 filas) **regresan**.
+- **Pista actual (27-jun):** bloques finos **2×2 / 2×3 separados por pasillos de 1 celda en AMBAS direcciones**
+  → cross-aisle en cada borde de bloque, WHCA\* rodea la congestión por cualquier lado. **`blocks_3x3` INVÁLIDO**
+  (3-ancho atrapa celdas centrales sin pickup); las filas largas (cross-aisle cada 5-10 filas) **regresan**.
+- ⚠️ **Realidad del submit:** `blocks_2x2` proyectaba 910 en banco (6 seeds) pero dio **866 oficial (<888)**.
+  El +22 vs baseline está DENTRO del ruido a 6 seeds. **Mide a `--count 20+`**, no a 6, antes de declarar ganador.
 - **Objetivo:** demanda uniforme sobre tus 960 estanterías; robots desde los 4 bordes.
   Minimiza el viaje medio base↔estantería **sin estrechar pasillos** (atascos). Búsqueda local moviendo estanterías.
 - **Reglas (el validador rechaza si no):** 960 estanterías únicas en `1..50`; ninguna sobre
@@ -105,8 +103,8 @@ Submission = **un único `.py`** con `create_layout()` y `act(observation)`.
   banco evalúa sobre 20-100 seeds propios: baja varianza, **sin sobreajustar** a round-0/1/2.
 - **Dos presupuestos de 180 s SEPARADOS:** setup (import + `create_layout`) y `act()` acumulado sobre
   los 3 seeds (~86.400 llamadas → **~2 ms/llamada**). → precompute en import; nada caro por tick.
-- **AMBAS palancas mueven:** policy (tweak `locked`, +12) Y layout en bloques finos 2×2/2×3 (+22).
-  La creencia vieja de "layout agotado" venía de probar solo filas largas; los bloques sí mueven (datos en `STRATEGY.md`).
+- **Palancas:** policy (tweak `locked`, +12 banco) parece real. Layout en bloques 2×2/2×3: Equipo 03 lo confirmó
+  en oficial (888), pero nuestro +22 en banco era 6-seed y el submit dio 866<888 → re-medir a 20+ (datos en `STRATEGY.md`).
 - Paquetes en submission: stdlib + `numpy scipy networkx sortedcontainers numba`. Prohibido: ficheros,
   red, threads/procesos, reloj, imports dinámicos, internals del simulador.
 
@@ -119,13 +117,13 @@ Submission = **un único `.py`** con `create_layout()` y `act(observation)`.
 | PIBT cooperativo (`policy_pibt.py`) | ~782 (oficial 759) | en vivo, act 0,24 s/seed |
 | A* cooperativo MAPF (Equipo 02) | ~904 (oficial 882) | referencia de policy |
 | WHCA* (`submission.py`, layout baseline) | ~876 | nuestra base actual; sin `locked` |
-| WHCA* + `locked` (layout baseline) | **~888** | `locked` solo: +12. Iguala la SOTA en banco |
-| **WHCA* + `locked` + `blocks_2x2`** | **~910** | **mejor medida.** Pendiente de integrar+subir |
-| WHCA* + `locked` + `blocks_2x3` | ~907 | bloques 2×3 |
+| WHCA* + `locked` (layout baseline) | ~888 banco | `locked` solo: +12 en banco |
+| **WHCA* + `locked` + `blocks_2x2`** (`submission.py`) | 910 banco / **866 OFICIAL** | subido. <888 frontera; banco ~5% alto |
+| WHCA* + `locked` + `blocks_2x3` | ~907 banco | bloques 2×3 (no subido) |
 
-(Las dos palancas suman: `locked` saca +12 sobre WHCA\* solo, y los bloques finos 2×2/2×3 otros ~+22.
-La SOTA pública 888 (Equipo 03) la lograron **por layout**, no por policy. Ojo: el banco va ~3-4% alto
-→ 910 proy ≈ ~880 oficial; rankea fiel, subir confirma. Detalle y log en `STRATEGY.md`.)
+(`locked` (policy) saca +12 en banco. El +22 de los bloques 2×2 era 6-seed y **NO se confirmó**: el submit dio
+**866 oficial < 888** (banco ~5% alto; ±22 entre layouts cae en el ruido a 6 seeds). La SOTA 888 (Equipo 03)
+sí es por layout pero medida en oficial. **Re-mide layouts a 20+ seeds.** Detalle y log en `STRATEGY.md`.)
 
 ## Estrategia de submits (resumen)
 
