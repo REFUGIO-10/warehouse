@@ -25,7 +25,7 @@ warehouse/
 ├── AGENTS.md              ← estás aquí (gateway)
 ├── refugio-starter-kit/   ← motor oficial. NO meter cosas nuestras aquí.
 ├── submissions/           ← nuestro trabajo
-│   ├── submission.py      ← INTEGRACIÓN: lo que se sube (BFS, = lo que está en vivo)
+│   ├── submission.py      ← INTEGRACIÓN: lo que se sube (PIBT, = lo que está en vivo)
 │   ├── layout_dev.py      ← RAMA A
 │   ├── policy_dev.py      ← RAMA B
 │   └── SUBMITS.md         ← log del operador de subida
@@ -89,7 +89,7 @@ Submission = **un único `.py`** con `create_layout()` y `act(observation)`.
   banco evalúa sobre 20-100 seeds propios: baja varianza, **sin sobreajustar** a round-0/1/2.
 - **Dos presupuestos de 180 s SEPARADOS:** setup (import + `create_layout`) y `act()` acumulado sobre
   los 3 seeds (~86.400 llamadas → **~2 ms/llamada**). → precompute en import; nada caro por tick.
-- **Layout es la mayor palanca de score; la policy es la segunda.**
+- **La policy es la palanca dominante ahora; el layout ya casi no mueve la aguja** (datos en `STRATEGY.md`).
 - Paquetes en submission: stdlib + `numpy scipy networkx sortedcontainers numba`. Prohibido: ficheros,
   red, threads/procesos, reloj, imports dinámicos, internals del simulador.
 
@@ -102,8 +102,8 @@ Submission = **un único `.py`** con `create_layout()` y `act(observation)`.
 | **PIBT cooperativo (`policy_pibt.py`)** | **~261** | **~782 (oficial 759)** | **lo nuestro en vivo**, act 0,24 s/seed |
 | A* cooperativo MAPF (Equipo 02) | ~301 | ~904 (oficial 882) | SOTA público. El gap a nosotros es la policy. |
 
-(En la layout baseline, BFS ≈ no se atasca; la ganancia ahora está en **mejorar la layout (A)**,
-porque con pasillos donde el greedy moriría es donde una buena policy/layout despega.)
+(El SOTA gana con mejor policy sobre la MISMA layout baseline; el sweep confirma que el layout
+mueve ±2/seed. El salto que falta está en la **policy + gastar el presupuesto**, no en el layout — ver `STRATEGY.md`.)
 
 ## Estrategia de submits (resumen)
 
