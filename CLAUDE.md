@@ -8,18 +8,20 @@
 
 ## Estado
 
-- **Nosotros EN VIVO: 759** (`submissions/policy_pibt.py`, PIBT — bench ~261/seed, 782 proy).
-  Confirmado por el scraper (`scraped/INDEX.md`, 10:52 UTC), job `8960d3b7806b`.
-- ⚠️ **`submission.py` AHORA = WHCA\*** (copia de `whca.py`, último commit), **NO** el PIBT en vivo.
-  **Sin banquear todavía** — `STRATEGY.md` lo lista como hilo abierto. **Antes de subir:** bánquéalo
-  (`--count 20+`) y confirma que bate 759 proy.; si no bate, restaura PIBT antes de la ventana.
-- **SOTA = Equipo 02: 882** (`submissions/sota_equipo02.py`, referencia — bench ~301/seed, A* cooperativo).
-  Gap ~16%, **y es de POLICY** (mismo layout baseline; su A* rutea mejor que nuestra PIBT).
-- **Tenemos 10x de presupuesto sin usar:** PIBT gasta ~0,24 s/seed de los 180 s. Hay margen para
-  una policy mucho más pesada (A* con ventana más larga, replanificación).
-- **La layout ya casi no es palanca:** sweep sobre PIBT → `horizontal_bands` +2/seed (ruido),
-  `wide_avenues` se hunde. Con tiras ≤2 + pasillos transversales, la baseline ya es casi óptima.
-  El 16% que falta está en la **policy**, no en el layout.
+- **En vivo: 759** (último submit registrado; la fuente de verdad es `scraped/INDEX.md`).
+- 🚀 **MEJOR medida (sin subir aún): WHCA\* + `locked` + layout `blocks_2x2` = 910 proy (6 seeds).**
+  Bate en banco a la SOTA pública (888). **PERO las piezas están SUELTAS, hay que integrarlas:**
+  - `locked` (anti-contención: 2 robots no apuntan a la misma estantería) → en `whca.py` **sin commitear**.
+    Subió la baseline 876→888 él solo.
+  - `blocks_2x2` (`create_layout`) → **solo en scratchpad, en ningún fichero del repo todavía**.
+  - `submission.py` sigue siendo el WHCA\* viejo (~876, layout baseline, sin `locked`).
+  - **Acción:** integrar `locked` + `blocks_2x2` en `submission.py`, `check_submission.py`, subir. Ver `SUBMITS.md`.
+- **SOTA pública: 888 (Equipo 03) — y la lograron por LAYOUT** (bloques 2×3, +38 sobre la canónica), no por policy.
+  Equipo 02 = 884. `sota_equipo02.py` (A* cooperativo, 882) queda como referencia de policy.
+- **Las DOS palancas mueven** (esto corrige la creencia vieja de "layout agotado"): el tweak `locked` (+12)
+  **y** layouts en bloques finos 2×2/2×3 con pasillos en ambas direcciones (+22). Detalle en `STRATEGY.md`.
+- **Calibración:** el banco va ~3-4% alto vs oficial → 910 proy ≈ **~880 oficial**, en el entorno de los 888.
+  El banco **rankea fiel** (blocks_2x2 > baseline es real), pero **solo un submit confirma** si bate la frontera.
 - Operación de subida (1 submit / 30 min): ver **`submissions/SUBMITS.md`**.
 
 ## Estructura del repo
@@ -29,9 +31,9 @@ warehouse/
 ├── AGENTS.md              ← estás aquí (gateway)
 ├── refugio-starter-kit/   ← motor oficial. NO meter cosas nuestras aquí.
 ├── submissions/           ← nuestro trabajo
-│   ├── submission.py      ← INTEGRACIÓN: lo que se sube. AHORA = WHCA* (copia de whca.py, SIN banquear)
-│   ├── policy_pibt.py     ← PIBT cooperativo — lo que ESTÁ EN VIVO (759). Fallback si WHCA* no bate.
-│   ├── whca.py            ← WHCA* (ventana espacio-temporal). Candidato; pendiente de banco vs PIBT.
+│   ├── submission.py      ← INTEGRACIÓN: lo que se sube. AHORA = WHCA* viejo (~876, sin locked). Pendiente integrar la mejor.
+│   ├── whca.py            ← WHCA* + locked (anti-contención). Baseline 888. Cambio locked SIN commitear.
+│   ├── policy_pibt.py     ← PIBT cooperativo — lo que ESTÁ EN VIVO (759). Fallback.
 │   ├── sota_equipo02.py   ← REFERENCIA (Equipo 02, 882). No subir tal cual.
 │   ├── pibt_v2.py         ← experimento de layout sobre PIBT (5 bandas, más pasillos transversales)
 │   ├── layout_dev.py      ← RAMA A (edita solo create_layout)
@@ -49,6 +51,10 @@ warehouse/
 
 ### Rama A · Layout → `submissions/layout_dev.py`
 Editas **solo `create_layout()`**. El `act()` es el BFS probado, para que tus layouts den entregas reales.
+- **GANADOR (27-jun):** bloques finos **2×2 / 2×3 separados por pasillos de 1 celda en AMBAS direcciones**
+  → hay un cross-aisle en cada borde de bloque y WHCA\* rodea la congestión por cualquier lado.
+  En banco: `blocks_2x2`=910, `blocks_2x3`=907 vs baseline 888. **`blocks_3x3` es INVÁLIDO** (3-ancho
+  atrapa celdas centrales sin pickup). Las layouts de filas largas (cross-aisle cada 5-10 filas) **regresan**.
 - **Objetivo:** demanda uniforme sobre tus 960 estanterías; robots desde los 4 bordes.
   Minimiza el viaje medio base↔estantería **sin estrechar pasillos** (atascos). Búsqueda local moviendo estanterías.
 - **Reglas (el validador rechaza si no):** 960 estanterías únicas en `1..50`; ninguna sobre
@@ -99,21 +105,27 @@ Submission = **un único `.py`** con `create_layout()` y `act(observation)`.
   banco evalúa sobre 20-100 seeds propios: baja varianza, **sin sobreajustar** a round-0/1/2.
 - **Dos presupuestos de 180 s SEPARADOS:** setup (import + `create_layout`) y `act()` acumulado sobre
   los 3 seeds (~86.400 llamadas → **~2 ms/llamada**). → precompute en import; nada caro por tick.
-- **La policy es la palanca dominante ahora; el layout ya casi no mueve la aguja** (datos en `STRATEGY.md`).
+- **AMBAS palancas mueven:** policy (tweak `locked`, +12) Y layout en bloques finos 2×2/2×3 (+22).
+  La creencia vieja de "layout agotado" venía de probar solo filas largas; los bloques sí mueven (datos en `STRATEGY.md`).
 - Paquetes en submission: stdlib + `numpy scipy networkx sortedcontainers numba`. Prohibido: ficheros,
   red, threads/procesos, reloj, imports dinámicos, internals del simulador.
 
 ## Números verificados (corrige creencias viejas)
 
-| Policy | entregas/seed | proy. oficial | nota |
-|---|---|---|---|
-| Greedy (paso a paso hacia el goal) | ~12 | ~37 | se atasca contra los bloques y hace WAIT |
-| BFS al goal más cercano | ~131 | ~394 (oficial 397) | submission inicial |
-| **PIBT cooperativo (`policy_pibt.py`)** | **~261** | **~782 (oficial 759)** | **lo nuestro en vivo**, act 0,24 s/seed |
-| A* cooperativo MAPF (Equipo 02) | ~301 | ~904 (oficial 882) | SOTA público. El gap a nosotros es la policy. |
+| Solución (policy + layout) | proy. (×3) | nota |
+|---|---|---|
+| Greedy (paso a paso hacia el goal) | ~37 | se atasca contra los bloques y hace WAIT |
+| BFS al goal más cercano | ~394 (oficial 397) | submission inicial |
+| PIBT cooperativo (`policy_pibt.py`) | ~782 (oficial 759) | en vivo, act 0,24 s/seed |
+| A* cooperativo MAPF (Equipo 02) | ~904 (oficial 882) | referencia de policy |
+| WHCA* (`submission.py`, layout baseline) | ~876 | nuestra base actual; sin `locked` |
+| WHCA* + `locked` (layout baseline) | **~888** | `locked` solo: +12. Iguala la SOTA en banco |
+| **WHCA* + `locked` + `blocks_2x2`** | **~910** | **mejor medida.** Pendiente de integrar+subir |
+| WHCA* + `locked` + `blocks_2x3` | ~907 | bloques 2×3 |
 
-(El SOTA gana con mejor policy sobre la MISMA layout baseline; el sweep confirma que el layout
-mueve ±2/seed. El salto que falta está en la **policy + gastar el presupuesto**, no en el layout — ver `STRATEGY.md`.)
+(Las dos palancas suman: `locked` saca +12 sobre WHCA\* solo, y los bloques finos 2×2/2×3 otros ~+22.
+La SOTA pública 888 (Equipo 03) la lograron **por layout**, no por policy. Ojo: el banco va ~3-4% alto
+→ 910 proy ≈ ~880 oficial; rankea fiel, subir confirma. Detalle y log en `STRATEGY.md`.)
 
 ## Estrategia de submits (resumen)
 

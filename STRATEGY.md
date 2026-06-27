@@ -5,20 +5,28 @@
 
 ## TL;DR
 
-- **En vivo: 759** (`policy_pibt.py`). **SOTA: 882** (Equipo 02). Gap ~16%.
-- **El gap es de POLICY, no de layout.** Misma layout baseline en ambos; su A* cooperativo
-  rutea mejor que nuestra PIBT.
-- **Usamos 0,24 s de los 180 s de presupuesto** → 10x de cómputo sin tocar.
-- **Conclusión:** el siguiente salto sale de **una policy más fuerte que gaste el presupuesto**
-  (A* con ventana larga + replanificación), no de tocar el layout.
+- **En vivo: 759** (último submit; fuente de verdad `scraped/INDEX.md`). **SOTA pública: 888** (Equipo 03).
+- **Nuestra mejor MEDIDA (sin subir): WHCA\* + `locked` + layout `blocks_2x2` = 910 proy (6 seeds).**
+  Piezas sueltas (`locked` sin commitear en `whca.py`; `blocks_2x2` solo en scratchpad) → **falta integrar en `submission.py`**.
+- **CORRECCIÓN de la tesis vieja:** decíamos "el gap es de policy, el layout está agotado". **Falso.**
+  Equipo 03 batió el techo **por layout** (+38). Las DOS palancas mueven:
+  - *Policy:* el set `locked` (2 robots no apuntan a la misma estantería) subió la baseline **876→888**.
+  - *Layout:* bloques finos **2×2/2×3 con pasillos de 1 celda en ambas direcciones** → 910/907 proy.
+    (Las layouts regulares de filas largas —batch 1/2— regresan; por eso creíamos que estaba agotado.)
+- **Calibración:** el banco va ~3-4% alto → 910 proy ≈ ~880 oficial, en el entorno de los 888 → **subir confirma**.
+- **Presupuesto:** WHCA\* aún cabe de sobra en los 180 s; margen para ventana/replan más agresivos.
 
 ## La estrategia ahora mismo
 
-### 1. La policy es la palanca; el layout está agotado
-Medido en banco (ver tabla abajo): cambiar el layout sobre una policy buena mueve **±2/seed (ruido)**.
-La restricción del problema (tiras de estanterías ≤2 de ancho por la regla de pickup + pasillos
-transversales obligatorios + demanda uniforme) hace que la **baseline ya sea casi óptima**. No merece
-la pena grinding de layouts a mano. El 16% que falta está en cómo se mueven los 96 robots.
+### 1. Layout Y policy mueven — la FORMA del layout es lo que importa
+**Corrección (27-jun).** La tesis previa ("layout agotado, ±2/seed") era falsa: venía de probar solo
+layouts REGULARES (filas de racks largas con cross-aisle cada 5-10 filas → robots atrapados en la fila;
+ver batch 1/2 abajo). Equipo 03 batió el techo cambiando el layout: bloques **2×2/2×3** separados por
+pasillos de 1 celda en AMBAS direcciones → hay un cross-aisle en CADA borde de bloque, así WHCA\* rodea
+la congestión por cualquier lado. Replicado en banco: `blocks_2x2`=910, `blocks_2x3`=907 vs baseline 888.
+Sigue valiendo: bloques **≤2 de ancho** (`blocks_3x3` es **INVÁLIDO** — atrapa celdas centrales sin pickup)
+y **pasillos transversales obligatorios** (`wide_aisle_full` sin ellos = 192). La policy también mueve
+(el tweak `locked` saca +12); ambas se suman.
 
 ### 2. Gastar el presupuesto (la oportunidad clara)
 Nuestra PIBT resuelve en 0,24 s/seed; el SOTA en 2,34 s/seed; el límite es **180 s**. Tenemos margen
@@ -48,22 +56,30 @@ Detalle operativo en `submissions/SUBMITS.md`.
 Banco = media de entregas/seed sobre seeds propios; proyección oficial = ×3. El banco va **~3-4% alto**
 vs oficial (calibración: 904→882, 782→759), pero **rankea fiel** (la estadística es idéntica entre seeds).
 
-| Enfoque | Banco /seed | Proy. | Oficial | Veredicto |
+| Enfoque (policy + layout) | Banco /seed | Proy. | Oficial | Veredicto |
 |---|---|---|---|---|
 | Greedy (paso a paso al goal) | ~12 | ~37 | — | ❌ Se atasca contra los bloques y hace WAIT. |
 | **BFS al goal más cercano** | ~131 | ~394 | **397** | 1er submit. Rutea alrededor de shelves; trata robots como muros. |
 | Reserva por tick **naïve** | ~23 | ~69 | — | ❌ ~5x peor que BFS. Gridlock: 83% WAIT (sin follow-moves/desync). |
 | **PIBT cooperativo** (`policy_pibt.py`) | ~261 | ~782 | **759** | ✅ **En vivo.** Campos de distancia + reservas + follow-moves + yield. act 0,24 s/seed. |
-| A\* cooperativo MAPF (`sota_equipo02.py`) | ~301 | ~904 | **882** | SOTA público (Equipo 02). Ventana espacio-temporal + reservas. act 2,34 s/seed. |
+| A\* cooperativo MAPF (`sota_equipo02.py`) | ~301 | ~904 | **882** | Referencia de policy (Equipo 02). Ventana espacio-temporal + reservas. act 2,34 s/seed. |
+| WHCA\* (`submission.py`, layout baseline) | ~292 | ~876 | — | Nuestra implementación; cell+edge reservations. Sin `locked`. |
+| **WHCA\* + `locked`** (layout baseline) | ~296 | **~888** | — | `locked` = no 2 robots a la misma estantería. **+12 sobre WHCA\* solo.** En `whca.py` (sin commitear). |
+| **WHCA\* + `locked` + `blocks_2x2`** | ~303 | **~910** | — | ✅ **Mejor medida.** Pendiente de integrar en `submission.py` + subir. |
+| WHCA\* + `locked` + `blocks_2x3` | ~302 | ~907 | — | Bloques 2×3 (la forma de Equipo 03). |
 
-### Sweep de layouts (sobre policy fija) — `tools/sweep_layouts.py`
-El layout casi no mueve la aguja sobre una policy buena:
+### Sweep de layouts — `tools/sweep_layouts.py` (todo medido con WHCA\*)
+El layout **sí** mueve la aguja, pero solo con la forma correcta (bloques finos, no filas largas):
 
-| Layout | sobre SOTA /seed | sobre PIBT /seed | nota |
-|---|---|---|---|
-| baseline (bloques 2-ancho, 4 bandas) | 301 | 261 | referencia |
-| horizontal_bands (transpuesta) | 300 | 263 | empata (simétrico) |
-| wide_avenues (tiras altas, sin bandas) | 59 | 67 | ❌ sin pasillos transversales → colapsa |
+| Layout | proy. (WHCA\*+locked) | nota |
+|---|---|---|
+| **`blocks_2x2`** | **910** | ✅ bloques 2×2, pasillo 1-celda en ambas direcciones → cross-aisle en cada borde |
+| `blocks_2x3` | 907 | bloques 2×3 (forma de Equipo 03, +38 sobre canónica) |
+| baseline (bloques 2-ancho, 4 bandas) | 888 | referencia |
+| thin/dense/compact (batch 1/2) | 859–876 | ❌ regresan: más pasillos = más área = viaje más largo |
+| over-compaction | 664 | ❌ demasiado denso |
+| `blocks_3x3` | INVÁLIDO | bloques 3-ancho atrapan celdas centrales sin pickup |
+| `wide_aisle_full` (sin cross-aisles) | 192 | ❌ confirma que los pasillos transversales son vitales |
 
 ## Hechos verificados del motor (no asumir, está en el código)
 
@@ -78,17 +94,19 @@ El layout casi no mueve la aguja sobre una policy buena:
 - **`act()` se llama por robot en orden de `robot_id`, mismo proceso, globals persisten** → permite
   coordinación con estado global por tick (lo que usa PIBT).
 - **Central minimiza la distancia media a todas las bases**, pero la **congestión** es el contrapeso
-  → es búsqueda empírica, no teoría. (En la práctica el layout apenas importa con buena policy.)
+  → es búsqueda empírica, no teoría. La FORMA del layout sí importa: bloques finos 2×2/2×3 con cross-aisle
+  en cada borde dejan a la policy rodear la congestión (+22 proy.); las filas largas la atrapan.
 - Paquetes en submission: stdlib + `numpy scipy networkx sortedcontainers numba`. Prohibido ficheros,
   red, threads, reloj, imports dinámicos, internals del simulador.
 
 ## Hilos abiertos / próximos experimentos
 
-- [ ] `whca.py` (WHCA*) — landearlo y compararlo vs PIBT en banco.
-- [ ] **`tools/sweep_params.py`**: barrer `WINDOW`, `NODE_CAP`, profundidad de replan → exprimir los 180 s.
-- [ ] Portar/mejorar el A* del SOTA y batir 882.
-- [ ] Búsqueda automática de layout (annealing) — upside probablemente <10%, baja prioridad.
-- [ ] Scraper del leaderboard + ingesta automática de soluciones públicas rivales.
+- [x] `whca.py` (WHCA*) landeado; baseline 876, con `locked` 888.
+- [x] `blocks_2x2`/`blocks_2x3` baten la SOTA en banco (910/907). La forma del layout ES palanca.
+- [ ] **INTEGRAR + SUBIR:** meter `locked` + `blocks_2x2` en `submission.py`, `check_submission.py`, subir (1/30 min).
+- [ ] Afinar tamaño de bloque alrededor de 2×2 y combinar con `tools/sweep_params.py` (`WINDOW`/`NODE_CAP`/replan).
+- [ ] Confirmar el oficial vs el ~880 proyectado (calibración 3-4%) con un submit real.
+- [x] Scraper del leaderboard + ingesta automática (CI cada 15 min → `scraped/`).
 
 ## Herramientas
 
