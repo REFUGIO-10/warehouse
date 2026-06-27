@@ -6,13 +6,14 @@
 
 ## Estado
 
-- **Nosotros EN VIVO: 397 entregas** (~131/seed, policy BFS).
-- **SOTA real = Equipo 02: ~301/seed → proy. ~904** (`submissions/sota_equipo02.py`, referencia).
-  Es **2,3x lo nuestro**, con la MISMA layout baseline + un **planificador A* cooperativo (MAPF)**.
-  → **La policy es la palanca dominante ahora mismo.** Hay que cerrar ese hueco.
-- **La layout es la palanca SOBRE una policy buena:** el SOTA dejó la layout en baseline.
-  Sweep inicial (layouts sobre la policy SOTA): baseline 301, su transpuesta 300, `wide_avenues` 59
-  (sin pasillos transversales se hunde). Batir 301 con layout requiere algo más listo que las variantes obvias.
+- **Nosotros EN VIVO: 759** (`submissions/policy_pibt.py`, PIBT — bench ~261/seed, 782 proy).
+- **SOTA = Equipo 02: 882** (`submissions/sota_equipo02.py`, referencia — bench ~301/seed, A* cooperativo).
+  Gap ~16%, **y es de POLICY** (mismo layout baseline; su A* rutea mejor que nuestra PIBT).
+- **Tenemos 10x de presupuesto sin usar:** PIBT gasta ~0,24 s/seed de los 180 s. Hay margen para
+  una policy mucho más pesada (A* con ventana más larga, replanificación).
+- **La layout ya casi no es palanca:** sweep sobre PIBT → `horizontal_bands` +2/seed (ruido),
+  `wide_avenues` se hunde. Con tiras ≤2 + pasillos transversales, la baseline ya es casi óptima.
+  El 16% que falta está en la **policy**, no en el layout.
 - Operación de subida (1 submit / 30 min): ver **`submissions/SUBMITS.md`**.
 
 ## Estructura del repo
@@ -91,8 +92,9 @@ Submission = **un único `.py`** con `create_layout()` y `act(observation)`.
 | Policy | entregas/seed | proy. oficial | nota |
 |---|---|---|---|
 | Greedy (paso a paso hacia el goal) | ~12 | ~37 | se atasca contra los bloques y hace WAIT |
-| **BFS al goal más cercano** | **~131** | **~394 (oficial 397)** | lo nuestro en vivo |
-| **A* cooperativo MAPF (Equipo 02)** | **~301** | **~904** | SOTA público, misma layout. La policy es el 2,3x. |
+| BFS al goal más cercano | ~131 | ~394 (oficial 397) | submission inicial |
+| **PIBT cooperativo (`policy_pibt.py`)** | **~261** | **~782 (oficial 759)** | **lo nuestro en vivo**, act 0,24 s/seed |
+| A* cooperativo MAPF (Equipo 02) | ~301 | ~904 (oficial 882) | SOTA público. El gap a nosotros es la policy. |
 
 (En la layout baseline, BFS ≈ no se atasca; la ganancia ahora está en **mejorar la layout (A)**,
 porque con pasillos donde el greedy moriría es donde una buena policy/layout despega.)
