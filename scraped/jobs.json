@@ -1,0 +1,643 @@
+[
+  {
+    "job_id": "8960d3b7806b",
+    "team": "Equipo 10",
+    "team_slug": "team-10",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 759,
+    "runtime_s": 1.42,
+    "submitted": "2026-06-27 10:50:43.310 UTC",
+    "committed": "2026-06-27 10:50:56.174 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 246,
+        "blocked_moves": 3,
+        "remaining_distance": 1970,
+        "policy_time_s": 0.6
+      },
+      {
+        "run": 2,
+        "deliveries": 257,
+        "blocked_moves": 7,
+        "remaining_distance": 2205,
+        "policy_time_s": 0.47
+      },
+      {
+        "run": 3,
+        "deliveries": 256,
+        "blocked_moves": 3,
+        "remaining_distance": 2130,
+        "policy_time_s": 0.34
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns found. The submission uses only allowed-style imports, in-memory caching, BFS, and routing logic without filesystem, network, subprocess, dynamic code execution, obfuscation, or sandbox escape behavior.",
+    "code_saved_to": "scraped/solutions/0759__equipo-10__8960d3b7806b.py"
+  },
+  {
+    "job_id": "3b8bedf4c0df",
+    "team": "Equipo 04",
+    "team_slug": "team-04",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 879,
+    "runtime_s": 15.89,
+    "submitted": "2026-06-27 10:48:42.583 UTC",
+    "committed": "2026-06-27 10:49:11.407 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 282,
+        "blocked_moves": 48,
+        "remaining_distance": 2283,
+        "policy_time_s": 5.49
+      },
+      {
+        "run": 2,
+        "deliveries": 303,
+        "blocked_moves": 48,
+        "remaining_distance": 2346,
+        "policy_time_s": 5.12
+      },
+      {
+        "run": 3,
+        "deliveries": 294,
+        "blocked_moves": 42,
+        "remaining_distance": 2310,
+        "policy_time_s": 5.14
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns found; the submission uses only standard planning logic and allowed-style imports without filesystem, network, subprocess, dynamic code execution, or obfuscation.",
+    "code_saved_to": "scraped/solutions/0879__equipo-04__3b8bedf4c0df.py"
+  },
+  {
+    "job_id": "9686b7a8fc67",
+    "team": "Equipo 16",
+    "team_slug": "team-16",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 824,
+    "runtime_s": 36.28,
+    "submitted": "2026-06-27 10:45:56.713 UTC",
+    "committed": "2026-06-27 10:46:48.151 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 271,
+        "blocked_moves": 0,
+        "remaining_distance": 2380,
+        "policy_time_s": 12.79
+      },
+      {
+        "run": 2,
+        "deliveries": 276,
+        "blocked_moves": 0,
+        "remaining_distance": 2290,
+        "policy_time_s": 11.64
+      },
+      {
+        "run": 3,
+        "deliveries": 277,
+        "blocked_moves": 0,
+        "remaining_distance": 2358,
+        "policy_time_s": 11.84
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns found: uses only allowed-style static imports and in-memory routing logic, with no filesystem, network, subprocess, dynamic import, or code execution behavior.",
+    "code_saved_to": "scraped/solutions/0824__equipo-16__9686b7a8fc67.py"
+  },
+  {
+    "job_id": "dd10c86ea066",
+    "team": "Equipo 01",
+    "team_slug": "team-01",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 882,
+    "runtime_s": 15.96,
+    "submitted": "2026-06-27 10:44:40.437 UTC",
+    "committed": "2026-06-27 10:45:10.707 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 285,
+        "blocked_moves": 7,
+        "remaining_distance": 2316,
+        "policy_time_s": 5.53
+      },
+      {
+        "run": 2,
+        "deliveries": 302,
+        "blocked_moves": 13,
+        "remaining_distance": 2327,
+        "policy_time_s": 5.23
+      },
+      {
+        "run": 3,
+        "deliveries": 295,
+        "blocked_moves": 15,
+        "remaining_distance": 2306,
+        "policy_time_s": 5.06
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "The submission uses only allowed-style imports and implements deterministic path-planning logic without network access, filesystem access, subprocesses, dynamic imports, dynamic code execution, obfuscation, introspection, or other apparent security risks.",
+    "code_saved_to": "scraped/solutions/0882__equipo-01__dd10c86ea066.py"
+  },
+  {
+    "job_id": "9371888e2ef7",
+    "team": "Equipo 04",
+    "team_slug": "team-04",
+    "status": "safety_rejected",
+    "points": null,
+    "deliveries": null,
+    "runtime_s": null,
+    "submitted": "2026-06-27 10:42:14.108 UTC",
+    "committed": "2026-06-27 10:42:14.161 UTC",
+    "has_code": false,
+    "has_replay": false,
+    "runs": [],
+    "safety_status": "rejected",
+    "safety_review": "Local safety rules flagged: dynamic-import, introspection-escape Safety review blocked this submission: Local safety rules flagged: dynamic-import, introspection-escape (dynamic-import, introspection-escape) (self.__next_f=self.__next_f||[]).push([0]) self.__next_f.push([1,\"1:\\\"$Sreact.fragment\\\"\\n2:I[22016,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"\\\"]\\n3:I[39756,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"default\\\"]\\n4:I[37457,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"default\\\"]\\n6:I[97367,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"OutletBoundary\\\"]\\n7:\\\"$Sreact.suspense\\\"\\na:I[97367,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"ViewportBoundary\\\"]\\nc:I[97367,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"MetadataBoundary\\\"]\\ne:I[68027,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"default\\\",1]\\n10:I[27201,[\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\"],\\\"IconMark\\\"]\\n:HL[\\\"/_next/static/chunks/1sqvg_u2fgq6n.css?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"style\\\"]\\n:HC[\\\"/\\\",\\\"\\\"]\\n\"]) self.__next_f.push([1,\"0:{\\\"P\\\":null,\\\"c\\\":[\\\"\\\",\\\"jobs\\\",\\\"9371888e2ef7\\\"],\\\"q\\\":\\\"\\\",\\\"i\\\":false,\\\"f\\\":[[[\\\"\\\",{\\\"children\\\":[\\\"jobs\\\",{\\\"children\\\":[[\\\"jobId\\\",\\\"9371888e2ef7\\\",\\\"d\\\",null],{\\\"children\\\":[\\\"__PAGE__\\\",{}]}]}]},\\\"$undefined\\\",\\\"$undefined\\\",16],[[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[[[\\\"$\\\",\\\"link\\\",\\\"0\\\",{\\\"rel\\\":\\\"stylesheet\\\",\\\"href\\\":\\\"/_next/static/chunks/1sqvg_u2fgq6n.css?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"precedence\\\":\\\"next\\\",\\\"crossOrigin\\\":\\\"$undefined\\\",\\\"nonce\\\":\\\"$undefined\\\"}],[\\\"$\\\",\\\"script\\\",\\\"script-0\\\",{\\\"src\\\":\\\"/_next/static/chunks/3rdqn8rx95pw7.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"async\\\":true,\\\"nonce\\\":\\\"$undefined\\\"}],[\\\"$\\\",\\\"script\\\",\\\"script-1\\\",{\\\"src\\\":\\\"/_next/static/chunks/14mrh2-p_w84d.js?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"async\\\":true,\\\"nonce\\\":\\\"$undefined\\\"}]],[\\\"$\\\",\\\"html\\\",null,{\\\"lang\\\":\\\"en\\\",\\\"children\\\":[\\\"$\\\",\\\"body\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"header\\\",null,{\\\"className\\\":\\\"site-header\\\",\\\"children\\\":[[\\\"$\\\",\\\"$L2\\\",null,{\\\"className\\\":\\\"brand\\\",\\\"href\\\":\\\"/\\\",\\\"children\\\":\\\"REFUGIO\\\"}],[\\\"$\\\",\\\"nav\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/\\\",\\\"children\\\":\\\"Leaderboard\\\"}],[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/instructions\\\",\\\"children\\\":\\\"Instructions\\\"}],[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/jobs\\\",\\\"children\\\":\\\"Jobs\\\"}],[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/submit\\\",\\\"children\\\":\\\"Submit\\\"}]]}]]}],[\\\"$\\\",\\\"main\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$L3\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L4\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":[[[\\\"$\\\",\\\"title\\\",null,{\\\"children\\\":\\\"404: This page could not be found.\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"fontFamily\\\":\\\"system-ui,\\\\\\\"Segoe UI\\\\\\\",Roboto,Helvetica,Arial,sans-serif,\\\\\\\"Apple Color Emoji\\\\\\\",\\\\\\\"Segoe UI Emoji\\\\\\\"\\\",\\\"height\\\":\\\"100vh\\\",\\\"textAlign\\\":\\\"center\\\",\\\"display\\\":\\\"flex\\\",\\\"flexDirection\\\":\\\"column\\\",\\\"alignItems\\\":\\\"center\\\",\\\"justifyContent\\\":\\\"center\\\"},\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"style\\\",null,{\\\"dangerouslySetInnerHTML\\\":{\\\"__html\\\":\\\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\\\"}}],[\\\"$\\\",\\\"h1\\\",null,{\\\"className\\\":\\\"next-error-h1\\\",\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\",\\\"margin\\\":\\\"0 20px 0 0\\\",\\\"padding\\\":\\\"0 23px 0 0\\\",\\\"fontSize\\\":24,\\\"fontWeight\\\":500,\\\"verticalAlign\\\":\\\"top\\\",\\\"lineHeight\\\":\\\"49px\\\"},\\\"children\\\":404}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\"},\\\"children\\\":[\\\"$\\\",\\\"h2\\\",null,{\\\"style\\\":{\\\"fontSize\\\":14,\\\"fontWeight\\\":400,\\\"lineHeight\\\":\\\"49px\\\",\\\"margin\\\":0},\\\"children\\\":\\\"This page could not be found.\\\"}]}]]}]}]],[]],\\\"forbidden\\\":\\\"$undefined\\\",\\\"unauthorized\\\":\\\"$undefined\\\"}]}]]}]}]]}],{\\\"children\\\":[[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[null,[\\\"$\\\",\\\"$L3\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L4\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":\\\"$undefined\\\",\\\"forbidden\\\":\\\"$undefined\\\",\\\"unauthorized\\\":\\\"$undefined\\\"}]]}],{\\\"children\\\":[[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[null,[\\\"$\\\",\\\"$L3\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L4\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":\\\"$undefined\\\",\\\"forbidden\\\":\\\"$undefined\\\",\\\"unauthorized\\\":\\\"$undefined\\\"}]]}],{\\\"children\\\":[[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[\\\"$L5\\\",null,[\\\"$\\\",\\\"$L6\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$7\\\",null,{\\\"name\\\":\\\"Next.MetadataOutlet\\\",\\\"children\\\":\\\"$@8\\\"}]}]]}],{},null,false,null]},null,false,\\\"$@9\\\"]},null,false,\\\"$@9\\\"]},null,false,null],[\\\"$\\\",\\\"$1\\\",\\\"h\\\",{\\\"children\\\":[null,[\\\"$\\\",\\\"$La\\\",null,{\\\"children\\\":\\\"$Lb\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"hidden\\\":true,\\\"children\\\":[\\\"$\\\",\\\"$Lc\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$7\\\",null,{\\\"name\\\":\\\"Next.Metadata\\\",\\\"children\\\":\\\"$Ld\\\"}]}]}],null]}],false]],\\\"m\\\":\\\"$undefined\\\",\\\"G\\\":[\\\"$e\\\",[[\\\"$\\\",\\\"link\\\",\\\"0\\\",{\\\"rel\\\":\\\"stylesheet\\\",\\\"href\\\":\\\"/_next/static/chunks/1sqvg_u2fgq6n.css?dpl=dpl_846it45UMpVz4YhioRwaAHupnBXj\\\",\\\"precedence\\\":\\\"next\\\",\\\"crossOrigin\\\":\\\"$undefined\\\",\\\"nonce\\\":\\\"$undefined\\\"}]]],\\\"S\\\":false,\\\"h\\\":null,\\\"s\\\":\\\"$undefined\\\",\\\"l\\\":\\\"$undefined\\\",\\\"p\\\":\\\"$undefined\\\",\\\"d\\\":\\\"$undefined\\\"}\\n\"]) self.__next_f.push([1,\"f:[]\\n9:\\\"$Wf\\\"\\nb:[[\\\"$\\\",\\\"meta\\\",\\\"0\\\",{\\\"charSet\\\":\\\"utf-8\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"1\\\",{\\\"name\\\":\\\"viewport\\\",\\\"content\\\":\\\"width=device-width, initial-scale=1\\\"}]]\\n8:null\\nd:[[\\\"$\\\",\\\"title\\\",\\\"0\\\",{\\\"children\\\":\\\"REFUGIO · Warehouse Challenge\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"1\\\",{\\\"name\\\":\\\"description\\\",\\\"content\\\":\\\"Multi-agent warehouse routing hackathon.\\\"}],[\\\"$\\\",\\\"link\\\",\\\"2\\\",{\\\"rel\\\":\\\"icon\\\",\\\"href\\\":\\\"/platform/favicon.svg\\\"}],[\\\"$\\\",\\\"$L10\\\",\\\"3\\\",{}]]\\n\"]) self.__next_f.push([1,\"5:[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"narrow page-stack\\\",\\\"children\\\":[[\\\"$\\\",\\\"section\\\",null,{\\\"className\\\":\\\"hero compact\\\",\\\"children\\\":[[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"eyebrow\\\",\\\"children\\\":\\\"Job\\\"}],[\\\"$\\\",\\\"h1\\\",null,{\\\"children\\\":\\\"9371888e2ef7\\\"}],[\\\"$\\\",\\\"p\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$L2\\\",null,{\\\"href\\\":\\\"/teams/team-04\\\",\\\"children\\\":\\\"Equipo 04\\\"}]}]]}],[\\\"$\\\",\\\"section\\\",null,{\\\"className\\\":\\\"grid two\\\",\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Status\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"safety_rejected\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Safety\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"rejected\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Hackathon points\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"-\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Deliveries\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"-\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"card stat\\\",\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"children\\\":\\\"Policy time\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"children\\\":\\\"-\\\"}]]}]]}],[\\\"$\\\",\\\"section\\\",null,{\\\"className\\\":\\\"card\\\",\\\"children\\\":[[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"eyebrow\\\",\\\"children\\\":\\\"Scoring\\\"}],[\\\"$\\\",\\\"h2\\\",null,{\\\"children\\\":\\\"Job result\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"score-hero\\\",\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"className\\\":\\\"score-detail\\\",\\\"children\\\":\\\"Frontier points awarded\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"className\\\":\\\"score-value\\\",\\\"children\\\":\\\"-\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"span\\\",null,{\\\"className\\\":\\\"score-detail\\\",\\\"children\\\":\\\"Deliveries\\\"}],[\\\"$\\\",\\\"strong\\\",null,{\\\"className\\\":\\\"score-value\\\",\\\"children\\\":\\\"-\\\"}]]}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"table-wrap\\\",\\\"children\\\":[\\\"$\\\",\\\"table\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"thead\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"tr\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Run\\\"}],[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Packages\\\"}],[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Blocked moves\\\"}],[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Remaining distance\\\"}],[\\\"$\\\",\\\"th\\\",null,{\\\"children\\\":\\\"Policy time\\\"}]]}]}],[\\\"$\\\",\\\"tbody\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"tr\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"td\\\",null,{\\\"colSpan\\\":5,\\\"className\\\":\\\"empty\\\",\\\"children\\\":\\\"No seed breakdown available yet.\\\"}]}]}]]}]}]]}],[\\\"$\\\",\\\"section\\\",null,{\\\"className\\\":\\\"card details\\\",\\\"children\\\":[[\\\"$\\\",\\\"h2\\\",null,{\\\"children\\\":\\\"Evaluation details\\\"}],[\\\"$\\\",\\\"dl\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Seed set\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":[\\\"Hidden official seeds (\\\",3,\\\" runs)\\\"]}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Replay seed\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"Hidden official seed\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Ticks\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":300}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Submitted\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"2026-06-27 10:42:14.108 UTC\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Started\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"-\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Validated + committed\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"2026-06-27 10:42:14.161 UTC\\\"}]]}],[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Updated\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"2026-06-27 10:42:14.161 UTC\\\"}]]}],null]}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"safety-review\\\",\\\"children\\\":[[\\\"$\\\",\\\"h3\\\",null,{\\\"children\\\":\\\"LLM safety review\\\"}],[\\\"$\\\",\\\"dl\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"dt\\\",null,{\\\"children\\\":\\\"Status\\\"}],[\\\"$\\\",\\\"dd\\\",null,{\\\"children\\\":\\\"rejected\\\"}]]}]}],[\\\"$\\\",\\\"p\\\",null,{\\\"style\\\":{\\\"overflowWrap\\\":\\\"anywhere\\\"},\\\"children\\\":\\\"Local safety rules flagged: dynamic-import, introspection-escape\\\"}]]}],[\\\"$\\\",\\\"p\\\",null,{\\\"className\\\":\\\"notice error\\\",\\\"children\\\":\\\"Safety review blocked this submission: Local safety rules flagged: dynamic-import, introspection-escape (dynamic-import, introspection-escape)\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"className\\\":\\\"inline-links\\\",\\\"children\\\":[null,null]}]]}]]}]\\n\"])",
+    "code_saved_to": null
+  },
+  {
+    "job_id": "4d8d233cbf6e",
+    "team": "Equipo 07",
+    "team_slug": "team-07",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 450,
+    "runtime_s": 119.07,
+    "submitted": "2026-06-27 10:36:29.707 UTC",
+    "committed": "2026-06-27 10:38:40.384 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 128,
+        "blocked_moves": 942,
+        "remaining_distance": 2630,
+        "policy_time_s": 44.1
+      },
+      {
+        "run": 2,
+        "deliveries": 161,
+        "blocked_moves": 840,
+        "remaining_distance": 2434,
+        "policy_time_s": 36.92
+      },
+      {
+        "run": 3,
+        "deliveries": 161,
+        "blocked_moves": 684,
+        "remaining_distance": 2753,
+        "policy_time_s": 38.04
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns found. The submission uses permitted static imports, deterministic routing logic, and in-memory state only, with no filesystem, network, subprocess, dynamic code execution, obfuscation, or exfiltration behavior.",
+    "code_saved_to": "scraped/solutions/0450__equipo-07__4d8d233cbf6e.py"
+  },
+  {
+    "job_id": "754cabbf101e",
+    "team": "Equipo 05",
+    "team_slug": "team-05",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 783,
+    "runtime_s": 3.02,
+    "submitted": "2026-06-27 10:33:30.429 UTC",
+    "committed": "2026-06-27 10:33:46.970 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 247,
+        "blocked_moves": 273,
+        "remaining_distance": 2172,
+        "policy_time_s": 0.37
+      },
+      {
+        "run": 2,
+        "deliveries": 267,
+        "blocked_moves": 242,
+        "remaining_distance": 2383,
+        "policy_time_s": 0.38
+      },
+      {
+        "run": 3,
+        "deliveries": 269,
+        "blocked_moves": 147,
+        "remaining_distance": 2105,
+        "policy_time_s": 0.37
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "Uses only allowed/static imports and deterministic in-memory path-planning logic; no filesystem, network, subprocess, dynamic code execution, obfuscation, or exfiltration behavior detected.",
+    "code_saved_to": "scraped/solutions/0783__equipo-05__754cabbf101e.py"
+  },
+  {
+    "job_id": "1b294895f546",
+    "team": "Equipo 02",
+    "team_slug": "team-02",
+    "status": "succeeded",
+    "points": 88683,
+    "deliveries": 882,
+    "runtime_s": 15.73,
+    "submitted": "2026-06-27 10:31:37.990 UTC",
+    "committed": "2026-06-27 10:32:07.465 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 283,
+        "blocked_moves": 52,
+        "remaining_distance": 2151,
+        "policy_time_s": 5.43
+      },
+      {
+        "run": 2,
+        "deliveries": 302,
+        "blocked_moves": 49,
+        "remaining_distance": 2332,
+        "policy_time_s": 5.1
+      },
+      {
+        "run": 3,
+        "deliveries": 297,
+        "blocked_moves": 40,
+        "remaining_distance": 2307,
+        "policy_time_s": 5.08
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns found: uses only allowed-style imports and deterministic in-memory planning logic, with no filesystem, network, subprocess, dynamic import/code execution, credential access, obfuscation, or sandbox-escape behavior.",
+    "code_saved_to": "scraped/solutions/0882__equipo-02__1b294895f546.py"
+  },
+  {
+    "job_id": "4fbc4e182b67",
+    "team": "Equipo 06",
+    "team_slug": "team-06",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 730,
+    "runtime_s": 3.19,
+    "submitted": "2026-06-27 10:29:39.819 UTC",
+    "committed": "2026-06-27 10:29:55.650 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 239,
+        "blocked_moves": 1,
+        "remaining_distance": 2159,
+        "policy_time_s": 1.5
+      },
+      {
+        "run": 2,
+        "deliveries": 248,
+        "blocked_moves": 6,
+        "remaining_distance": 2472,
+        "policy_time_s": 0.98
+      },
+      {
+        "run": 3,
+        "deliveries": 243,
+        "blocked_moves": 8,
+        "remaining_distance": 2432,
+        "policy_time_s": 0.69
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "Submission uses only allowed standard data structures and heap-based pathfinding with no filesystem, network, subprocess, dynamic import, dynamic execution, obfuscation, or exfiltration behavior. Global caches/reservation state are benign for routing logic.",
+    "code_saved_to": "scraped/solutions/0730__equipo-06__4fbc4e182b67.py"
+  },
+  {
+    "job_id": "e8ad7754c58a",
+    "team": "Equipo 08",
+    "team_slug": "team-08",
+    "status": "succeeded",
+    "points": 87165,
+    "deliveries": 759,
+    "runtime_s": 1.4,
+    "submitted": "2026-06-27 10:29:25.769 UTC",
+    "committed": "2026-06-27 10:29:39.760 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 246,
+        "blocked_moves": 3,
+        "remaining_distance": 1970,
+        "policy_time_s": 0.6
+      },
+      {
+        "run": 2,
+        "deliveries": 257,
+        "blocked_moves": 7,
+        "remaining_distance": 2205,
+        "policy_time_s": 0.45
+      },
+      {
+        "run": 3,
+        "deliveries": 256,
+        "blocked_moves": 3,
+        "remaining_distance": 2130,
+        "policy_time_s": 0.34
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "The submission uses only standard data structures and the provided warehouse API, with no filesystem, network, subprocess, dynamic import/code execution, obfuscation, credential access, or sandbox escape behavior. Module-level caching and BFS logic are acceptable for routing.",
+    "code_saved_to": "scraped/solutions/0759__equipo-08__e8ad7754c58a.py"
+  },
+  {
+    "job_id": "9d741016f58e",
+    "team": "Equipo 13",
+    "team_slug": "team-13",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 548,
+    "runtime_s": 93.66,
+    "submitted": "2026-06-27 10:25:48.864 UTC",
+    "committed": "2026-06-27 10:27:36.609 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 193,
+        "blocked_moves": 0,
+        "remaining_distance": 2190,
+        "policy_time_s": 31.25
+      },
+      {
+        "run": 2,
+        "deliveries": 184,
+        "blocked_moves": 0,
+        "remaining_distance": 2137,
+        "policy_time_s": 31.48
+      },
+      {
+        "run": 3,
+        "deliveries": 171,
+        "blocked_moves": 0,
+        "remaining_distance": 2299,
+        "policy_time_s": 30.91
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns found. The code uses only allowed imports and implements deterministic routing logic without filesystem, network, subprocess, dynamic execution/imports, obfuscation, or sandbox escape behavior.",
+    "code_saved_to": "scraped/solutions/0548__equipo-13__9d741016f58e.py"
+  },
+  {
+    "job_id": "9c8ddcffc4f3",
+    "team": "Equipo 03",
+    "team_slug": "team-03",
+    "status": "succeeded",
+    "points": 85754,
+    "deliveries": 610,
+    "runtime_s": 1.41,
+    "submitted": "2026-06-27 10:22:34.003 UTC",
+    "committed": "2026-06-27 10:22:51.498 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 215,
+        "blocked_moves": 554,
+        "remaining_distance": 2287,
+        "policy_time_s": 0.62
+      },
+      {
+        "run": 2,
+        "deliveries": 190,
+        "blocked_moves": 970,
+        "remaining_distance": 2030,
+        "policy_time_s": 0.42
+      },
+      {
+        "run": 3,
+        "deliveries": 205,
+        "blocked_moves": 1209,
+        "remaining_distance": 1991,
+        "policy_time_s": 0.34
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns found; code uses static routing logic and benign in-memory state without filesystem, network, subprocess, dynamic import, or dynamic code execution.",
+    "code_saved_to": "scraped/solutions/0610__equipo-03__9c8ddcffc4f3.py"
+  },
+  {
+    "job_id": "8cb6baa8def4",
+    "team": "Equipo 09",
+    "team_slug": "team-09",
+    "status": "succeeded",
+    "points": 298,
+    "deliveries": 398,
+    "runtime_s": 29.1,
+    "submitted": "2026-06-27 10:19:13.935 UTC",
+    "committed": "2026-06-27 10:19:57.305 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 120,
+        "blocked_moves": 5757,
+        "remaining_distance": 2338,
+        "policy_time_s": 9.86
+      },
+      {
+        "run": 2,
+        "deliveries": 135,
+        "blocked_moves": 5780,
+        "remaining_distance": 2204,
+        "policy_time_s": 9.87
+      },
+      {
+        "run": 3,
+        "deliveries": 143,
+        "blocked_moves": 5418,
+        "remaining_distance": 2019,
+        "policy_time_s": 9.35
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns found. The submission uses allowed static imports, computes layout/pathfinding in memory, and does not perform filesystem, network, subprocess, dynamic code execution, obfuscation, or sandbox escape behavior.",
+    "code_saved_to": "scraped/solutions/0398__equipo-09__8cb6baa8def4.py"
+  },
+  {
+    "job_id": "ce08283218fa",
+    "team": "Equipo 10",
+    "team_slug": "team-10",
+    "status": "succeeded",
+    "points": 7938,
+    "deliveries": 397,
+    "runtime_s": 21.68,
+    "submitted": "2026-06-27 10:19:11.162 UTC",
+    "committed": "2026-06-27 10:19:45.098 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 120,
+        "blocked_moves": 3430,
+        "remaining_distance": 2613,
+        "policy_time_s": 7.68
+      },
+      {
+        "run": 2,
+        "deliveries": 133,
+        "blocked_moves": 3232,
+        "remaining_distance": 1999,
+        "policy_time_s": 7.15
+      },
+      {
+        "run": 3,
+        "deliveries": 144,
+        "blocked_moves": 3429,
+        "remaining_distance": 2356,
+        "policy_time_s": 6.84
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "Submission uses only allowed-style imports and implements deterministic BFS routing with in-memory caching. No network, subprocess, filesystem, dynamic code execution, obfuscation, or other security-abusive behavior detected.",
+    "code_saved_to": "scraped/solutions/0397__equipo-10__ce08283218fa.py"
+  },
+  {
+    "job_id": "b2c1f8fc5722",
+    "team": "Equipo 11",
+    "team_slug": "team-11",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 97,
+    "runtime_s": 1.11,
+    "submitted": "2026-06-27 10:09:15.276 UTC",
+    "committed": "2026-06-27 10:09:28.562 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 39,
+        "blocked_moves": 0,
+        "remaining_distance": 1960,
+        "policy_time_s": 0.43
+      },
+      {
+        "run": 2,
+        "deliveries": 37,
+        "blocked_moves": 0,
+        "remaining_distance": 1767,
+        "policy_time_s": 0.35
+      },
+      {
+        "run": 3,
+        "deliveries": 21,
+        "blocked_moves": 0,
+        "remaining_distance": 1784,
+        "policy_time_s": 0.31
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "No security concerns detected. The submission uses only allowed/static imports, implements layout and routing logic, and does not perform filesystem, network, subprocess, dynamic code execution, obfuscation, or sandbox escape behavior.",
+    "code_saved_to": "scraped/solutions/0097__equipo-11__b2c1f8fc5722.py"
+  },
+  {
+    "job_id": "15c4cc5a483b",
+    "team": "Equipo 04",
+    "team_slug": "team-04",
+    "status": "succeeded",
+    "points": 36315,
+    "deliveries": 369,
+    "runtime_s": 57.1,
+    "submitted": "2026-06-27 10:07:34.565 UTC",
+    "committed": "2026-06-27 10:08:47.724 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 121,
+        "blocked_moves": 5165,
+        "remaining_distance": 2609,
+        "policy_time_s": 20.45
+      },
+      {
+        "run": 2,
+        "deliveries": 123,
+        "blocked_moves": 4911,
+        "remaining_distance": 2125,
+        "policy_time_s": 19.01
+      },
+      {
+        "run": 3,
+        "deliveries": 125,
+        "blocked_moves": 5520,
+        "remaining_distance": 2086,
+        "policy_time_s": 17.62
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "Submission uses static imports from allowed-looking modules and implements deterministic pathfinding/layout logic. No filesystem, network, subprocess, dynamic import/code execution, obfuscation, credential access, or sandbox escape behavior detected.",
+    "code_saved_to": "scraped/solutions/0369__equipo-04__15c4cc5a483b.py"
+  },
+  {
+    "job_id": "ecc405f020bd",
+    "team": "Equipo 16",
+    "team_slug": "team-16",
+    "status": "succeeded",
+    "points": 0,
+    "deliveries": 24,
+    "runtime_s": 0.5,
+    "submitted": "2026-06-27 10:06:49.794 UTC",
+    "committed": "2026-06-27 10:07:04.869 UTC",
+    "has_code": true,
+    "has_replay": true,
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 7,
+        "blocked_moves": 14292,
+        "remaining_distance": 2973,
+        "policy_time_s": 0.16
+      },
+      {
+        "run": 2,
+        "deliveries": 12,
+        "blocked_moves": 14750,
+        "remaining_distance": 3272,
+        "policy_time_s": 0.17
+      },
+      {
+        "run": 3,
+        "deliveries": 5,
+        "blocked_moves": 16256,
+        "remaining_distance": 2804,
+        "policy_time_s": 0.16
+      }
+    ],
+    "safety_status": "approved",
+    "safety_review": "Submission uses only the expected warehouse API imports and contains straightforward layout generation and robot policy logic with no filesystem, network, subprocess, dynamic execution/imports, obfuscation, or other security concerns.",
+    "code_saved_to": "scraped/solutions/0024__equipo-16__ecc405f020bd.py"
+  }
+]

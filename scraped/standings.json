@@ -1,0 +1,106 @@
+[
+  {
+    "team": "Equipo 01",
+    "best_deliveries": 882,
+    "best_points": 0,
+    "jobs": 1,
+    "best_job": "dd10c86ea066",
+    "rank_by_deliveries": 1
+  },
+  {
+    "team": "Equipo 02",
+    "best_deliveries": 882,
+    "best_points": 88683,
+    "jobs": 1,
+    "best_job": "1b294895f546",
+    "rank_by_deliveries": 2
+  },
+  {
+    "team": "Equipo 04",
+    "best_deliveries": 879,
+    "best_points": 36315,
+    "jobs": 3,
+    "best_job": "3b8bedf4c0df",
+    "rank_by_deliveries": 3
+  },
+  {
+    "team": "Equipo 16",
+    "best_deliveries": 824,
+    "best_points": 0,
+    "jobs": 2,
+    "best_job": "9686b7a8fc67",
+    "rank_by_deliveries": 4
+  },
+  {
+    "team": "Equipo 05",
+    "best_deliveries": 783,
+    "best_points": 0,
+    "jobs": 1,
+    "best_job": "754cabbf101e",
+    "rank_by_deliveries": 5
+  },
+  {
+    "team": "Equipo 10",
+    "best_deliveries": 759,
+    "best_points": 7938,
+    "jobs": 2,
+    "best_job": "8960d3b7806b",
+    "rank_by_deliveries": 6
+  },
+  {
+    "team": "Equipo 08",
+    "best_deliveries": 759,
+    "best_points": 87165,
+    "jobs": 1,
+    "best_job": "e8ad7754c58a",
+    "rank_by_deliveries": 7
+  },
+  {
+    "team": "Equipo 06",
+    "best_deliveries": 730,
+    "best_points": 0,
+    "jobs": 1,
+    "best_job": "4fbc4e182b67",
+    "rank_by_deliveries": 8
+  },
+  {
+    "team": "Equipo 03",
+    "best_deliveries": 610,
+    "best_points": 85754,
+    "jobs": 1,
+    "best_job": "9c8ddcffc4f3",
+    "rank_by_deliveries": 9
+  },
+  {
+    "team": "Equipo 13",
+    "best_deliveries": 548,
+    "best_points": 0,
+    "jobs": 1,
+    "best_job": "9d741016f58e",
+    "rank_by_deliveries": 10
+  },
+  {
+    "team": "Equipo 07",
+    "best_deliveries": 450,
+    "best_points": 0,
+    "jobs": 1,
+    "best_job": "4d8d233cbf6e",
+    "rank_by_deliveries": 11
+  },
+  {
+    "team": "Equipo 09",
+    "best_deliveries": 398,
+    "best_points": 298,
+    "jobs": 1,
+    "best_job": "8cb6baa8def4",
+    "rank_by_deliveries": 12
+  },
+  {
+    "team": "Equipo 11",
+    "best_deliveries": 97,
+    "best_points": 0,
+    "jobs": 1,
+    "best_job": "b2c1f8fc5722",
+    "rank_by_deliveries": 13
+  }
+]
