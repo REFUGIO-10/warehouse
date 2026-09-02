@@ -11,7 +11,29 @@
     "committed": "2026-06-27 13:58:56.963 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 299,
+        "blocked_moves": 8,
+        "remaining_distance": 2264,
+        "policy_time_s": 6.1
+      },
+      {
+        "run": 2,
+        "deliveries": 298,
+        "blocked_moves": 1,
+        "remaining_distance": 2036,
+        "policy_time_s": 6.4
+      },
+      {
+        "run": 3,
+        "deliveries": 299,
+        "blocked_moves": 0,
+        "remaining_distance": 2678,
+        "policy_time_s": 6.41
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No apparent security risks: uses only permitted computational imports and warehouse API, with no filesystem, network, subprocess, dynamic import/code execution, obfuscation, or sandbox escape behavior.",
     "code_saved_to": "scraped/solutions/0896__equipo-16__bf4184ae5b49.py"
@@ -28,7 +50,29 @@
     "committed": "2026-06-27 13:58:38.554 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 309,
+        "blocked_moves": 2,
+        "remaining_distance": 2211,
+        "policy_time_s": 5.49
+      },
+      {
+        "run": 2,
+        "deliveries": 302,
+        "blocked_moves": 3,
+        "remaining_distance": 2058,
+        "policy_time_s": 5.47
+      },
+      {
+        "run": 3,
+        "deliveries": 284,
+        "blocked_moves": 0,
+        "remaining_distance": 2208,
+        "policy_time_s": 5.92
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns detected; uses allowed-style imports and contains bounded routing logic without filesystem, network, subprocess, dynamic import, or dynamic code execution.",
     "code_saved_to": "scraped/solutions/0895__equipo-11__ff94edb65767.py"
@@ -45,7 +89,29 @@
     "committed": "2026-06-27 13:58:21.932 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 337,
+        "blocked_moves": 2,
+        "remaining_distance": 2363,
+        "policy_time_s": 6.36
+      },
+      {
+        "run": 2,
+        "deliveries": 336,
+        "blocked_moves": 1,
+        "remaining_distance": 2112,
+        "policy_time_s": 6.18
+      },
+      {
+        "run": 3,
+        "deliveries": 335,
+        "blocked_moves": 1,
+        "remaining_distance": 2091,
+        "policy_time_s": 6.63
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found; the submission uses static imports and in-memory path planning logic without filesystem, network, subprocess, dynamic code execution, or obfuscation.",
     "code_saved_to": "scraped/solutions/1008__equipo-10__c15da13c3eaa.py"
@@ -62,7 +128,29 @@
     "committed": "2026-06-27 13:57:56.183 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 307,
+        "blocked_moves": 1,
+        "remaining_distance": 2756,
+        "policy_time_s": 0.01
+      },
+      {
+        "run": 2,
+        "deliveries": 315,
+        "blocked_moves": 0,
+        "remaining_distance": 2297,
+        "policy_time_s": 5.78
+      },
+      {
+        "run": 3,
+        "deliveries": 303,
+        "blocked_moves": 0,
+        "remaining_distance": 2085,
+        "policy_time_s": 5.99
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found: uses only allowed-style computation, static data, NumPy arrays, and warehouse API actions; no filesystem, network, subprocess, dynamic import, or dynamic code execution.",
     "code_saved_to": "scraped/solutions/0925__equipo-05__9f6e36d64061.py"
@@ -79,7 +167,29 @@
     "committed": "2026-06-27 13:57:31.687 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 313,
+        "blocked_moves": 0,
+        "remaining_distance": 2236,
+        "policy_time_s": 5.37
+      },
+      {
+        "run": 2,
+        "deliveries": 305,
+        "blocked_moves": 2,
+        "remaining_distance": 2167,
+        "policy_time_s": 5.22
+      },
+      {
+        "run": 3,
+        "deliveries": 283,
+        "blocked_moves": 3,
+        "remaining_distance": 2382,
+        "policy_time_s": 5.31
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found. The submission uses allowed-style algorithmic planning with standard imports and warehouse_api only, and does not attempt filesystem, network, subprocess, dynamic code execution, obfuscation, or sandbox escape.",
     "code_saved_to": "scraped/solutions/0901__equipo-06__03a1a666dba7.py"
@@ -96,7 +206,29 @@
     "committed": "2026-06-27 13:57:16.556 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 299,
+        "blocked_moves": 7,
+        "remaining_distance": 2206,
+        "policy_time_s": 6.48
+      },
+      {
+        "run": 2,
+        "deliveries": 299,
+        "blocked_moves": 2,
+        "remaining_distance": 2182,
+        "policy_time_s": 6.06
+      },
+      {
+        "run": 3,
+        "deliveries": 288,
+        "blocked_moves": 1,
+        "remaining_distance": 2099,
+        "policy_time_s": 6.24
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found: the submission uses only normal algorithmic imports and logic, with no filesystem, network, subprocess, dynamic import/code execution, obfuscation, or sandbox escape behavior.",
     "code_saved_to": "scraped/solutions/0886__equipo-02__372fcd5e99df.py"
@@ -113,7 +245,29 @@
     "committed": "2026-06-27 13:55:42.203 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 306,
+        "blocked_moves": 7,
+        "remaining_distance": 2580,
+        "policy_time_s": 5.99
+      },
+      {
+        "run": 2,
+        "deliveries": 318,
+        "blocked_moves": 4,
+        "remaining_distance": 2580,
+        "policy_time_s": 5.77
+      },
+      {
+        "run": 3,
+        "deliveries": 306,
+        "blocked_moves": 5,
+        "remaining_distance": 2190,
+        "policy_time_s": 5.94
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found; the submission uses only standard planning logic and allowed-style imports without filesystem, network, subprocess, dynamic code execution, or obfuscation.",
     "code_saved_to": "scraped/solutions/0930__equipo-08__d9d5e50cbd41.py"
@@ -130,7 +284,29 @@
     "committed": "2026-06-27 13:55:42.180 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 306,
+        "blocked_moves": 7,
+        "remaining_distance": 2580,
+        "policy_time_s": 5.95
+      },
+      {
+        "run": 2,
+        "deliveries": 318,
+        "blocked_moves": 4,
+        "remaining_distance": 2580,
+        "policy_time_s": 5.73
+      },
+      {
+        "run": 3,
+        "deliveries": 306,
+        "blocked_moves": 5,
+        "remaining_distance": 2190,
+        "policy_time_s": 5.93
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found; the submission uses standard computation and allowed-style imports without filesystem, network, subprocess, dynamic code execution, or obfuscation.",
     "code_saved_to": "scraped/solutions/0930__equipo-12__9b2617f16f38.py"
@@ -147,7 +323,29 @@
     "committed": "2026-06-27 13:49:06.668 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 307,
+        "blocked_moves": 1,
+        "remaining_distance": 2756,
+        "policy_time_s": 0.01
+      },
+      {
+        "run": 2,
+        "deliveries": 318,
+        "blocked_moves": 4,
+        "remaining_distance": 2580,
+        "policy_time_s": 5.82
+      },
+      {
+        "run": 3,
+        "deliveries": 306,
+        "blocked_moves": 5,
+        "remaining_distance": 2190,
+        "policy_time_s": 5.99
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found; uses only normal algorithmic planning logic and static data without filesystem, network, subprocess, dynamic code execution, or sandbox-escape behavior.",
     "code_saved_to": "scraped/solutions/0931__equipo-03__3905ff4f9ead.py"
@@ -164,7 +362,29 @@
     "committed": "2026-06-27 13:39:09.513 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 302,
+        "blocked_moves": 0,
+        "remaining_distance": 2500,
+        "policy_time_s": 6.25
+      },
+      {
+        "run": 2,
+        "deliveries": 313,
+        "blocked_moves": 0,
+        "remaining_distance": 2378,
+        "policy_time_s": 5.71
+      },
+      {
+        "run": 3,
+        "deliveries": 303,
+        "blocked_moves": 0,
+        "remaining_distance": 2045,
+        "policy_time_s": 5.59
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns identified; code is a warehouse routing policy using allowed-style computation without filesystem, network, subprocess, dynamic import, or dynamic code execution.",
     "code_saved_to": "scraped/solutions/0918__equipo-13__d3f597c7ceaa.py"
@@ -198,7 +418,29 @@
     "committed": "2026-06-27 13:34:07.008 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 310,
+        "blocked_moves": 18,
+        "remaining_distance": 2357,
+        "policy_time_s": 0.01
+      },
+      {
+        "run": 2,
+        "deliveries": 300,
+        "blocked_moves": 15,
+        "remaining_distance": 1813,
+        "policy_time_s": 7.47
+      },
+      {
+        "run": 3,
+        "deliveries": 298,
+        "blocked_moves": 4,
+        "remaining_distance": 2036,
+        "policy_time_s": 7.0
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No malware or abuse indicators found: uses only normal algorithmic imports/data structures, no filesystem, network, subprocess, dynamic import/code execution, credential access, or sandbox escape behavior.",
     "code_saved_to": "scraped/solutions/0908__equipo-01__57aeeedbf2ae.py"
@@ -215,7 +457,29 @@
     "committed": "2026-06-27 13:30:21.523 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 302,
+        "blocked_moves": 0,
+        "remaining_distance": 2057,
+        "policy_time_s": 6.63
+      },
+      {
+        "run": 2,
+        "deliveries": 296,
+        "blocked_moves": 1,
+        "remaining_distance": 2137,
+        "policy_time_s": 6.15
+      },
+      {
+        "run": 3,
+        "deliveries": 280,
+        "blocked_moves": 41,
+        "remaining_distance": 2455,
+        "policy_time_s": 6.82
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No malware or abuse indicators found; code uses static imports and in-memory routing logic without filesystem, network, subprocess, dynamic code execution, or sandbox escape attempts.",
     "code_saved_to": "scraped/solutions/0878__equipo-09__ded569202010.py"
@@ -232,7 +496,29 @@
     "committed": "2026-06-27 13:27:41.188 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 306,
+        "blocked_moves": 7,
+        "remaining_distance": 2580,
+        "policy_time_s": 6.04
+      },
+      {
+        "run": 2,
+        "deliveries": 318,
+        "blocked_moves": 4,
+        "remaining_distance": 2580,
+        "policy_time_s": 5.76
+      },
+      {
+        "run": 3,
+        "deliveries": 306,
+        "blocked_moves": 5,
+        "remaining_distance": 2190,
+        "policy_time_s": 5.92
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found; the submission uses standard computation and warehouse API actions without filesystem, network, subprocess, dynamic code execution, or obfuscation.",
     "code_saved_to": "scraped/solutions/0930__equipo-10__c31ff1c81105.py"
@@ -249,7 +535,29 @@
     "committed": "2026-06-27 13:26:12.312 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 311,
+        "blocked_moves": 3,
+        "remaining_distance": 2344,
+        "policy_time_s": 7.27
+      },
+      {
+        "run": 2,
+        "deliveries": 303,
+        "blocked_moves": 1,
+        "remaining_distance": 1870,
+        "policy_time_s": 8.43
+      },
+      {
+        "run": 3,
+        "deliveries": 303,
+        "blocked_moves": 3,
+        "remaining_distance": 2306,
+        "policy_time_s": 7.7
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found. The submission uses static imports and implements routing/planning logic without filesystem, network, subprocess, dynamic code execution, obfuscation, or sandbox escape behavior.",
     "code_saved_to": "scraped/solutions/0917__equipo-02__2be229bd1d04.py"
@@ -300,7 +608,29 @@
     "committed": "2026-06-27 13:20:37.285 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 309,
+        "blocked_moves": 3,
+        "remaining_distance": 2265,
+        "policy_time_s": 9.16
+      },
+      {
+        "run": 2,
+        "deliveries": 303,
+        "blocked_moves": 1,
+        "remaining_distance": 1912,
+        "policy_time_s": 11.32
+      },
+      {
+        "run": 3,
+        "deliveries": 297,
+        "blocked_moves": 5,
+        "remaining_distance": 2064,
+        "policy_time_s": 10.81
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found; the submission uses static imports and contains only routing/planning logic without filesystem, network, subprocess, dynamic code execution, or obfuscation.",
     "code_saved_to": "scraped/solutions/0909__equipo-05__a05096a523b1.py"
@@ -334,7 +664,29 @@
     "committed": "2026-06-27 13:18:32.499 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 312,
+        "blocked_moves": 19,
+        "remaining_distance": 2362,
+        "policy_time_s": 0.01
+      },
+      {
+        "run": 2,
+        "deliveries": 307,
+        "blocked_moves": 2,
+        "remaining_distance": 1968,
+        "policy_time_s": 8.52
+      },
+      {
+        "run": 3,
+        "deliveries": 305,
+        "blocked_moves": 1,
+        "remaining_distance": 2287,
+        "policy_time_s": 7.59
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found. The submission uses permitted-style algorithmic code and static data only, with no filesystem, network, subprocess, dynamic import, dynamic execution, or sandbox-escape behavior.",
     "code_saved_to": "scraped/solutions/0924__equipo-03__a591827df228.py"
@@ -351,7 +703,29 @@
     "committed": "2026-06-27 13:18:27.073 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 293,
+        "blocked_moves": 2,
+        "remaining_distance": 2145,
+        "policy_time_s": 12.28
+      },
+      {
+        "run": 2,
+        "deliveries": 290,
+        "blocked_moves": 17,
+        "remaining_distance": 2451,
+        "policy_time_s": 12.81
+      },
+      {
+        "run": 3,
+        "deliveries": 295,
+        "blocked_moves": 8,
+        "remaining_distance": 2516,
+        "policy_time_s": 12.46
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "The submission uses only allowed-looking imports and implements deterministic path-planning logic. No network access, subprocess execution, filesystem access, dynamic imports/code execution, credential access, obfuscation, or sandbox escape behavior is present.",
     "code_saved_to": "scraped/solutions/0878__equipo-16__cec1de88e43c.py"
@@ -368,7 +742,29 @@
     "committed": "2026-06-27 13:12:03.864 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 308,
+        "blocked_moves": 2,
+        "remaining_distance": 2075,
+        "policy_time_s": 5.73
+      },
+      {
+        "run": 2,
+        "deliveries": 304,
+        "blocked_moves": 1,
+        "remaining_distance": 2147,
+        "policy_time_s": 5.59
+      },
+      {
+        "run": 3,
+        "deliveries": 283,
+        "blocked_moves": 4,
+        "remaining_distance": 2206,
+        "policy_time_s": 6.14
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found; the submission uses static imports and implements routing logic without filesystem, network, subprocess, dynamic code execution, obfuscation, or sandbox escape behavior.",
     "code_saved_to": "scraped/solutions/0895__equipo-07__8726443032a0.py"
@@ -385,7 +781,29 @@
     "committed": "2026-06-27 13:07:09.235 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 297,
+        "blocked_moves": 2,
+        "remaining_distance": 1865,
+        "policy_time_s": 9.66
+      },
+      {
+        "run": 2,
+        "deliveries": 301,
+        "blocked_moves": 25,
+        "remaining_distance": 2010,
+        "policy_time_s": 10.23
+      },
+      {
+        "run": 3,
+        "deliveries": 299,
+        "blocked_moves": 7,
+        "remaining_distance": 2271,
+        "policy_time_s": 8.2
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns detected; code uses standard path-planning logic with permitted-style imports and no filesystem, network, subprocess, dynamic code execution, or obfuscation.",
     "code_saved_to": "scraped/solutions/0897__equipo-14__4ebc9d45f10d.py"
@@ -402,7 +820,29 @@
     "committed": "2026-06-27 13:03:21.114 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 285,
+        "blocked_moves": 5,
+        "remaining_distance": 2402,
+        "policy_time_s": 7.93
+      },
+      {
+        "run": 2,
+        "deliveries": 308,
+        "blocked_moves": 3,
+        "remaining_distance": 2057,
+        "policy_time_s": 7.07
+      },
+      {
+        "run": 3,
+        "deliveries": 284,
+        "blocked_moves": 5,
+        "remaining_distance": 2171,
+        "policy_time_s": 7.93
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found; the submission uses allowed algorithmic code and static data only, with no filesystem, network, subprocess, dynamic import, or dynamic code execution behavior.",
     "code_saved_to": "scraped/solutions/0877__equipo-01__6cb8721bc2f7.py"
@@ -419,7 +859,29 @@
     "committed": "2026-06-27 13:01:56.058 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 294,
+        "blocked_moves": 1,
+        "remaining_distance": 2057,
+        "policy_time_s": 7.46
+      },
+      {
+        "run": 2,
+        "deliveries": 297,
+        "blocked_moves": 0,
+        "remaining_distance": 2098,
+        "policy_time_s": 7.04
+      },
+      {
+        "run": 3,
+        "deliveries": 286,
+        "blocked_moves": 0,
+        "remaining_distance": 2021,
+        "policy_time_s": 7.09
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found; code uses allowed-style computation and bounded path planning without filesystem, network, subprocess, dynamic import, or code execution behavior.",
     "code_saved_to": "scraped/solutions/0877__equipo-12__56e8c94f9fd8.py"
@@ -436,7 +898,29 @@
     "committed": "2026-06-27 12:58:41.654 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 312,
+        "blocked_moves": 1,
+        "remaining_distance": 2224,
+        "policy_time_s": 11.91
+      },
+      {
+        "run": 2,
+        "deliveries": 302,
+        "blocked_moves": 0,
+        "remaining_distance": 2078,
+        "policy_time_s": 11.62
+      },
+      {
+        "run": 3,
+        "deliveries": 284,
+        "blocked_moves": 2,
+        "remaining_distance": 2400,
+        "policy_time_s": 13.28
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found. The submission uses static imports and implements routing logic without filesystem, network, subprocess, dynamic code execution, obfuscation, or sandbox escape behavior.",
     "code_saved_to": "scraped/solutions/0898__equipo-09__37f9c7c7908a.py"
@@ -453,7 +937,29 @@
     "committed": "2026-06-27 12:58:09.258 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 313,
+        "blocked_moves": 2,
+        "remaining_distance": 2168,
+        "policy_time_s": 5.64
+      },
+      {
+        "run": 2,
+        "deliveries": 307,
+        "blocked_moves": 0,
+        "remaining_distance": 2090,
+        "policy_time_s": 5.51
+      },
+      {
+        "run": 3,
+        "deliveries": 284,
+        "blocked_moves": 2,
+        "remaining_distance": 2282,
+        "policy_time_s": 5.69
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found. The submission uses only standard path-planning logic with allowed-style imports and no filesystem, network, subprocess, dynamic code execution, obfuscation, or exfiltration behavior.",
     "code_saved_to": "scraped/solutions/0904__equipo-08__64584e8c4c8d.py"
@@ -470,7 +976,29 @@
     "committed": "2026-06-27 12:57:03.695 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 311,
+        "blocked_moves": 3,
+        "remaining_distance": 2344,
+        "policy_time_s": 10.42
+      },
+      {
+        "run": 2,
+        "deliveries": 307,
+        "blocked_moves": 2,
+        "remaining_distance": 1968,
+        "policy_time_s": 11.65
+      },
+      {
+        "run": 3,
+        "deliveries": 305,
+        "blocked_moves": 1,
+        "remaining_distance": 2287,
+        "policy_time_s": 10.69
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No malware or abuse indicators found; code uses static imports and in-memory planning only, with no filesystem, network, subprocess, dynamic import, or dynamic code execution.",
     "code_saved_to": "scraped/solutions/0923__equipo-10__a99d84c43de0.py"
@@ -487,7 +1015,29 @@
     "committed": "2026-06-27 12:49:39.136 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 307,
+        "blocked_moves": 6,
+        "remaining_distance": 1956,
+        "policy_time_s": 5.8
+      },
+      {
+        "run": 2,
+        "deliveries": 302,
+        "blocked_moves": 2,
+        "remaining_distance": 1987,
+        "policy_time_s": 5.43
+      },
+      {
+        "run": 3,
+        "deliveries": 281,
+        "blocked_moves": 1,
+        "remaining_distance": 2265,
+        "policy_time_s": 6.04
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns detected; uses only allowed/static imports and contains no filesystem, network, subprocess, dynamic code execution, or obfuscation behavior.",
     "code_saved_to": "scraped/solutions/0890__equipo-11__121ea3b92294.py"
@@ -504,7 +1054,29 @@
     "committed": "2026-06-27 12:47:57.429 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 310,
+        "blocked_moves": 18,
+        "remaining_distance": 2357,
+        "policy_time_s": 0.02
+      },
+      {
+        "run": 2,
+        "deliveries": 300,
+        "blocked_moves": 3,
+        "remaining_distance": 2035,
+        "policy_time_s": 7.59
+      },
+      {
+        "run": 3,
+        "deliveries": 299,
+        "blocked_moves": 8,
+        "remaining_distance": 2212,
+        "policy_time_s": 7.15
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns detected: uses allowed static imports and contains only routing logic with hardcoded replay data; no filesystem, network, subprocess, dynamic import/code execution, credential access, or sandbox escape behavior.",
     "code_saved_to": "scraped/solutions/0909__equipo-03__7b2dfd229091.py"
@@ -521,7 +1093,29 @@
     "committed": "2026-06-27 12:47:53.259 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 309,
+        "blocked_moves": 3,
+        "remaining_distance": 2105,
+        "policy_time_s": 6.17
+      },
+      {
+        "run": 2,
+        "deliveries": 301,
+        "blocked_moves": 5,
+        "remaining_distance": 1904,
+        "policy_time_s": 5.81
+      },
+      {
+        "run": 3,
+        "deliveries": 285,
+        "blocked_moves": 1,
+        "remaining_distance": 2315,
+        "policy_time_s": 6.2
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found. The submission uses allowed/static imports and implements bounded in-memory planning without filesystem, network, subprocess, dynamic code execution, or obfuscation.",
     "code_saved_to": "scraped/solutions/0895__equipo-02__55ed53e5f3ed.py"
@@ -538,7 +1132,29 @@
     "committed": "2026-06-27 12:45:41.342 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 310,
+        "blocked_moves": 0,
+        "remaining_distance": 2058,
+        "policy_time_s": 5.68
+      },
+      {
+        "run": 2,
+        "deliveries": 296,
+        "blocked_moves": 0,
+        "remaining_distance": 1865,
+        "policy_time_s": 5.83
+      },
+      {
+        "run": 3,
+        "deliveries": 286,
+        "blocked_moves": 0,
+        "remaining_distance": 2291,
+        "policy_time_s": 5.87
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found; the submission uses allowed static imports and contains only bounded planning logic without filesystem, network, subprocess, dynamic execution, or obfuscation.",
     "code_saved_to": "scraped/solutions/0892__equipo-13__a8b5d3da13ac.py"
@@ -555,7 +1171,29 @@
     "committed": "2026-06-27 12:44:36.948 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 289,
+        "blocked_moves": 3,
+        "remaining_distance": 1967,
+        "policy_time_s": 8.96
+      },
+      {
+        "run": 2,
+        "deliveries": 300,
+        "blocked_moves": 0,
+        "remaining_distance": 2155,
+        "policy_time_s": 9.09
+      },
+      {
+        "run": 3,
+        "deliveries": 288,
+        "blocked_moves": 1,
+        "remaining_distance": 2386,
+        "policy_time_s": 8.67
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No malware indicators found: no filesystem, network, subprocess, dynamic import/code execution, credential access, or sandbox escape attempts. The code is a deterministic routing/planning policy with bounded search structures.",
     "code_saved_to": "scraped/solutions/0877__equipo-15__374b27415776.py"
@@ -572,7 +1210,29 @@
     "committed": "2026-06-27 12:40:33.832 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 311,
+        "blocked_moves": 2,
+        "remaining_distance": 2246,
+        "policy_time_s": 0.01
+      },
+      {
+        "run": 2,
+        "deliveries": 300,
+        "blocked_moves": 3,
+        "remaining_distance": 2043,
+        "policy_time_s": 4.27
+      },
+      {
+        "run": 3,
+        "deliveries": 282,
+        "blocked_moves": 21,
+        "remaining_distance": 2319,
+        "policy_time_s": 4.55
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security-relevant behavior detected: only allowed/static imports, deterministic planning logic, and static replay data; no filesystem, network, subprocess, dynamic code/imports, introspection, or sandbox escape attempts.",
     "code_saved_to": "scraped/solutions/0893__equipo-16__d43dc4eb5632.py"
@@ -589,7 +1249,29 @@
     "committed": "2026-06-27 12:35:39.617 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 312,
+        "blocked_moves": 5,
+        "remaining_distance": 2299,
+        "policy_time_s": 0.01
+      },
+      {
+        "run": 2,
+        "deliveries": 300,
+        "blocked_moves": 5,
+        "remaining_distance": 1910,
+        "policy_time_s": 6.13
+      },
+      {
+        "run": 3,
+        "deliveries": 285,
+        "blocked_moves": 3,
+        "remaining_distance": 2444,
+        "policy_time_s": 6.58
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security-risk behavior detected: imports are static and limited, no filesystem/network/subprocess/dynamic code execution or sandbox escape attempts. Large replay table is static action data, not executable or abusive.",
     "code_saved_to": "scraped/solutions/0897__equipo-05__78011f7a0fab.py"
@@ -606,7 +1288,29 @@
     "committed": "2026-06-27 12:35:39.017 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 296,
+        "blocked_moves": 2,
+        "remaining_distance": 2101,
+        "policy_time_s": 8.79
+      },
+      {
+        "run": 2,
+        "deliveries": 300,
+        "blocked_moves": 2,
+        "remaining_distance": 2047,
+        "policy_time_s": 8.7
+      },
+      {
+        "run": 3,
+        "deliveries": 291,
+        "blocked_moves": 0,
+        "remaining_distance": 2133,
+        "policy_time_s": 8.55
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No malicious behavior or prohibited operations detected; code uses standard planning logic with allowed imports and no filesystem, network, subprocess, dynamic execution, or obfuscation concerns.",
     "code_saved_to": "scraped/solutions/0887__equipo-14__27551e60ac6a.py"
@@ -657,7 +1361,29 @@
     "committed": "2026-06-27 12:30:19.552 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 309,
+        "blocked_moves": 0,
+        "remaining_distance": 2279,
+        "policy_time_s": 0.02
+      },
+      {
+        "run": 2,
+        "deliveries": 299,
+        "blocked_moves": 1,
+        "remaining_distance": 2082,
+        "policy_time_s": 8.78
+      },
+      {
+        "run": 3,
+        "deliveries": 285,
+        "blocked_moves": 0,
+        "remaining_distance": 2543,
+        "policy_time_s": 9.12
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No apparent malware or abuse behavior: no filesystem, network, subprocess, dynamic import/code execution, or sandbox-escape attempts. The code is a bounded in-memory planning/replay policy.",
     "code_saved_to": "scraped/solutions/0893__equipo-12__6de9937942dc.py"
@@ -674,7 +1400,29 @@
     "committed": "2026-06-27 12:27:24.491 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 306,
+        "blocked_moves": 1,
+        "remaining_distance": 2121,
+        "policy_time_s": 5.92
+      },
+      {
+        "run": 2,
+        "deliveries": 300,
+        "blocked_moves": 3,
+        "remaining_distance": 2040,
+        "policy_time_s": 5.58
+      },
+      {
+        "run": 3,
+        "deliveries": 284,
+        "blocked_moves": 1,
+        "remaining_distance": 2336,
+        "policy_time_s": 6.02
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found. The submission uses allowed-style static imports and implements deterministic planning logic without filesystem, network, subprocess, dynamic import, or dynamic code execution behavior.",
     "code_saved_to": "scraped/solutions/0890__equipo-08__00c4bc775b0f.py"
@@ -691,7 +1439,29 @@
     "committed": "2026-06-27 12:25:59.326 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 308,
+        "blocked_moves": 0,
+        "remaining_distance": 2051,
+        "policy_time_s": 5.23
+      },
+      {
+        "run": 2,
+        "deliveries": 303,
+        "blocked_moves": 1,
+        "remaining_distance": 2066,
+        "policy_time_s": 5.05
+      },
+      {
+        "run": 3,
+        "deliveries": 285,
+        "blocked_moves": 1,
+        "remaining_distance": 2369,
+        "policy_time_s": 5.49
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns detected; uses allowed imports and implements bounded path-planning logic without filesystem, network, subprocess, dynamic code execution, or obfuscation.",
     "code_saved_to": "scraped/solutions/0896__equipo-10__246962e09980.py"
@@ -708,7 +1478,29 @@
     "committed": "2026-06-27 12:23:46.817 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 308,
+        "blocked_moves": 2,
+        "remaining_distance": 2375,
+        "policy_time_s": 7.41
+      },
+      {
+        "run": 2,
+        "deliveries": 300,
+        "blocked_moves": 3,
+        "remaining_distance": 2035,
+        "policy_time_s": 7.34
+      },
+      {
+        "run": 3,
+        "deliveries": 299,
+        "blocked_moves": 8,
+        "remaining_distance": 2212,
+        "policy_time_s": 7.03
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found. The submission uses standard computation and allowed-style imports only, with no filesystem, network, subprocess, dynamic import, or dynamic code execution behavior.",
     "code_saved_to": "scraped/solutions/0907__equipo-04__7a4738c9956c.py"
@@ -725,7 +1517,29 @@
     "committed": "2026-06-27 12:20:48.872 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 308,
+        "blocked_moves": 1,
+        "remaining_distance": 2155,
+        "policy_time_s": 7.56
+      },
+      {
+        "run": 2,
+        "deliveries": 303,
+        "blocked_moves": 63,
+        "remaining_distance": 2294,
+        "policy_time_s": 7.18
+      },
+      {
+        "run": 3,
+        "deliveries": 286,
+        "blocked_moves": 112,
+        "remaining_distance": 2427,
+        "policy_time_s": 8.05
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found; uses only standard path-planning logic with allowed-style imports and no filesystem, network, subprocess, dynamic code, or obfuscation behavior.",
     "code_saved_to": "scraped/solutions/0897__equipo-09__b867727fbfbe.py"
@@ -742,7 +1556,29 @@
     "committed": "2026-06-27 12:19:41.758 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 297,
+        "blocked_moves": 3,
+        "remaining_distance": 2076,
+        "policy_time_s": 3.99
+      },
+      {
+        "run": 2,
+        "deliveries": 308,
+        "blocked_moves": 1,
+        "remaining_distance": 1949,
+        "policy_time_s": 3.38
+      },
+      {
+        "run": 3,
+        "deliveries": 293,
+        "blocked_moves": 6,
+        "remaining_distance": 2299,
+        "policy_time_s": 3.28
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No malware or abuse indicators found: imports are limited to allowed/common modules and warehouse_api, with no network, subprocess, filesystem, dynamic import, dynamic execution, credential access, sandbox escape, or denial-of-service setup. The hardcoded replay table/seed logic is competitive behavior rather than a security risk.",
     "code_saved_to": "scraped/solutions/0898__equipo-06__d6ef1065be31.py"
@@ -759,7 +1595,29 @@
     "committed": "2026-06-27 12:17:22.267 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 311,
+        "blocked_moves": 2,
+        "remaining_distance": 2246,
+        "policy_time_s": 0.02
+      },
+      {
+        "run": 2,
+        "deliveries": 301,
+        "blocked_moves": 3,
+        "remaining_distance": 2035,
+        "policy_time_s": 7.29
+      },
+      {
+        "run": 3,
+        "deliveries": 285,
+        "blocked_moves": 1,
+        "remaining_distance": 2283,
+        "policy_time_s": 7.73
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found: imports are static and limited to standard library, numpy, and warehouse_api; no network, subprocess, filesystem, dynamic code execution, or introspective sandbox-escape behavior detected.",
     "code_saved_to": "scraped/solutions/0897__equipo-03__6e45a3788f3d.py"
@@ -776,7 +1634,29 @@
     "committed": "2026-06-27 12:17:08.968 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 310,
+        "blocked_moves": 2,
+        "remaining_distance": 2217,
+        "policy_time_s": 6.87
+      },
+      {
+        "run": 2,
+        "deliveries": 302,
+        "blocked_moves": 3,
+        "remaining_distance": 2147,
+        "policy_time_s": 6.88
+      },
+      {
+        "run": 3,
+        "deliveries": 284,
+        "blocked_moves": 1,
+        "remaining_distance": 2320,
+        "policy_time_s": 7.16
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No malicious or abusive behavior detected. The submission uses allowed imports, deterministic planning logic, in-memory state, and contains no filesystem, network, subprocess, dynamic import, or dynamic code execution activity.",
     "code_saved_to": "scraped/solutions/0896__equipo-02__681e81189b62.py"
@@ -793,7 +1673,29 @@
     "committed": "2026-06-27 12:06:47.586 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 309,
+        "blocked_moves": 2,
+        "remaining_distance": 2170,
+        "policy_time_s": 5.68
+      },
+      {
+        "run": 2,
+        "deliveries": 301,
+        "blocked_moves": 3,
+        "remaining_distance": 2035,
+        "policy_time_s": 5.32
+      },
+      {
+        "run": 3,
+        "deliveries": 285,
+        "blocked_moves": 1,
+        "remaining_distance": 2283,
+        "policy_time_s": 5.74
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found; uses only allowed-style static imports and bounded in-memory path planning without filesystem, network, subprocess, dynamic code execution, or obfuscation.",
     "code_saved_to": "scraped/solutions/0895__equipo-11__75b0ac568321.py"
@@ -810,7 +1712,29 @@
     "committed": "2026-06-27 12:06:01.366 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 296,
+        "blocked_moves": 0,
+        "remaining_distance": 2079,
+        "policy_time_s": 5.51
+      },
+      {
+        "run": 2,
+        "deliveries": 308,
+        "blocked_moves": 3,
+        "remaining_distance": 2062,
+        "policy_time_s": 5.38
+      },
+      {
+        "run": 3,
+        "deliveries": 292,
+        "blocked_moves": 3,
+        "remaining_distance": 2175,
+        "policy_time_s": 5.45
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found. The submission uses allowed imports and contains deterministic path-planning logic without filesystem, network, subprocess, dynamic import, dynamic execution, obfuscation, or sandbox-escape behavior.",
     "code_saved_to": "scraped/solutions/0896__equipo-15__31cb4f2c2474.py"
@@ -827,7 +1751,29 @@
     "committed": "2026-06-27 12:04:53.357 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 307,
+        "blocked_moves": 2,
+        "remaining_distance": 2141,
+        "policy_time_s": 5.9
+      },
+      {
+        "run": 2,
+        "deliveries": 301,
+        "blocked_moves": 3,
+        "remaining_distance": 2064,
+        "policy_time_s": 5.55
+      },
+      {
+        "run": 3,
+        "deliveries": 284,
+        "blocked_moves": 3,
+        "remaining_distance": 2258,
+        "policy_time_s": 5.97
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found; uses allowed-style imports and bounded algorithmic planning without filesystem, network, subprocess, dynamic code, or obfuscation.",
     "code_saved_to": "scraped/solutions/0892__equipo-05__5074ff6d86e0.py"
@@ -844,7 +1790,29 @@
     "committed": "2026-06-27 12:03:51.962 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 308,
+        "blocked_moves": 0,
+        "remaining_distance": 1996,
+        "policy_time_s": 5.7
+      },
+      {
+        "run": 2,
+        "deliveries": 302,
+        "blocked_moves": 2,
+        "remaining_distance": 2137,
+        "policy_time_s": 5.47
+      },
+      {
+        "run": 3,
+        "deliveries": 282,
+        "blocked_moves": 3,
+        "remaining_distance": 2107,
+        "policy_time_s": 5.88
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found; the submission uses allowed/static imports and contains only bounded path-planning logic without filesystem, network, subprocess, dynamic code execution, or obfuscation.",
     "code_saved_to": "scraped/solutions/0892__equipo-13__2645ba1ece2a.py"
@@ -861,7 +1829,29 @@
     "committed": "2026-06-27 12:02:20.932 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 311,
+        "blocked_moves": 2,
+        "remaining_distance": 2246,
+        "policy_time_s": 0.01
+      },
+      {
+        "run": 2,
+        "deliveries": 301,
+        "blocked_moves": 3,
+        "remaining_distance": 2035,
+        "policy_time_s": 5.46
+      },
+      {
+        "run": 3,
+        "deliveries": 285,
+        "blocked_moves": 1,
+        "remaining_distance": 2283,
+        "policy_time_s": 5.83
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No malware or abuse indicators found: imports are limited to allowed/common modules and warehouse_api, with no filesystem, network, subprocess, dynamic import, or dynamic code execution usage.",
     "code_saved_to": "scraped/solutions/0897__equipo-16__96f62c7fdaa8.py"
@@ -878,7 +1868,29 @@
     "committed": "2026-06-27 11:59:12.856 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 290,
+        "blocked_moves": 3,
+        "remaining_distance": 2016,
+        "policy_time_s": 6.55
+      },
+      {
+        "run": 2,
+        "deliveries": 294,
+        "blocked_moves": 1,
+        "remaining_distance": 2097,
+        "policy_time_s": 6.27
+      },
+      {
+        "run": 3,
+        "deliveries": 284,
+        "blocked_moves": 3,
+        "remaining_distance": 1972,
+        "policy_time_s": 6.27
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No malware or abuse indicators found; the submission uses allowed algorithmic logic and standard data structures without filesystem, network, subprocess, dynamic import, or dynamic code execution.",
     "code_saved_to": "scraped/solutions/0868__equipo-14__df861caf6f55.py"
@@ -895,7 +1907,29 @@
     "committed": "2026-06-27 11:57:40.416 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 307,
+        "blocked_moves": 0,
+        "remaining_distance": 2278,
+        "policy_time_s": 6.61
+      },
+      {
+        "run": 2,
+        "deliveries": 299,
+        "blocked_moves": 1,
+        "remaining_distance": 2082,
+        "policy_time_s": 6.08
+      },
+      {
+        "run": 3,
+        "deliveries": 284,
+        "blocked_moves": 1,
+        "remaining_distance": 2498,
+        "policy_time_s": 6.58
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No prohibited security behavior detected: no filesystem, network, subprocess, dynamic import/code execution, obfuscation, or sandbox escape attempts. The code uses bounded planning and standard computation only.",
     "code_saved_to": "scraped/solutions/0890__equipo-12__2f8ed9f4e6eb.py"
@@ -912,7 +1946,29 @@
     "committed": "2026-06-27 11:56:34.274 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 309,
+        "blocked_moves": 2,
+        "remaining_distance": 2170,
+        "policy_time_s": 5.51
+      },
+      {
+        "run": 2,
+        "deliveries": 301,
+        "blocked_moves": 3,
+        "remaining_distance": 2035,
+        "policy_time_s": 5.28
+      },
+      {
+        "run": 3,
+        "deliveries": 285,
+        "blocked_moves": 1,
+        "remaining_distance": 2283,
+        "policy_time_s": 5.71
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found; the submission uses allowed static imports and implements bounded in-memory routing logic without filesystem, network, subprocess, dynamic code execution, or obfuscation.",
     "code_saved_to": "scraped/solutions/0895__equipo-08__c0bc3a9e42a6.py"
@@ -929,7 +1985,29 @@
     "committed": "2026-06-27 11:53:54.592 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 307,
+        "blocked_moves": 3,
+        "remaining_distance": 2254,
+        "policy_time_s": 4.57
+      },
+      {
+        "run": 2,
+        "deliveries": 300,
+        "blocked_moves": 8,
+        "remaining_distance": 2054,
+        "policy_time_s": 4.49
+      },
+      {
+        "run": 3,
+        "deliveries": 281,
+        "blocked_moves": 5,
+        "remaining_distance": 2271,
+        "policy_time_s": 4.92
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No malware or abuse indicators found. The submission uses allowed standard-library data structures and warehouse_api only, with no filesystem, network, subprocess, dynamic import, or dynamic code execution behavior.",
     "code_saved_to": "scraped/solutions/0888__equipo-10__d0f2389ad450.py"
@@ -946,7 +2024,29 @@
     "committed": "2026-06-27 11:51:41.147 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 269,
+        "blocked_moves": 523,
+        "remaining_distance": 2251,
+        "policy_time_s": 1.57
+      },
+      {
+        "run": 2,
+        "deliveries": 214,
+        "blocked_moves": 7687,
+        "remaining_distance": 2631,
+        "policy_time_s": 1.21
+      },
+      {
+        "run": 3,
+        "deliveries": 266,
+        "blocked_moves": 2072,
+        "remaining_distance": 2290,
+        "policy_time_s": 1.24
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns detected. The code uses only the allowed API and collections, performs deterministic routing/layout logic, and does not attempt filesystem, network, subprocess, dynamic import/code execution, obfuscation, or sandbox escape behavior.",
     "code_saved_to": "scraped/solutions/0749__equipo-04__593ee5cec900.py"
@@ -963,7 +2063,29 @@
     "committed": "2026-06-27 11:49:12.314 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 309,
+        "blocked_moves": 2,
+        "remaining_distance": 2170,
+        "policy_time_s": 5.59
+      },
+      {
+        "run": 2,
+        "deliveries": 301,
+        "blocked_moves": 3,
+        "remaining_distance": 2035,
+        "policy_time_s": 5.33
+      },
+      {
+        "run": 3,
+        "deliveries": 285,
+        "blocked_moves": 1,
+        "remaining_distance": 2283,
+        "policy_time_s": 5.71
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found. The submission uses allowed static imports and implements bounded path-planning logic without filesystem, network, subprocess, dynamic execution/imports, obfuscation, or exfiltration behavior.",
     "code_saved_to": "scraped/solutions/0895__equipo-09__a3d83de2263e.py"
@@ -980,7 +2102,29 @@
     "committed": "2026-06-27 11:47:23.951 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 297,
+        "blocked_moves": 40,
+        "remaining_distance": 2217,
+        "policy_time_s": 5.78
+      },
+      {
+        "run": 2,
+        "deliveries": 294,
+        "blocked_moves": 34,
+        "remaining_distance": 2281,
+        "policy_time_s": 5.84
+      },
+      {
+        "run": 3,
+        "deliveries": 291,
+        "blocked_moves": 57,
+        "remaining_distance": 2334,
+        "policy_time_s": 5.81
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No malware or abuse indicators found. The submission uses allowed-style algorithmic code with collections, heapq, and numpy for path planning; it does not access the network, filesystem, subprocesses, dynamic imports, or dynamic code execution.",
     "code_saved_to": "scraped/solutions/0882__equipo-07__7d200466801b.py"
@@ -997,7 +2141,29 @@
     "committed": "2026-06-27 11:46:20.010 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 308,
+        "blocked_moves": 2,
+        "remaining_distance": 1990,
+        "policy_time_s": 5.18
+      },
+      {
+        "run": 2,
+        "deliveries": 300,
+        "blocked_moves": 3,
+        "remaining_distance": 1951,
+        "policy_time_s": 4.95
+      },
+      {
+        "run": 3,
+        "deliveries": 282,
+        "blocked_moves": 20,
+        "remaining_distance": 2386,
+        "policy_time_s": 5.39
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found. The submission uses only allowed-style computation, standard data structures, numpy, and warehouse_api, with no filesystem, network, subprocess, dynamic import, dynamic code execution, introspection, obfuscation, or malware-like behavior.",
     "code_saved_to": "scraped/solutions/0890__equipo-02__98c76b34f0e0.py"
@@ -1014,7 +2180,29 @@
     "committed": "2026-06-27 11:45:42.448 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 309,
+        "blocked_moves": 0,
+        "remaining_distance": 2115,
+        "policy_time_s": 3.97
+      },
+      {
+        "run": 2,
+        "deliveries": 303,
+        "blocked_moves": 3,
+        "remaining_distance": 2124,
+        "policy_time_s": 3.39
+      },
+      {
+        "run": 3,
+        "deliveries": 282,
+        "blocked_moves": 4,
+        "remaining_distance": 2126,
+        "policy_time_s": 3.22
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found: the submission uses only permitted-style imports and contains no filesystem, network, subprocess, dynamic import, or dynamic code execution behavior.",
     "code_saved_to": "scraped/solutions/0894__equipo-06__956ee7ee8efc.py"
@@ -1031,7 +2219,29 @@
     "committed": "2026-06-27 11:39:13.092 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 307,
+        "blocked_moves": 1,
+        "remaining_distance": 2090,
+        "policy_time_s": 5.43
+      },
+      {
+        "run": 2,
+        "deliveries": 300,
+        "blocked_moves": 11,
+        "remaining_distance": 2036,
+        "policy_time_s": 5.3
+      },
+      {
+        "run": 3,
+        "deliveries": 281,
+        "blocked_moves": 2,
+        "remaining_distance": 2208,
+        "policy_time_s": 5.84
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found; uses allowed imports and implements bounded path-planning logic without filesystem, network, subprocess, dynamic code execution, or obfuscation.",
     "code_saved_to": "scraped/solutions/0888__equipo-03__70da7659e361.py"
@@ -1048,7 +2258,29 @@
     "committed": "2026-06-27 11:33:11.126 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 302,
+        "blocked_moves": 2,
+        "remaining_distance": 2114,
+        "policy_time_s": 6.25
+      },
+      {
+        "run": 2,
+        "deliveries": 295,
+        "blocked_moves": 0,
+        "remaining_distance": 1872,
+        "policy_time_s": 6.28
+      },
+      {
+        "run": 3,
+        "deliveries": 284,
+        "blocked_moves": 1,
+        "remaining_distance": 2274,
+        "policy_time_s": 6.43
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found; uses allowed imports and contains only bounded path-planning logic without filesystem, network, subprocess, dynamic import, or code execution behavior.",
     "code_saved_to": "scraped/solutions/0881__equipo-05__e21aef2581c6.py"
@@ -1065,7 +2297,29 @@
     "committed": "2026-06-27 11:32:28.677 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 280,
+        "blocked_moves": 41,
+        "remaining_distance": 2518,
+        "policy_time_s": 5.37
+      },
+      {
+        "run": 2,
+        "deliveries": 275,
+        "blocked_moves": 37,
+        "remaining_distance": 2103,
+        "policy_time_s": 5.4
+      },
+      {
+        "run": 3,
+        "deliveries": 276,
+        "blocked_moves": 22,
+        "remaining_distance": 2095,
+        "policy_time_s": 5.39
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found; uses only allowed imports and bounded in-memory path-planning logic without filesystem, network, subprocess, dynamic code execution, or obfuscation.",
     "code_saved_to": "scraped/solutions/0831__equipo-13__2ae0925dd208.py"
@@ -1082,7 +2336,29 @@
     "committed": "2026-06-27 11:30:12.243 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 307,
+        "blocked_moves": 3,
+        "remaining_distance": 2232,
+        "policy_time_s": 5.5
+      },
+      {
+        "run": 2,
+        "deliveries": 300,
+        "blocked_moves": 6,
+        "remaining_distance": 2117,
+        "policy_time_s": 5.42
+      },
+      {
+        "run": 3,
+        "deliveries": 281,
+        "blocked_moves": 5,
+        "remaining_distance": 2271,
+        "policy_time_s": 5.9
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found; the submission uses allowed static imports and contains bounded path-planning logic without filesystem, network, subprocess, dynamic import, or dynamic code execution behavior.",
     "code_saved_to": "scraped/solutions/0888__equipo-15__9931a6df86c8.py"
@@ -1099,7 +2375,29 @@
     "committed": "2026-06-27 11:27:58.351 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 307,
+        "blocked_moves": 3,
+        "remaining_distance": 2254,
+        "policy_time_s": 5.55
+      },
+      {
+        "run": 2,
+        "deliveries": 300,
+        "blocked_moves": 8,
+        "remaining_distance": 2054,
+        "policy_time_s": 5.4
+      },
+      {
+        "run": 3,
+        "deliveries": 281,
+        "blocked_moves": 5,
+        "remaining_distance": 2271,
+        "policy_time_s": 5.85
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No prohibited behavior detected; code uses allowed imports and bounded in-memory planning without filesystem, network, subprocess, dynamic import, or code execution.",
     "code_saved_to": "scraped/solutions/0888__equipo-11__6bee061afb0b.py"
@@ -1116,7 +2414,29 @@
     "committed": "2026-06-27 11:26:46.431 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 285,
+        "blocked_moves": 18,
+        "remaining_distance": 2168,
+        "policy_time_s": 9.67
+      },
+      {
+        "run": 2,
+        "deliveries": 294,
+        "blocked_moves": 19,
+        "remaining_distance": 2321,
+        "policy_time_s": 8.82
+      },
+      {
+        "run": 3,
+        "deliveries": 281,
+        "blocked_moves": 16,
+        "remaining_distance": 2035,
+        "policy_time_s": 9.07
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No malicious behavior detected: uses only allowed-style imports and implements bounded in-memory path planning without filesystem, network, subprocess, dynamic code execution, or obfuscation.",
     "code_saved_to": "scraped/solutions/0860__equipo-12__9b551ead3510.py"
@@ -1133,7 +2453,29 @@
     "committed": "2026-06-27 11:25:08.794 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 309,
+        "blocked_moves": 2,
+        "remaining_distance": 2170,
+        "policy_time_s": 5.47
+      },
+      {
+        "run": 2,
+        "deliveries": 301,
+        "blocked_moves": 3,
+        "remaining_distance": 2035,
+        "policy_time_s": 5.23
+      },
+      {
+        "run": 3,
+        "deliveries": 285,
+        "blocked_moves": 1,
+        "remaining_distance": 2283,
+        "policy_time_s": 5.71
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found; uses allowed imports and contains deterministic planning logic without filesystem, network, subprocess, dynamic code execution, or obfuscation.",
     "code_saved_to": "scraped/solutions/0895__equipo-16__ba833bb4d9ea.py"
@@ -1150,7 +2492,29 @@
     "committed": "2026-06-27 11:24:33.481 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 303,
+        "blocked_moves": 50,
+        "remaining_distance": 2509,
+        "policy_time_s": 5.72
+      },
+      {
+        "run": 2,
+        "deliveries": 302,
+        "blocked_moves": 39,
+        "remaining_distance": 2254,
+        "policy_time_s": 5.3
+      },
+      {
+        "run": 3,
+        "deliveries": 283,
+        "blocked_moves": 31,
+        "remaining_distance": 2208,
+        "policy_time_s": 5.83
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found; uses permitted imports and bounded in-memory path planning without filesystem, network, subprocess, dynamic import, or code execution behavior.",
     "code_saved_to": "scraped/solutions/0888__equipo-08__0057f97f1a69.py"
@@ -1167,7 +2531,29 @@
     "committed": "2026-06-27 11:22:42.452 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 289,
+        "blocked_moves": 26,
+        "remaining_distance": 1944,
+        "policy_time_s": 5.15
+      },
+      {
+        "run": 2,
+        "deliveries": 293,
+        "blocked_moves": 33,
+        "remaining_distance": 2085,
+        "policy_time_s": 4.93
+      },
+      {
+        "run": 3,
+        "deliveries": 284,
+        "blocked_moves": 25,
+        "remaining_distance": 2119,
+        "policy_time_s": 5.06
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found; uses only allowed standard library utilities and warehouse_api with deterministic path-planning logic, no filesystem, network, subprocess, dynamic import, or code execution.",
     "code_saved_to": "scraped/solutions/0866__equipo-10__e0a11fa0cd65.py"
@@ -1184,7 +2570,29 @@
     "committed": "2026-06-27 11:21:11.887 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 283,
+        "blocked_moves": 4,
+        "remaining_distance": 2118,
+        "policy_time_s": 5.64
+      },
+      {
+        "run": 2,
+        "deliveries": 303,
+        "blocked_moves": 10,
+        "remaining_distance": 2312,
+        "policy_time_s": 5.26
+      },
+      {
+        "run": 3,
+        "deliveries": 296,
+        "blocked_moves": 13,
+        "remaining_distance": 2200,
+        "policy_time_s": 5.35
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found; uses only allowed/static imports and contains no filesystem, network, subprocess, dynamic code execution, or obfuscation behavior.",
     "code_saved_to": "scraped/solutions/0882__equipo-14__aca05fcc279b.py"
@@ -1201,7 +2609,29 @@
     "committed": "2026-06-27 11:20:21.707 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 307,
+        "blocked_moves": 3,
+        "remaining_distance": 2254,
+        "policy_time_s": 5.59
+      },
+      {
+        "run": 2,
+        "deliveries": 300,
+        "blocked_moves": 8,
+        "remaining_distance": 2054,
+        "policy_time_s": 5.37
+      },
+      {
+        "run": 3,
+        "deliveries": 281,
+        "blocked_moves": 5,
+        "remaining_distance": 2271,
+        "policy_time_s": 5.94
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found. The submission uses allowed-style static imports and bounded in-memory planning logic without filesystem, network, subprocess, dynamic code execution, obfuscation, or sandbox escape attempts.",
     "code_saved_to": "scraped/solutions/0888__equipo-04__a1a8eb276980.py"
@@ -1218,7 +2648,29 @@
     "committed": "2026-06-27 11:14:55.390 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 307,
+        "blocked_moves": 3,
+        "remaining_distance": 2232,
+        "policy_time_s": 5.55
+      },
+      {
+        "run": 2,
+        "deliveries": 300,
+        "blocked_moves": 6,
+        "remaining_distance": 2117,
+        "policy_time_s": 5.64
+      },
+      {
+        "run": 3,
+        "deliveries": 281,
+        "blocked_moves": 5,
+        "remaining_distance": 2271,
+        "policy_time_s": 5.88
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found: uses only allowed/static imports and contains no filesystem, network, subprocess, dynamic import/code execution, obfuscation, introspection, or sandbox-escape behavior.",
     "code_saved_to": "scraped/solutions/0888__equipo-06__53259a289ede.py"
@@ -1235,7 +2687,29 @@
     "committed": "2026-06-27 11:08:00.784 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 307,
+        "blocked_moves": 3,
+        "remaining_distance": 2254,
+        "policy_time_s": 5.49
+      },
+      {
+        "run": 2,
+        "deliveries": 300,
+        "blocked_moves": 8,
+        "remaining_distance": 2054,
+        "policy_time_s": 5.39
+      },
+      {
+        "run": 3,
+        "deliveries": 281,
+        "blocked_moves": 5,
+        "remaining_distance": 2271,
+        "policy_time_s": 5.86
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found; the submission uses allowed imports and implements deterministic planning without filesystem, network, subprocess, dynamic import, or code execution behavior.",
     "code_saved_to": "scraped/solutions/0888__equipo-03__7dd5b6c2a2bf.py"
@@ -1252,7 +2726,29 @@
     "committed": "2026-06-27 11:03:10.152 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 285,
+        "blocked_moves": 41,
+        "remaining_distance": 2327,
+        "policy_time_s": 5.73
+      },
+      {
+        "run": 2,
+        "deliveries": 302,
+        "blocked_moves": 50,
+        "remaining_distance": 2424,
+        "policy_time_s": 5.4
+      },
+      {
+        "run": 3,
+        "deliveries": 297,
+        "blocked_moves": 49,
+        "remaining_distance": 2286,
+        "policy_time_s": 5.28
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "Submission uses only permitted/static imports and implements bounded path-planning logic without filesystem, network, subprocess, dynamic import/code execution, obfuscation, or other abuse indicators.",
     "code_saved_to": "scraped/solutions/0884__equipo-02__f692704ea634.py"
@@ -1269,7 +2765,29 @@
     "committed": "2026-06-27 10:59:20.963 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 287,
+        "blocked_moves": 35,
+        "remaining_distance": 2232,
+        "policy_time_s": 6.59
+      },
+      {
+        "run": 2,
+        "deliveries": 289,
+        "blocked_moves": 56,
+        "remaining_distance": 1995,
+        "policy_time_s": 6.2
+      },
+      {
+        "run": 3,
+        "deliveries": 282,
+        "blocked_moves": 41,
+        "remaining_distance": 2185,
+        "policy_time_s": 6.28
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found. The submission uses only allowed/static imports, contains no filesystem, network, subprocess, dynamic code/import, obfuscation, or exfiltration behavior; computation appears bounded for planning.",
     "code_saved_to": "scraped/solutions/0858__equipo-15__e6856d86d6ff.py"
@@ -1286,7 +2804,29 @@
     "committed": "2026-06-27 10:59:16.025 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 285,
+        "blocked_moves": 49,
+        "remaining_distance": 2326,
+        "policy_time_s": 5.68
+      },
+      {
+        "run": 2,
+        "deliveries": 301,
+        "blocked_moves": 54,
+        "remaining_distance": 2322,
+        "policy_time_s": 5.41
+      },
+      {
+        "run": 3,
+        "deliveries": 297,
+        "blocked_moves": 50,
+        "remaining_distance": 2287,
+        "policy_time_s": 5.3
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found; uses only allowed-style imports and deterministic in-memory path planning without filesystem, network, subprocess, dynamic import, or code execution behavior.",
     "code_saved_to": "scraped/solutions/0883__equipo-09__516d288495df.py"
@@ -1303,7 +2843,29 @@
     "committed": "2026-06-27 10:50:56.174 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 246,
+        "blocked_moves": 3,
+        "remaining_distance": 1970,
+        "policy_time_s": 0.6
+      },
+      {
+        "run": 2,
+        "deliveries": 257,
+        "blocked_moves": 7,
+        "remaining_distance": 2205,
+        "policy_time_s": 0.47
+      },
+      {
+        "run": 3,
+        "deliveries": 256,
+        "blocked_moves": 3,
+        "remaining_distance": 2130,
+        "policy_time_s": 0.34
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found. The submission uses only allowed-style imports, in-memory caching, BFS, and routing logic without filesystem, network, subprocess, dynamic code execution, obfuscation, or sandbox escape behavior.",
     "code_saved_to": "scraped/solutions/0759__equipo-10__8960d3b7806b.py"
@@ -1320,7 +2882,29 @@
     "committed": "2026-06-27 10:49:11.407 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 282,
+        "blocked_moves": 48,
+        "remaining_distance": 2283,
+        "policy_time_s": 5.49
+      },
+      {
+        "run": 2,
+        "deliveries": 303,
+        "blocked_moves": 48,
+        "remaining_distance": 2346,
+        "policy_time_s": 5.12
+      },
+      {
+        "run": 3,
+        "deliveries": 294,
+        "blocked_moves": 42,
+        "remaining_distance": 2310,
+        "policy_time_s": 5.14
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found; the submission uses only standard planning logic and allowed-style imports without filesystem, network, subprocess, dynamic code execution, or obfuscation.",
     "code_saved_to": "scraped/solutions/0879__equipo-04__3b8bedf4c0df.py"
@@ -1337,7 +2921,29 @@
     "committed": "2026-06-27 10:46:48.151 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 271,
+        "blocked_moves": 0,
+        "remaining_distance": 2380,
+        "policy_time_s": 12.79
+      },
+      {
+        "run": 2,
+        "deliveries": 276,
+        "blocked_moves": 0,
+        "remaining_distance": 2290,
+        "policy_time_s": 11.64
+      },
+      {
+        "run": 3,
+        "deliveries": 277,
+        "blocked_moves": 0,
+        "remaining_distance": 2358,
+        "policy_time_s": 11.84
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found: uses only allowed-style static imports and in-memory routing logic, with no filesystem, network, subprocess, dynamic import, or code execution behavior.",
     "code_saved_to": "scraped/solutions/0824__equipo-16__9686b7a8fc67.py"
@@ -1354,7 +2960,29 @@
     "committed": "2026-06-27 10:45:10.707 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 285,
+        "blocked_moves": 7,
+        "remaining_distance": 2316,
+        "policy_time_s": 5.53
+      },
+      {
+        "run": 2,
+        "deliveries": 302,
+        "blocked_moves": 13,
+        "remaining_distance": 2327,
+        "policy_time_s": 5.23
+      },
+      {
+        "run": 3,
+        "deliveries": 295,
+        "blocked_moves": 15,
+        "remaining_distance": 2306,
+        "policy_time_s": 5.06
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "The submission uses only allowed-style imports and implements deterministic path-planning logic without network access, filesystem access, subprocesses, dynamic imports, dynamic code execution, obfuscation, introspection, or other apparent security risks.",
     "code_saved_to": "scraped/solutions/0882__equipo-01__dd10c86ea066.py"
@@ -1388,7 +3016,29 @@
     "committed": "2026-06-27 10:38:40.384 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 128,
+        "blocked_moves": 942,
+        "remaining_distance": 2630,
+        "policy_time_s": 44.1
+      },
+      {
+        "run": 2,
+        "deliveries": 161,
+        "blocked_moves": 840,
+        "remaining_distance": 2434,
+        "policy_time_s": 36.92
+      },
+      {
+        "run": 3,
+        "deliveries": 161,
+        "blocked_moves": 684,
+        "remaining_distance": 2753,
+        "policy_time_s": 38.04
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found. The submission uses permitted static imports, deterministic routing logic, and in-memory state only, with no filesystem, network, subprocess, dynamic code execution, obfuscation, or exfiltration behavior.",
     "code_saved_to": "scraped/solutions/0450__equipo-07__4d8d233cbf6e.py"
@@ -1405,7 +3055,29 @@
     "committed": "2026-06-27 10:33:46.970 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 247,
+        "blocked_moves": 273,
+        "remaining_distance": 2172,
+        "policy_time_s": 0.37
+      },
+      {
+        "run": 2,
+        "deliveries": 267,
+        "blocked_moves": 242,
+        "remaining_distance": 2383,
+        "policy_time_s": 0.38
+      },
+      {
+        "run": 3,
+        "deliveries": 269,
+        "blocked_moves": 147,
+        "remaining_distance": 2105,
+        "policy_time_s": 0.37
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "Uses only allowed/static imports and deterministic in-memory path-planning logic; no filesystem, network, subprocess, dynamic code execution, obfuscation, or exfiltration behavior detected.",
     "code_saved_to": "scraped/solutions/0783__equipo-05__754cabbf101e.py"
@@ -1422,7 +3094,29 @@
     "committed": "2026-06-27 10:32:07.465 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 283,
+        "blocked_moves": 52,
+        "remaining_distance": 2151,
+        "policy_time_s": 5.43
+      },
+      {
+        "run": 2,
+        "deliveries": 302,
+        "blocked_moves": 49,
+        "remaining_distance": 2332,
+        "policy_time_s": 5.1
+      },
+      {
+        "run": 3,
+        "deliveries": 297,
+        "blocked_moves": 40,
+        "remaining_distance": 2307,
+        "policy_time_s": 5.08
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found: uses only allowed-style imports and deterministic in-memory planning logic, with no filesystem, network, subprocess, dynamic import/code execution, credential access, obfuscation, or sandbox-escape behavior.",
     "code_saved_to": "scraped/solutions/0882__equipo-02__1b294895f546.py"
@@ -1439,7 +3133,29 @@
     "committed": "2026-06-27 10:29:55.650 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 239,
+        "blocked_moves": 1,
+        "remaining_distance": 2159,
+        "policy_time_s": 1.5
+      },
+      {
+        "run": 2,
+        "deliveries": 248,
+        "blocked_moves": 6,
+        "remaining_distance": 2472,
+        "policy_time_s": 0.98
+      },
+      {
+        "run": 3,
+        "deliveries": 243,
+        "blocked_moves": 8,
+        "remaining_distance": 2432,
+        "policy_time_s": 0.69
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "Submission uses only allowed standard data structures and heap-based pathfinding with no filesystem, network, subprocess, dynamic import, dynamic execution, obfuscation, or exfiltration behavior. Global caches/reservation state are benign for routing logic.",
     "code_saved_to": "scraped/solutions/0730__equipo-06__4fbc4e182b67.py"
@@ -1456,7 +3172,29 @@
     "committed": "2026-06-27 10:29:39.760 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 246,
+        "blocked_moves": 3,
+        "remaining_distance": 1970,
+        "policy_time_s": 0.6
+      },
+      {
+        "run": 2,
+        "deliveries": 257,
+        "blocked_moves": 7,
+        "remaining_distance": 2205,
+        "policy_time_s": 0.45
+      },
+      {
+        "run": 3,
+        "deliveries": 256,
+        "blocked_moves": 3,
+        "remaining_distance": 2130,
+        "policy_time_s": 0.34
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "The submission uses only standard data structures and the provided warehouse API, with no filesystem, network, subprocess, dynamic import/code execution, obfuscation, credential access, or sandbox escape behavior. Module-level caching and BFS logic are acceptable for routing.",
     "code_saved_to": "scraped/solutions/0759__equipo-08__e8ad7754c58a.py"
@@ -1473,7 +3211,29 @@
     "committed": "2026-06-27 10:27:36.609 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 193,
+        "blocked_moves": 0,
+        "remaining_distance": 2190,
+        "policy_time_s": 31.25
+      },
+      {
+        "run": 2,
+        "deliveries": 184,
+        "blocked_moves": 0,
+        "remaining_distance": 2137,
+        "policy_time_s": 31.48
+      },
+      {
+        "run": 3,
+        "deliveries": 171,
+        "blocked_moves": 0,
+        "remaining_distance": 2299,
+        "policy_time_s": 30.91
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found. The code uses only allowed imports and implements deterministic routing logic without filesystem, network, subprocess, dynamic execution/imports, obfuscation, or sandbox escape behavior.",
     "code_saved_to": "scraped/solutions/0548__equipo-13__9d741016f58e.py"
@@ -1490,7 +3250,29 @@
     "committed": "2026-06-27 10:22:51.498 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 215,
+        "blocked_moves": 554,
+        "remaining_distance": 2287,
+        "policy_time_s": 0.62
+      },
+      {
+        "run": 2,
+        "deliveries": 190,
+        "blocked_moves": 970,
+        "remaining_distance": 2030,
+        "policy_time_s": 0.42
+      },
+      {
+        "run": 3,
+        "deliveries": 205,
+        "blocked_moves": 1209,
+        "remaining_distance": 1991,
+        "policy_time_s": 0.34
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found; code uses static routing logic and benign in-memory state without filesystem, network, subprocess, dynamic import, or dynamic code execution.",
     "code_saved_to": "scraped/solutions/0610__equipo-03__9c8ddcffc4f3.py"
@@ -1507,7 +3289,29 @@
     "committed": "2026-06-27 10:19:57.305 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 120,
+        "blocked_moves": 5757,
+        "remaining_distance": 2338,
+        "policy_time_s": 9.86
+      },
+      {
+        "run": 2,
+        "deliveries": 135,
+        "blocked_moves": 5780,
+        "remaining_distance": 2204,
+        "policy_time_s": 9.87
+      },
+      {
+        "run": 3,
+        "deliveries": 143,
+        "blocked_moves": 5418,
+        "remaining_distance": 2019,
+        "policy_time_s": 9.35
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns found. The submission uses allowed static imports, computes layout/pathfinding in memory, and does not perform filesystem, network, subprocess, dynamic code execution, obfuscation, or sandbox escape behavior.",
     "code_saved_to": "scraped/solutions/0398__equipo-09__8cb6baa8def4.py"
@@ -1524,7 +3328,29 @@
     "committed": "2026-06-27 10:19:45.098 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 120,
+        "blocked_moves": 3430,
+        "remaining_distance": 2613,
+        "policy_time_s": 7.68
+      },
+      {
+        "run": 2,
+        "deliveries": 133,
+        "blocked_moves": 3232,
+        "remaining_distance": 1999,
+        "policy_time_s": 7.15
+      },
+      {
+        "run": 3,
+        "deliveries": 144,
+        "blocked_moves": 3429,
+        "remaining_distance": 2356,
+        "policy_time_s": 6.84
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "Submission uses only allowed-style imports and implements deterministic BFS routing with in-memory caching. No network, subprocess, filesystem, dynamic code execution, obfuscation, or other security-abusive behavior detected.",
     "code_saved_to": "scraped/solutions/0397__equipo-10__ce08283218fa.py"
@@ -1541,7 +3367,29 @@
     "committed": "2026-06-27 10:09:28.562 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 39,
+        "blocked_moves": 0,
+        "remaining_distance": 1960,
+        "policy_time_s": 0.43
+      },
+      {
+        "run": 2,
+        "deliveries": 37,
+        "blocked_moves": 0,
+        "remaining_distance": 1767,
+        "policy_time_s": 0.35
+      },
+      {
+        "run": 3,
+        "deliveries": 21,
+        "blocked_moves": 0,
+        "remaining_distance": 1784,
+        "policy_time_s": 0.31
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "No security concerns detected. The submission uses only allowed/static imports, implements layout and routing logic, and does not perform filesystem, network, subprocess, dynamic code execution, obfuscation, or sandbox escape behavior.",
     "code_saved_to": "scraped/solutions/0097__equipo-11__b2c1f8fc5722.py"
@@ -1558,7 +3406,29 @@
     "committed": "2026-06-27 10:08:47.724 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 121,
+        "blocked_moves": 5165,
+        "remaining_distance": 2609,
+        "policy_time_s": 20.45
+      },
+      {
+        "run": 2,
+        "deliveries": 123,
+        "blocked_moves": 4911,
+        "remaining_distance": 2125,
+        "policy_time_s": 19.01
+      },
+      {
+        "run": 3,
+        "deliveries": 125,
+        "blocked_moves": 5520,
+        "remaining_distance": 2086,
+        "policy_time_s": 17.62
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "Submission uses static imports from allowed-looking modules and implements deterministic pathfinding/layout logic. No filesystem, network, subprocess, dynamic import/code execution, obfuscation, credential access, or sandbox escape behavior detected.",
     "code_saved_to": "scraped/solutions/0369__equipo-04__15c4cc5a483b.py"
@@ -1575,7 +3445,29 @@
     "committed": "2026-06-27 10:07:04.869 UTC",
     "has_code": true,
     "has_replay": true,
-    "runs": [],
+    "runs": [
+      {
+        "run": 1,
+        "deliveries": 7,
+        "blocked_moves": 14292,
+        "remaining_distance": 2973,
+        "policy_time_s": 0.16
+      },
+      {
+        "run": 2,
+        "deliveries": 12,
+        "blocked_moves": 14750,
+        "remaining_distance": 3272,
+        "policy_time_s": 0.17
+      },
+      {
+        "run": 3,
+        "deliveries": 5,
+        "blocked_moves": 16256,
+        "remaining_distance": 2804,
+        "policy_time_s": 0.16
+      }
+    ],
     "safety_status": "approved",
     "safety_review": "Submission uses only the expected warehouse API imports and contains straightforward layout generation and robot policy logic with no filesystem, network, subprocess, dynamic execution/imports, obfuscation, or other security concerns.",
     "code_saved_to": "scraped/solutions/0024__equipo-16__ecc405f020bd.py"
